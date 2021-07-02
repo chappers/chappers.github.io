@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% feed_meta %}
+	<link rel="stylesheet" href="https://charliec443.github.io/css/site.css">
+	<link rel="stylesheet" href="https://charliec443.github.io/css/pygments.css">
+	<script src="https://charliec443.github.io/js/site.js"></script>
+	<title>charliec</title>
+
+
+	<script
+		type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+	<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       processEscapes: true
+     }
+   });
+ </script>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+		type="text/javascript"></script>
+	<script data-ad-client="ca-pub-5058752309493957" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<article>
+			<h1><a href="/" id="home">charliec</a> : <a href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a>
+			</h1>
+			<p>{{ page.date | date_to_string }}</p>
+			<p>{{ content }}</p>
+			<script src="https://utteranc.es/client.js" repo="charliec443/blogroll" issue-term="{{ page.url }}"
+				theme="github-light" crossorigin="anonymous" async>
+				</script>
+		</article>
+	</div>
+	<canvas id="map"></canvas>
+	<script src="https://charliec443.github.io/js/pagemap.min.js"></script>
+	<!-- mathjax -->
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<footer>
+		{% include footer.html %}
+	</footer>
+
+</body>
+
+</html>

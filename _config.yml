@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+highlighter:      rouge
+permalink:        pretty
+markdown:         kramdown
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss']
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+title:           charliec

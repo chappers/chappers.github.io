@@ -8,11 +8,11 @@ tagline:
 
 Based on Janko's [jQuery table of contents](http://www.jankoatwarpspeed.com/post/2009/08/20/Table-of-contents-using-jQuery.aspx).
 
-<del>Repository: [github repository](https://github.com/charliec443/ToC-using-jQuery), using [Skeleton](http://www.getskeleton.com/) as a basis for responsive web design.</del>
+<del>Repository: [github repository](https://github.com/chappers/ToC-using-jQuery), using [Skeleton](http://www.getskeleton.com/) as a basis for responsive web design.</del>
 
-<del>[Click here](http://htmlpreview.github.com/?https://github.com/charliec443/ToC-using-jQuery/blob/master/markdownText.html) to view it in action.</del>
+<del>[Click here](http://htmlpreview.github.com/?https://github.com/chappers/ToC-using-jQuery/blob/master/markdownText.html) to view it in action.</del>
 
-_update:_ _I've moved and refactored my code [here](https://github.com/charliec443/Contents) this post will be kept for legacy, though the code is more or less the same as before (23 February 2013)_
+_update:_ _I've moved and refactored my code [here](https://github.com/chappers/Contents) this post will be kept for legacy, though the code is more or less the same as before (23 February 2013)_
 
 ##Goals
 

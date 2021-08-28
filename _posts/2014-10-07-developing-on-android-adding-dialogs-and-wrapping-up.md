@@ -8,7 +8,7 @@ tags : [android, java]
 
 In this post, we will build a simple "guess the number game". There will be a input area, which you enter you guess, and simple prompt to tell you whether your guess was too high or too low. 
 
-![lower higher layouts](https://raw2.github.com/charliec443/charliec443.github.io/master/img/android/lowerhigher/layout.png)
+![lower higher layouts](https://raw2.github.com/chappers/chappers.github.com/master/img/android/lowerhigher/layout.png)
 
 ```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

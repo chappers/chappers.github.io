@@ -80,7 +80,7 @@ stop_times %>%
   ggplot(aes(arrival_time, time_taken)) + geom_line()
 ```
 
-![bus-times](https://raw2.github.com/charliec443/charliec443.github.io/master/img/dplyr/Bus Times.png)
+![bus-times](https://raw2.github.com/chappers/chappers.github.com/master/img/dplyr/Bus Times.png)
 
 Overall, I can definitely see the advantages of forward piping particularly in data analytics, and hope that more and more people would use this approach to generate clean code.
 It is quite scary to even think of the code above to be R code since it resembles little of what you might consider to be "base R".

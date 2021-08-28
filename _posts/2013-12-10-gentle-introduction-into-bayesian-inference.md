@@ -6,7 +6,7 @@ tags :
 
 
 
-Following on from a previous [post](http://charliec443.github.io/proofs/2013/11/07/a-glimpse-into-bayes-probability/), lets look into
+Following on from a previous [post](http://chappers.github.io/proofs/2013/11/07/a-glimpse-into-bayes-probability/), lets look into
 Bayesian inference.
 
 ## Recap

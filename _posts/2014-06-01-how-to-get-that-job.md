@@ -32,7 +32,7 @@ others place _blind_ _faith_ on your abilities!
 Let's say that you have recently graduated from university and looking for a data analytics role,
 however you only have R knowledge, but no SAS knowledge. What could you do? Perhaps one of the best
 ways is to demonstrate that you can clean and manipulate dirty data, as a suggestion perhaps you could
-provide some code to plot the location of all the [Sydney hat restaurants](http://charliec443.github.io/web%20micro%20log/2013/12/08/Sydney-Hat-Restaurants/) and publish the
+provide some code to plot the location of all the [Sydney hat restaurants](http://chappers.github.io/web%20micro%20log/2013/12/08/Sydney-Hat-Restaurants/) and publish the
 corresponding R code, describing your methodology. In fact this would be a perfect interview example of
 demonstrating your technical skills. 
 

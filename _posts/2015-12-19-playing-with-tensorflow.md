@@ -54,4 +54,4 @@ For some reason I couldn't get the deep neural net working; I will check it out 
 
 I have set up a repository with my own vagrant instance. You can check it out here:
 
-[https://github.com/charliec443/skflow-tensorflow-vagrant](https://github.com/charliec443/skflow-tensorflow-vagrant)
+[https://github.com/chappers/skflow-tensorflow-vagrant](https://github.com/chappers/skflow-tensorflow-vagrant)

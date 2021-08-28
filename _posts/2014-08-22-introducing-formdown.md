@@ -4,7 +4,7 @@ category : web micro log
 tags : [python]
 ---
 
-Announcing [`formdown`](http://charliec443.github.io/formdown/). This is a simple python module which assists with generating pesky forms without all the html tags. 
+Announcing [`formdown`](http://chappers.github.io/formdown/). This is a simple python module which assists with generating pesky forms without all the html tags. 
 
 This can be combined with [datepicker](http://jqueryui.com/datepicker/).
 

@@ -5,7 +5,7 @@ tags :
 ---
 
 In this blog post I will go through the process of building a combinatory parser in R. This post reflects
-my intent of developing an R package called [Ramble](https://github.com/charliec443/Ramble). Please note that at the time of writing
+my intent of developing an R package called [Ramble](https://github.com/chappers/Ramble). Please note that at the time of writing
 Ramble was still a work in progress and may differ to what I will explore in this blog post.
 
 ## R is a functional

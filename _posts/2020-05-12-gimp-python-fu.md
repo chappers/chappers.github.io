@@ -36,7 +36,7 @@ This can become a bit of a mess down the track, but at least its helped me stay 
 
 ### Thinking about the execution script
 
-The execution script in this context does end up being a bit of a hack, essentially you end up with a dictionary of parameterised procedures to execute. For example here: https://github.com/charliec443/gimp-python-experiments/blob/master/gimp-plugins/export_batch.py
+The execution script in this context does end up being a bit of a hack, essentially you end up with a dictionary of parameterised procedures to execute. For example here: https://github.com/chappers/gimp-python-experiments/blob/master/gimp-plugins/export_batch.py
 
 We have code which looks like this:
 

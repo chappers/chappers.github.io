@@ -4,7 +4,7 @@ category : web micro log
 tags : [python, sas]
 ---
 
-So I've just released `v0.01-alpha` of my SAS transcompiler to Python ([Stan](https://github.com/charliec443/Stan)). 
+So I've just released `v0.01-alpha` of my SAS transcompiler to Python ([Stan](https://github.com/chappers/Stan)). 
 
 Here is just a list of things I've learnt :
 

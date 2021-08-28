@@ -10,7 +10,7 @@ Off the back of my first assignment (which we've been given permission to share 
 
 The goal of such a script wouldn't be to remove all human knowledge (domain knowledge in building orthogonal data sets will still build applying models naively), but if it can even meet 50% of what a human can do, that is important information in estimated the amount of effort needed or even the feasibility of the problem on hand.
 
-See [here](http://charliec443.github.io/automatic-modeller/) for the project repository. 
+See [here](http://chappers.github.io/automatic-modeller/) for the project repository. 
 
 # Building an Automatic Classifier
 

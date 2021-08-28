@@ -19,6 +19,6 @@ I think the next steps for game development would be (in no particular order):
 *  [Tetris](http://en.wikipedia.org/wiki/Tetris) : Understand puzzle game, and hopefully start introducing graphical assets into the game.  
 *  A simple side scrolling platform game. 
 
-For my notes on how I constructed the game see [refresh-love](http://charliec443.github.io/refresh-love).
+For my notes on how I constructed the game see [refresh-love](http://chappers.github.com/refresh-love).
 
 

@@ -14,7 +14,7 @@ Statistics
 
 One area which required attention particularly after two years of working was relearning my statistics. It wasn't so much that my statistics was deficit instead it was the realisation that many of the results in my education were poorly understood or perhaps more importantly I had gained new insight or appreciation for some of the meta-learning ideas. 
 
-This was most evident when completing Coursera's ML course (Stanford) where they talked about gradient descent approaches to logistic regression; an idea which I didn't even know existed! This lead to me reading up on [Kantorovich Inequality](http://charliec443.github.io/proofs/2013/04/20/kantorovich-inequality/) amongst other things. In the last few months I have revised statistical inference and regularization techniques, something which escaped me somewhat during my university years. 
+This was most evident when completing Coursera's ML course (Stanford) where they talked about gradient descent approaches to logistic regression; an idea which I didn't even know existed! This lead to me reading up on [Kantorovich Inequality](http://chappers.github.io/proofs/2013/04/20/kantorovich-inequality/) amongst other things. In the last few months I have revised statistical inference and regularization techniques, something which escaped me somewhat during my university years. 
 
 It is clear through this that there really wasn't any pattern to learning any of this but it was just a result of the exposure I was fortunate to receive as part of my day to day work.
 

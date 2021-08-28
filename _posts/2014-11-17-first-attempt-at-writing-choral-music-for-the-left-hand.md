@@ -4,7 +4,7 @@ category : web micro log
 tags : 
 ---
 
-[Ostinato](https://github.com/charliec443/ostinato) is my attempt at writing an ostinato for choral music. At the time of writing this blog post, I must say it was a lot harder than I anticipated for the following reasons:
+[Ostinato](https://github.com/chappers/ostinato) is my attempt at writing an ostinato for choral music. At the time of writing this blog post, I must say it was a lot harder than I anticipated for the following reasons:
 
 *  Limited support of any modules for music editing  
 *  Personally, limited knowledge and patience for the existing modules!

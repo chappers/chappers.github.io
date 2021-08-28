@@ -4,7 +4,7 @@ category : web micro log
 tags :
 ---
 
-Today I am releasing [binst](https://github.com/charliec443/binst) which an "optimal binning" package using supervised and unsupervised methods including:
+Today I am releasing [binst](https://github.com/chappers/binst) which an "optimal binning" package using supervised and unsupervised methods including:
 
 * kmeans
 * entropy

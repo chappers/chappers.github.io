@@ -15,7 +15,7 @@ But firstly, let's have a quick look at the different files which build up an An
 
 I like to think of layouts as your HTML code. It tells you where everything sits. Within Android studio, there is a simple point and click template which allows you to easily and quickly generate something to your liking.
 
-![Point and click layouts](https://raw2.github.com/charliec443/charliec443.github.io/master/img/android/hello-world/designlayout.png)
+![Point and click layouts](https://raw2.github.com/chappers/chappers.github.com/master/img/android/hello-world/designlayout.png)
 
 The `.xml` file will then automatically be generated to reflect any changes you make. So what controls the "Hello World!" text?
 
@@ -114,7 +114,7 @@ public class HelloActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.hello, menu);
         
         TextView changeText = (TextView) findViewById(R.id.hello_world);
-        changeText.setText("user!");
+        changeText.setText("Chapman!");
         return true;
     }
 

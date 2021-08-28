@@ -5,15 +5,15 @@ tags : [python, deck.js]
 tagline: 
 ---
 
-_update: check out [Puma.js](http://charliec443.github.io/puma/) which uses the same ideas but with no server-side compilation needed._
+_update: check out [Puma.js](http://chappers.github.io/puma/) which uses the same ideas but with no server-side compilation needed._
 
 I've been interested in various forms of markdown for a while (after all jekyll uses markdown heavily). Thats when I've discovered [deck.js](http://imakewebthings.com/deck.js/). 
 
 A very short python script will allow you to generate presentations without having to worry about layout. The structure of the presentations is using markdown as normal and seperating each slide by `---`. For example, the markdown presentation to generate this [presentation](https://googledrive.com/host/0ByHWFFfBDxCFZ1ctMk9MRjBXc0U/deckjs/presentation.html) is as below:
 
-	#user Siu
+	#Chapman Siu
 	---
-	user's personal:  
+	Chapman's personal:  
 
 	*	projects, essays and code dump
 	*	web micro log

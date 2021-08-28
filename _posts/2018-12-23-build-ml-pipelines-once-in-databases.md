@@ -15,7 +15,7 @@ Broad approach would be:
 *  Transcompile to SQL
 *  Run models in SQL
 
-This repository: [https://github.com/charliec443/sklearn-predict](https://github.com/charliec443/sklearn-predict) shows broadly how this approach may work on sqlite databases. Some of the obvious challenges are:
+This repository: [https://github.com/chappers/sklearn-predict](https://github.com/chappers/sklearn-predict) shows broadly how this approach may work on sqlite databases. Some of the obvious challenges are:
 
 *  Supporting mutiple databases (sqlalchemy?)
 *  Supporting databases with limited mathematical transformations

@@ -5,7 +5,7 @@ tags :
 tagline: 
 ---
 
-In attempting to write a pure Python sampling version of _determinantal point process_ I thought I'll write through some pseudo-code and go through what worked. I have provided [my current work in progress here](https://github.com/charliec443/dpp). It is based on the [Matlab code of Alex Kulesza](http://web.eecs.umich.edu/~kulesza/), which was converted (partially) using SMOP package. 
+In attempting to write a pure Python sampling version of _determinantal point process_ I thought I'll write through some pseudo-code and go through what worked. I have provided [my current work in progress here](https://github.com/chappers/dpp). It is based on the [Matlab code of Alex Kulesza](http://web.eecs.umich.edu/~kulesza/), which was converted (partially) using SMOP package. 
 
 ## Changes to the Original Implementation
 

@@ -16,5 +16,5 @@ There are still various improvements which I can make:
 Responsive web is not the main goal, though for learning purposes; why not! I suppose the wordcloud could be held static in case you need to zoom...
 
 ##Links
-[user's WordClouds](http://wordcloud-usersiu.rhcloud.com/)  
+[Chapman's WordClouds](http://wordcloud-chapmansiu.rhcloud.com/)  
 Word Cloud was created using a template based on [this](http://www.jasondavies.com/wordcloud).

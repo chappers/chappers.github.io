@@ -70,7 +70,7 @@ Again there were addresses which couldn't be parsed correctly using this method,
 
 Python's Beautiful Soup is an amazing library which can do so much. I think the results were far better than I expected, and perhaps in the future I will revisit it to get a better hit rate.
 
-See this [gist for the code](https://gist.github.com/charliec443/7856223). _Note_: I would be lying if I claimed this code resembled something production ready.
+See this [gist for the code](https://gist.github.com/chappers/7856223). _Note_: I would be lying if I claimed this code resembled something production ready.
 
 
 

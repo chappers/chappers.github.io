@@ -5,7 +5,7 @@ tags : [python]
 ---
 
 Perhaps its just an itch, but I couldn't resist. So here is 
-[**Wow**](https://gist.github.com/charliec443/8412812). As stated before 
+[**Wow**](https://gist.github.com/chappers/8412812). As stated before 
 I thought the best way was to emulate [APScheduler](http://pythonhosted.org/APScheduler/).
 
 Usage is fairly similar. To start Wow simply use.
@@ -17,7 +17,7 @@ z = Wow()
 Then to add a payment:
 
 {% highlight python %}
-z.add_payment("deposit", 39.25, "user", "Tim")
+z.add_payment("deposit", 39.25, "Chapman", "Tim")
 {% endhighlight %}
 
 Finally to calculate, simply do
@@ -26,4 +26,4 @@ Finally to calculate, simply do
 print z.calculate_owing()
 {% endhighlight %}
 
-Here is the [gist](https://gist.github.com/charliec443/8412812).
+Here is the [gist](https://gist.github.com/chappers/8412812).

@@ -39,12 +39,12 @@ violate the requirements I set for myself.
 Since I demanded that the data be a flat file, its quite simple.
 
     description, amount, creditor, debitor
-    deposit, 38, user, Tim
-    breakfast, 10, Dave, user
+    deposit, 38, Chapman, Tim
+    breakfast, 10, Dave, Chapman
     Taxi, 20, Josh
     breakfast, 25, Josh
-    Sea Kayaking, 250, user
-    ATV tour, 350, user
+    Sea Kayaking, 250, Chapman
+    ATV tour, 350, Chapman
     Taxi, 5, Josh, Tim
     Groceries, 23.5, Dave
 
@@ -95,21 +95,21 @@ Which would result in something like this:
 <tbody>
 <tr>
 <th>0</th>
-<td> user</td>
+<td> Chapman</td>
 <td>    Dave</td>
 <td> 150.000</td>
 <td>  15.875</td>
 </tr>
 <tr>
 <th>1</th>
-<td> user</td>
+<td> Chapman</td>
 <td>    Josh</td>
 <td> 150.000</td>
 <td>  11.250</td>
 </tr>
 <tr>
 <th>2</th>
-<td> user</td>
+<td> Chapman</td>
 <td>     Tim</td>
 <td> 188.000</td>
 <td>   0.000</td>
@@ -117,7 +117,7 @@ Which would result in something like this:
 <tr>
 <th>3</th>
 <td>    Dave</td>
-<td> user</td>
+<td> Chapman</td>
 <td>  15.875</td>
 <td> 150.000</td>
 </tr>
@@ -159,19 +159,19 @@ The ending result would look like this:
 <tbody>
 <tr>
 <th>0</th>
-<td> user</td>
+<td> Chapman</td>
 <td> Dave</td>
 <td> 134.625</td>
 </tr>
 <tr>
 <th>1</th>
-<td> user</td>
+<td> Chapman</td>
 <td> Josh</td>
 <td> 160.375</td>
 </tr>
 <tr>
 <th>2</th>
-<td> user</td>
+<td> Chapman</td>
 <td>  Tim</td>
 <td> 165.875</td>
 </tr>
@@ -180,4 +180,4 @@ The ending result would look like this:
 
 And thats it, you've figured out who owes what.
 
-[Notebook](http://nbviewer.ipython.org/gist/charliec443/8253724/who-owes-what.ipynb) and [gist](https://gist.github.com/charliec443/8253724)
+[Notebook](http://nbviewer.ipython.org/gist/chappers/8253724/who-owes-what.ipynb) and [gist](https://gist.github.com/chappers/8253724)

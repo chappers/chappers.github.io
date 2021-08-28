@@ -38,7 +38,7 @@ from types import MethodType
 		self.age = age
 		return None
 	
-	p = Person("charliec")
+	p = Person("chappers")
 	p.add_age= MethodType(add_age, p)
 	
 	p.add_age(10)
@@ -57,9 +57,9 @@ The R equivalent of the above is
 	
 	Person$methods(add_age = function(set_age) age <<- set_age)
 	
-	user <- Person$new(name = "user")
-	user$add_age(10)
-	print(user$age)
+	chapman <- Person$new(name = "chapman")
+	chapman$add_age(10)
+	print(chapman$age)
 
 
 

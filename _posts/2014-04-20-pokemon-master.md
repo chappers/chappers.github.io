@@ -112,8 +112,8 @@ The result is below:
 
     var pokemonLayer = new L.LayerGroup();
     
-    var pikachu = new LeafIcon({iconUrl: 'https://raw2.github.com/charliec443/charliec443.github.io/master/img/pokemon/pikachu.png'}),
-        pokeball = new LeafIcon({iconUrl: 'https://raw2.github.com/charliec443/charliec443.github.io/master/img/pokemon/pokeball.gif'});
+    var pikachu = new LeafIcon({iconUrl: 'https://raw2.github.com/chappers/chappers.github.com/master/img/pokemon/pikachu.png'}),
+        pokeball = new LeafIcon({iconUrl: 'https://raw2.github.com/chappers/chappers.github.com/master/img/pokemon/pokeball.gif'});
         //var redIcon = new LeafIcon({iconUrl: '../docs/images/leaf-red.png'}),
         //orangeIcon = new LeafIcon({iconUrl: '../docs/images/leaf-orange.png'});
 

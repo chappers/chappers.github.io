@@ -5,7 +5,7 @@ tags :
 tagline: 
 ---
 
-Whilst the [first post on Paper Writing](http://charliec443.github.io/web%20micro%20log/2016/12/12/paper-writing/) was focused on delivering a paper, and providing structure for peole who have yet to write a paper, one year on, what would I change about it? Is it still relevant?
+Whilst the [first post on Paper Writing](http://chappers.github.io/web%20micro%20log/2016/12/12/paper-writing/) was focused on delivering a paper, and providing structure for peole who have yet to write a paper, one year on, what would I change about it? Is it still relevant?
 
 In the original focus, we being with no topic, no ideas, and spend half the time:
 

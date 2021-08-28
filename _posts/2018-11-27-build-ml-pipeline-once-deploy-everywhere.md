@@ -20,7 +20,7 @@ There is a certain appeal to building a machine learning pipeline once and deplo
 
 **Approach**
 
-The approach to do this can be found [here](https://github.com/charliec443/tfjs-python-pipelines). The general gist of it is that we are:
+The approach to do this can be found [here](https://github.com/chappers/tfjs-python-pipelines). The general gist of it is that we are:
 
 *  Using [transcrypt](http://transcrypt.org/) to convert plain Python objects to JavaScript
 *  Using [tensorflow.js](https://js.tensorflow.org/) to handle things like converting TensorFlow models to JavaScript, allowing us to easily use these mature libraries in a sensible fashion. Afterall why would we want to rebuilt ML algorithms from scratch!

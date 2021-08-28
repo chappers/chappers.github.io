@@ -29,4 +29,4 @@ document.getElementById('marked').style.display = 'none';
 
 And that's it! with 8 lines of boilerplate code, you've essentially got your strapdown alternative!
 
-I've put an [example here](https://github.com/charliec443/strapmarked/blob/master/index.html) with a [live demo](https://charliec443.github.io/strapmarked/)
+I've put an [example here](https://github.com/chappers/strapmarked/blob/master/index.html) with a [live demo](https://chappers.github.io/strapmarked/)

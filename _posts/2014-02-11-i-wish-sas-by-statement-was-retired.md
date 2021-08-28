@@ -4,7 +4,7 @@ category : web micro log
 tags : [sas]
 ---
 
-I've been debating whether `by` statement should be retained in [Stan](http://charliec443.github.io/Stan). This is quite easily my least favourite "feature" of SAS. The modern methodology of "split-apply-combine" in R and Pandas is far superior and easier to read compared with the many hacks which come along. For example:
+I've been debating whether `by` statement should be retained in [Stan](http://chappers.github.com/Stan). This is quite easily my least favourite "feature" of SAS. The modern methodology of "split-apply-combine" in R and Pandas is far superior and easier to read compared with the many hacks which come along. For example:
 
     data class;
         set sashelp.class;

@@ -5,8 +5,8 @@ tags : [python]
 tagline: 
 ---
 
-[Repository here](https://github.com/charliec443/markdownResume)  
-[View my resume here](http://htmlpreview.github.com/?https://github.com/charliec443/markdownResume/blob/master/Resume.html)
+[Repository here](https://github.com/chappers/markdownResume)  
+[View my resume here](http://htmlpreview.github.com/?https://github.com/chappers/markdownResume/blob/master/Resume.html)
 
 ---
 

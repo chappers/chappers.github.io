@@ -20,7 +20,7 @@ If we wish to convince our colleague or friend of our point of view we have to r
 
 ## Framing
 
-Previously we've looked at how to give and [communicate disagreements](http://charliec443.github.io/web%20micro%20log/2014/05/21/Framing/). The structure is as follows:
+Previously we've looked at how to give and [communicate disagreements](http://chappers.github.io/web%20micro%20log/2014/05/21/Framing/). The structure is as follows:
 
 1. Universal (set the scene)
 2. Would it be wonderful... (aiming for the higher moral ground)

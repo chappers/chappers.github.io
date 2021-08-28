@@ -7,3 +7,5 @@ plugins:
   - jekyll-sitemap
 
 title:           chappers
+
+theme: jekyll-theme-minimal

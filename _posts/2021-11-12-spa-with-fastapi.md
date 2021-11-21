@@ -73,3 +73,5 @@ async def serve_home(request: Request):
 ```
 
 Happy coding!
+
+Based on this: https://stackoverflow.com/questions/64522736/how-to-connect-vue-js-as-frontend-and-fastapi-as-backend

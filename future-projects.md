@@ -18,4 +18,6 @@ A walk through how programming and many aspects of technology work that we take 
 
 ## Rebuilding Michelangelo
 
-A project on creating Uber's michelangelo just like Handmade Hero
+<s>A project on creating Uber's Michelangelo just like Handmade Hero</s>. Feast basically does this, even in a limited infrastructure setting. 
+
+

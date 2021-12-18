@@ -16,3 +16,7 @@ The games I plan on implementing are from "Code the Classics", which should prov
 of controlling/comparing the two from a benchmark perspective -->
 
 Let's see how far I get.
+
+## Update
+
+Using things like [pola.rs](https://www.pola.rs/) will ease the transition. This might be the "gateway" for moving towards simplier data processing workflows in Rust.

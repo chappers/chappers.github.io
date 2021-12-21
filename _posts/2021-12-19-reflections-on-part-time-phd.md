@@ -16,7 +16,7 @@ One of the key items to a PhD is consistency and self-motivation and drive. My k
 *  Writing code to reimplement algorithms or code for a paper
 *  Writing down future plans
 
-Having this as the baseline helped ensure there was always some kind of measureable progress made. Of course amount of work does not equate to sensible output! Some might look at this list and think it is busy work. This approach worked for me to ensure my mind was always active and useful for building good habits.
+Having this as the baseline helped ensure there was always some kind of measurable progress made. Of course amount of work does not equate to sensible output! Some might look at this list and think it is busy work. This approach worked for me to ensure my mind was always active and useful for building good habits.
 
 ## Ideas and Failures
 

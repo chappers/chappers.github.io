@@ -20,3 +20,5 @@ Let's see how far I get.
 ## Update
 
 Using things like [pola.rs](https://www.pola.rs/) will ease the transition. This might be the "gateway" for moving towards simplier data processing workflows in Rust.
+
+Other interesting tools include [evcxr](https://github.com/google/evcxr) (Evaluation Context for Rust). 

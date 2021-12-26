@@ -193,7 +193,7 @@ farmhash.fingerprint64('alphabet')
 Bridged Schema
 --------------
 
-I believe this is a variation of the fstrangler pattern for deprecating old code bases. The idea is to leave the existing approach as is, and have the new one running in parallel. The nuance being to (selectively) recast old data to the new schema via remapping. This can be handled in RDMs or other approaches. 
+I believe this is a variation of the strangler pattern for deprecating old code bases. The idea is to leave the existing approach as is, and have the new one running in parallel. The nuance being to (selectively) recast old data to the new schema via remapping. This can be handled in RDMs or other approaches. 
 
 When there is new data available the book does make good suggestions around how to manage it, particularly around "life-long" learning. But I'll leave this as a topic for another day, as I'm partial to Hoeffding racing for handling and deprecating models of this nature in production. 
 

@@ -30,7 +30,7 @@
 <body>
 	<div class="container">
 		<article>
-			<h1><a href="/" id="home">chappers</a> : <a href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a>
+			<h1><div id="print-hide"><a href="/" id="home">chappers</a> : <a href="{{ site.base_url }}{{ page.url }}"></div>{{ page.title }}</a>
 			</h1>
 			<p>{{ page.date | date_to_string }}</p>
 			<p>{{ content }}</p>
@@ -44,7 +44,7 @@
 	<!-- mathjax -->
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-	<footer>
+	<footer id="print-hide">
 		{% include footer.html %}
 	</footer>
 

@@ -461,7 +461,7 @@ pre,
 pre span,
 kbd,
 samp {
-  font-size: 1.075rem;
+  font-size: 0.9rem;
   font-family: var(--mono-font);
   color: var(--code);
 }

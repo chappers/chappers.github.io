@@ -10,8 +10,10 @@ Using `tsfresh` to generate features quickly without thinking too hard...
 Rough sketch is below. I'm not perfectly happy with the code, but using `tsfresh` in conjunction with `shap` and `isolationforest` should provide a really good starting point for bootstrapping timeseries modelling, particularly when you don't have any labels. We can make use of this feature engineering pipeline to build (hopefully) sensible profiles. 
 
 ```py
-from tsfresh.examples.robot_execution_failures import download_robot_execution_failures, \
-    load_robot_execution_failures
+from tsfresh.examples.robot_execution_failures import (
+    download_robot_execution_failures,
+    load_robot_execution_failures,
+)
 from tsfresh import extract_features
 from sklearn.ensemble import IsolationForest
 from sklearn.feature_selection import SelectFromModel
@@ -27,6 +29,7 @@ import tsfresh
 
 download_robot_execution_failures()
 timeseries, _ = load_robot_execution_failures()
+
 
 def impute_dataframe_range(df_impute, col_to_max, col_to_min, col_to_median):
     columns = df_impute.columns
@@ -44,10 +47,12 @@ def impute_dataframe_range(df_impute, col_to_max, col_to_min, col_to_median):
 
     df_impute.astype(np.float64, copy=False)
 
+    return df_impute.dropna(axis=1, how="all")
 
-    return df_impute.dropna(axis=1, how='all')
 
-def extract_features_and_impute(*args, return_statistics=False, col_to_max=None, col_to_min=None, **kwargs):
+def extract_features_and_impute(
+    *args, return_statistics=False, col_to_max=None, col_to_min=None, **kwargs
+):
     df = extract_features(*args, **kwargs)
 
     if col_to_max is None or col_to_min is None:
@@ -60,12 +65,14 @@ def extract_features_and_impute(*args, return_statistics=False, col_to_max=None,
         df = impute_dataframe_range(df, col_to_max, col_to_min, {})
         return df
 
+
 from sklearn.base import TransformerMixin, OutlierMixin
+
 
 class PandasTransformer(TransformerMixin):
     def __init__(self, est):
         self.est = est
-    
+
     def fit(self, X, y=None):
         self.est.fit(X, y)
         return self
@@ -75,10 +82,13 @@ class PandasTransformer(TransformerMixin):
         X_out.columns = X.columns
         return X_out
 
+
 # this doesn't really work properly? - as it is stateful
 pipeline = make_pipeline(
-    FunctionTransformer(lambda x: extract_features_and_impute(x, column_id="id", column_sort="time")),
-    PandasTransformer(SimpleImputer(strategy='median'))
+    FunctionTransformer(
+        lambda x: extract_features_and_impute(x, column_id="id", column_sort="time")
+    ),
+    PandasTransformer(SimpleImputer(strategy="median")),
 )
 
 X_out = pipeline.fit_transform(timeseries)
@@ -93,10 +103,22 @@ feature_info = dict(zip(list(X_out.columns), vals))
 # dict(sorted(feature_info.items(), key=lambda x: x[1], reverse=True)[:10])
 
 selected_features_info = tsfresh.feature_extraction.settings.from_columns(col_select)
-col_to_max, col_to_min = extract_features_and_impute(return_statistics=True, timeseries_container=timeseries,   column_id="id", column_sort="time")  # save statistics
+col_to_max, col_to_min = extract_features_and_impute(
+    return_statistics=True,
+    timeseries_container=timeseries,
+    column_id="id",
+    column_sort="time",
+)  # save statistics
 
 # then we can reuse the information to have a better extract function
-subset_timeseries = extract_features_and_impute(timeseries, column_id="id", column_sort="time", kind_to_fc_parameters=selected_features_info, col_to_max=col_to_max, col_to_min=col_to_min)
+subset_timeseries = extract_features_and_impute(
+    timeseries,
+    column_id="id",
+    column_sort="time",
+    kind_to_fc_parameters=selected_features_info,
+    col_to_max=col_to_max,
+    col_to_min=col_to_min,
+)
 
 ```
 

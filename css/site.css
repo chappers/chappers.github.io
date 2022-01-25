@@ -56,7 +56,9 @@ body {
 }
 
 body>* {
-  grid-column: 2;
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 2rem;
 }
 
 /* Make the header bg full width, but the content inline with body */

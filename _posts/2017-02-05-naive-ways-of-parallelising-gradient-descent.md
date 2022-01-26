@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 It is easy to see that stochastic gradient descent is somewhat an "online learning" algorithm. It can be computed in a minibatch manner that can be parallised. If we take this idea to the extreme, we actually have an algorithm called the ["Hogwild!" algorithm](https://people.eecs.berkeley.edu/~brecht/papers/hogwildTR.pdf). The gist of this algorithm is:

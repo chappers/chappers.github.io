@@ -1,21 +1,21 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 _For the sake of my own sanity, everything I developed as in Graphene, so whenever I mention GraphQL please substitute with "GraphQL/Graphene" where it makes sense_
 
-GraphQL is an interesting approach to graph queries (after all it stands for Graph Query Language), as it does not explicitly sit on a graph database. Rather it seems to make use of various [data loaders](http://docs.graphene-python.org/en/latest/execution/dataloader/) and constructors in order to create a graph-like experience. In this fashion GraphQL can feel like a virtual database; but for graph outputs. 
+GraphQL is an interesting approach to graph queries (after all it stands for Graph Query Language), as it does not explicitly sit on a graph database. Rather it seems to make use of various [data loaders](http://docs.graphene-python.org/en/latest/execution/dataloader/) and constructors in order to create a graph-like experience. In this fashion GraphQL can feel like a virtual database; but for graph outputs.
 
 That being said, it isn't always obvious how to design a simple API for it, but it becomes easier if we stick to a few key principals GraphQL appears to adhere to:
 
->  Key-values in everything!
+> Key-values in everything!
 
-Do you need to write a `DataLoader`? Please think in terms of key-value pair. Do you need to execute a `query`? Key-value pair. 
+Do you need to write a `DataLoader`? Please think in terms of key-value pair. Do you need to execute a `query`? Key-value pair.
 
-The relevant aspects to this is that the `key` can be an abstract type, such as a `String` or a `Float`, a `[String]` or even another object. Similar for the `value`. This makes it really powerful and at the same time confusing if that construct wasn't in your mind. 
+The relevant aspects to this is that the `key` can be an abstract type, such as a `String` or a `Float`, a `[String]` or even another object. Similar for the `value`. This makes it really powerful and at the same time confusing if that construct wasn't in your mind.
 
 For example, consider [Getting Started](http://docs.graphene-python.org/en/latest/quickstart/) page on graphene.
 
@@ -140,9 +140,4 @@ if result.errors:
 print(result.data['hello'])
 ```
 
-[Which is covered here](http://graphql.org/learn/schema/). Similarly for [DataLoader](http://docs.graphene-python.org/en/latest/execution/dataloader/), the idea applies. When you write the `batch_load_fn` the `keys` can be an item like `[String]`, and the resolution can be an arbitary object. In this way it enforces particular typing so that you can built complex queries. 
-
-
-
-
-
+[Which is covered here](http://graphql.org/learn/schema/). Similarly for [DataLoader](http://docs.graphene-python.org/en/latest/execution/dataloader/), the idea applies. When you write the `batch_load_fn` the `keys` can be an item like `[String]`, and the resolution can be an arbitary object. In this way it enforces particular typing so that you can built complex queries.

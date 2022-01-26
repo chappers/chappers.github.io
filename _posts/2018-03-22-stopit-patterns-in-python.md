@@ -1,14 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-One useful pattern in machine learning is having time-based constraints for testing and comparing your algorithms - afterall that is the easiest way to assess its efficacy. The easiest way to do this is through the [`stopit` library](https://github.com/glenfant/stopit). 
+One useful pattern in machine learning is having time-based constraints for testing and comparing your algorithms - afterall that is the easiest way to assess its efficacy. The easiest way to do this is through the [`stopit` library](https://github.com/glenfant/stopit).
 
 The simpliest pattern I got working is this one:
-
 
 ```py
 from stopit import threading_timeoutable as timeoutable
@@ -22,7 +21,7 @@ class SimpleObject(object):
     """
     def __init__(self):
         self.items = []
-    
+
     @timeoutable()
     def ticker(self):
         while True:
@@ -30,7 +29,6 @@ class SimpleObject(object):
             time.sleep(1.0)
 
 ```
-
 
 What are some of the implications or usage? Within my work, we can "abuse" this function in many ways:
 
@@ -45,13 +43,13 @@ def ticker():
 class PerformanceTracker(object):
     """
     Usage:
-    
+
     >>> pt = PerformanceTracker()
     >>> pt.tracker(timeout=5)
     """
     def __init__(self):
         self.items = []
-        
+
     @timeoutable()
     def tracker(self):
         while True:
@@ -60,9 +58,3 @@ class PerformanceTracker(object):
 ```
 
 This could be a useful pattern for many crawlers as well! Surprisingly, there are very few examples using this library on the internet...
-
-
-
-
-
-

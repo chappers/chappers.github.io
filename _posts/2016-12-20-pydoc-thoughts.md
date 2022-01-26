@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 If you Google documentation with Python, there is a lot of posts and articles on

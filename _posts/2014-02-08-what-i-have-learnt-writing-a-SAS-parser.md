@@ -1,28 +1,26 @@
 ---
 layout: post
-category : web micro log
-tags : [python, sas]
+category: web micro log
+tags: [python, sas]
 ---
 
-So I've just released `v0.01-alpha` of my SAS transcompiler to Python ([Stan](https://github.com/chappers/Stan)). 
+So I've just released `v0.01-alpha` of my SAS transcompiler to Python ([Stan](https://github.com/chappers/Stan)).
 
 Here is just a list of things I've learnt :
 
-*  SAS very similar to a PL\\0 language
-*  `by` statements are inferior to the `split-apply-combine` strategy
-*  `pyparsing` makes life very easy (compared with dealing with lots of regex)
-*  iPython magics are ridiculously easy to write
-*  writing Python packages isn't that hard, but there is **a lot** of extraneous options
+- SAS very similar to a PL\\0 language
+- `by` statements are inferior to the `split-apply-combine` strategy
+- `pyparsing` makes life very easy (compared with dealing with lots of regex)
+- iPython magics are ridiculously easy to write
+- writing Python packages isn't that hard, but there is **a lot** of extraneous options
 
 Some of the (many) things which are missing:
 
-*  Just about every `proc` you can think of ... you can define your own as a "function". I know strictly speaking they are **not** the same thing, but for now it will do. (`proc sql` coming next release)
-*  As stated above no `by` statements, and hence none of the related statements as well (like `retain`).
-*  `if-else-then-do` not implemented correctly
+- Just about every `proc` you can think of ... you can define your own as a "function". I know strictly speaking they are **not** the same thing, but for now it will do. (`proc sql` coming next release)
+- As stated above no `by` statements, and hence none of the related statements as well (like `retain`).
+- `if-else-then-do` not implemented correctly
 
 But of course you would want to see it in action. So here it is!
-
-
 
     from stan.transcompile import transcompile
     import stan_magic
@@ -32,17 +30,14 @@ But of course you would want to see it in action. So here it is!
 
 
     import stan.proc_functions as proc_func
-    
-    mod_name = ["from stan.proc_functions import %s" % name for _, name, _ in pkgutil.iter_modules(proc_func.__path__)] 
+
+    mod_name = ["from stan.proc_functions import %s" % name for _, name, _ in pkgutil.iter_modules(proc_func.__path__)]
     exec("\n".join(mod_name))
 
 
-    # create an example data frame 
+    # create an example data frame
     df = DataFrame(np.random.randn(10, 5), columns = ['a','b','c','d','e'])
     df
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -141,9 +136,6 @@ But of course you would want to see it in action. So here it is!
 </table>
 </div>
 
-
-
-
     %%stan
     data test;
     set df (drop = a);
@@ -159,9 +151,6 @@ But of course you would want to see it in action. So here it is!
 
     exec(_)
     test
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -260,13 +249,10 @@ But of course you would want to see it in action. So here it is!
 </table>
 </div>
 
-
-
 `if` statements combined with `do` `end` statements were difficult to implement.
 Here is my current
 implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
 `end` statements in the future...)
-
 
     %%stan
     data df_if;
@@ -285,9 +271,6 @@ implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
     exec(_)
     df_if
 
-
-
-
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -396,20 +379,14 @@ implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
 </table>
 </div>
 
-
-
 ---
-
 
     # procs can be added manually they can be thought of as python functions
     # you can define your own, though I need to work on the parser
     # to get it "smooth"
-    
+
     df1 = DataFrame({'a' : [1, 0, 1], 'b' : [0, 1, 1] }, dtype=bool)
     df1
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -440,9 +417,6 @@ implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
 </table>
 </div>
 
-
-
-
     %%stan
     proc describe data = df1 out = df2;
     by a;
@@ -458,9 +432,6 @@ implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
 
     exec(_)
     df2
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -565,11 +536,8 @@ implementation of if-then-else control flow, (I'll have to revisit `if` and `do`
 </table>
 </div>
 
-
-
 The proc actually isn't difficult to write. So for the above code it is actually
 just this:
-
 
     def describe(data, by):
         return data.groupby(by).describe()
@@ -580,7 +548,6 @@ like Python and R, the normal way to handle data is through the split-apply-
 combine methodology.
 
 Merges can be achieved in a similar way, by creating a `proc`:
-
 
     %%stan
     proc merge out = df2;
@@ -599,12 +566,9 @@ Merges can be achieved in a similar way, by creating a `proc`:
 
     left = DataFrame({'key': ['foo', 'foo'], 'lval': [1, 2]})
     right = DataFrame({'key': ['foo', 'foo'], 'rval': [4, 5]})
-    
+
     exec(_)
     df2
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -645,15 +609,12 @@ Merges can be achieved in a similar way, by creating a `proc`:
 </table>
 </div>
 
-
-
 heres an example showing how you can define your own function and run it (not a
 function
 that came with the package)
 
-
     def sum_mean_by(data, by):
-        return data.groupby(by).agg([np.sum, np.mean]) 
+        return data.groupby(by).agg([np.sum, np.mean])
 
 
     %%stan
@@ -671,9 +632,6 @@ that came with the package)
 
     exec(_)
     df_sum
-
-
-
 
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
@@ -743,7 +701,3 @@ that came with the package)
   </tbody>
 </table>
 </div>
-
-
-
-

@@ -1,18 +1,18 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Today I am releasing [binst](https://github.com/chappers/binst) which an "optimal binning" package using supervised and unsupervised methods including:
 
-* kmeans
-* entropy
-* decision trees
+- kmeans
+- entropy
+- decision trees
 
 ## Motivations
 
-This package was firstly spurred by `smbinning` which to me seemed to be very confusing to use. This was what spurred the decision tree method in this package. Although this package "worked", I had trouble from an interoperability perspective to apply it on H2OFrames. 
+This package was firstly spurred by `smbinning` which to me seemed to be very confusing to use. This was what spurred the decision tree method in this package. Although this package "worked", I had trouble from an interoperability perspective to apply it on H2OFrames.
 
 For example I wished to perform something as simple as:
 
@@ -54,22 +54,22 @@ list.rules.party <- function(x, i = NULL, ...) {
   stopifnot(length(i) == 1 & is.numeric(i))
   stopifnot(i <= length(x) & i >= 1)
   i <- as.integer(i)
-  dat <- data_party(x, i)  
+  dat <- data_party(x, i)
   if (!is.null(x$fitted)) {
-    findx <- which("(fitted)" == names(dat))[1]  
-    fit <- dat[,findx:ncol(dat), drop = FALSE]   
+    findx <- which("(fitted)" == names(dat))[1]
+    fit <- dat[,findx:ncol(dat), drop = FALSE]
     dat <- dat[,-(findx:ncol(dat)), drop = FALSE]
     if (ncol(dat) == 0)
       dat <- x$data
   } else {
-    fit <- NULL  
+    fit <- NULL
     dat <- x$data
   }
-  
+
   rule <- c()
-  
+
   recFun <- function(node) {
-    if (id_node(node) == i) return(NULL)   
+    if (id_node(node) == i) return(NULL)
     kid <- sapply(kids_node(node), id_node)
     whichkid <- max(which(kid <= i))
     split <- split_node(node)
@@ -78,12 +78,12 @@ list.rules.party <- function(x, i = NULL, ...) {
     index <- index_split(split)
     if (is.factor(dat[, svar])) {
       slevels <- levels(dat[, svar])[index == whichkid]
-      srule <- paste(svar, " %in% c(\"", 
+      srule <- paste(svar, " %in% c(\"",
                      paste(slevels, collapse = "\", \"", sep = ""), "\")",
                      sep = "")
     } else {
       if (is.null(index)) index <- 1:length(kid)
-      breaks <- cbind(c(-Inf, breaks_split(split)), 
+      breaks <- cbind(c(-Inf, breaks_split(split)),
                       c(breaks_split(split), Inf))
       sbreak <- breaks[index == whichkid,]
       right <- right_split(split)
@@ -114,11 +114,11 @@ iris.hex$SL_Bin %>% as.vector() %>% unique
 
 `kmeans` was mostly inspired by a similar approach I took to one dimensional clustering which was used in my CS 6601 course at Georgia Tech (note that in this course we had to implement our own variant of kmeans using Python, so you won't get any hints here!)
 
-The approach using `entropy` is simply a wrapper to the `discretization` library within R. 
+The approach using `entropy` is simply a wrapper to the `discretization` library within R.
 
 ## Future Work
 
-If there is enough interest I hope to add other approaches to binning, probably using techniques such as 
+If there is enough interest I hope to add other approaches to binning, probably using techniques such as
 
-* Jenks Natural Breaks
-* Support for categorical data
+- Jenks Natural Breaks
+- Support for categorical data

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 I've been playing around with angular as part of my Health of Informatics at Georgia Tech and as part of an experiment I decided to try to write and "deploy" an app using only github pages. You can see [my attempt here](https://github.com/chappers/shuffle-topics).

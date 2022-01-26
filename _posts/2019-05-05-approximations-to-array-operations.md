@@ -1,17 +1,17 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-When you think about Machine Learning operations, often the complexity arises when the operations which are used operate over arrays rather than over records. 
+When you think about Machine Learning operations, often the complexity arises when the operations which are used operate over arrays rather than over records.
 
-For example, elementary operations which are row-based generally have simple SQL query analogues; whether you are doing something like addition, subtraction or even calculating the mean via a group by. However if you are doing group by comparisons or operations over a sequential data, you will essentially be performing an operation which is like an inner loop (or an all-pairs operation). 
+For example, elementary operations which are row-based generally have simple SQL query analogues; whether you are doing something like addition, subtraction or even calculating the mean via a group by. However if you are doing group by comparisons or operations over a sequential data, you will essentially be performing an operation which is like an inner loop (or an all-pairs operation).
 
 **Example**
 
-One could normalise prediction outputs for recommendation across multiple items by using percentile, another approach is simply to shift the location of the logistic function and scale it to the desired output. 
+One could normalise prediction outputs for recommendation across multiple items by using percentile, another approach is simply to shift the location of the logistic function and scale it to the desired output.
 
 ```py
 import numpy as np
@@ -23,10 +23,9 @@ def scale_logx(x, mean, variance):
 
 We should take care when performing this; as the transformation would have impact when applying softmax function (infact performing these transformations have direct analogues to gumbel-softmax/concrete distribution approaches). To understand what happens:
 
-*  Shifting by the mean (or location) would move the midpoint of the distribution to the "middle" which would align all other log-odds distributions as well; whereas the shift to variance would control the scale or the steepness to how it approaches either extreme points (i.e. $P(y) = \{0, 1\}$). 
+- Shifting by the mean (or location) would move the midpoint of the distribution to the "middle" which would align all other log-odds distributions as well; whereas the shift to variance would control the scale or the steepness to how it approaches either extreme points (i.e. $P(y) = \{0, 1\}$).
 
 Example code which demonstrates this:
-
 
 ```py
 import numpy as np

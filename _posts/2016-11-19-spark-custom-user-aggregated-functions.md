@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Not much to really say here. This was a question which was asked from OMSCS about creating your own user defined aggregation function, so here it is.

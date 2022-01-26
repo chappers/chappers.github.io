@@ -1,16 +1,16 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
-Continuing on the previous post, I thought we'll have a quick look at bagging (bootstrap aggregating). We will have a look at using bagging for regression and classification. 
+Continuing on the previous post, I thought we'll have a quick look at bagging (bootstrap aggregating). We will have a look at using bagging for regression and classification.
 
-Firstly what is bootstrapping? 
+Firstly what is bootstrapping?
 
 # Bootstrap
 
-Bootstrap is where we try to estimate something based on a sample. This is important when we don't know the distribution of the variable, and we want to get a feel for the error which we may have for our estimate. 
+Bootstrap is where we try to estimate something based on a sample. This is important when we don't know the distribution of the variable, and we want to get a feel for the error which we may have for our estimate.
 
 ### Methodology
 
@@ -20,15 +20,15 @@ The goal of bootstrap is to find the theoretical distribution of a particular st
 2.  Apply the statistic in question
 3.  Repeat this process as desired
 
-This assumes that by resampling our observations we will be able to infer the distribution of our statistic. 
+This assumes that by resampling our observations we will be able to infer the distribution of our statistic.
 
 ### Example
 
 _The code below is a simple example. It is not a representation of how bagging should be done._
 
-Lets compute the example on Wikipedia in R. 
+Lets compute the example on Wikipedia in R.
 
->  Consider a coin-flipping experiment. We flip the coin and record whether it lands heads or tails. (Assume for simplicity that there are only two outcomes) Let \\(X = x_1, x_2, ..., x_10\\) be 10 observations from the experiment. \\(x_i = 1\\) if the \\(i^{th}\\) flip lands heads, and \\(0\\) otherwise.
+> Consider a coin-flipping experiment. We flip the coin and record whether it lands heads or tails. (Assume for simplicity that there are only two outcomes) Let \\(X = x_1, x_2, ..., x_10\\) be 10 observations from the experiment. \\(x_i = 1\\) if the \\(i^{th}\\) flip lands heads, and \\(0\\) otherwise.
 
 Firstly we can quickly get 10 flips of the coin using the `sample` function:
 
@@ -47,7 +47,7 @@ Now the vector `bootstrap.mean` will be the empirical bootstrap distribution of 
 
 # Bagging
 
-How does this idea extend to combining models? Quite simply, the example in my previous post was basically a bagging example; the idea where we resample and reconstruct the model, with the final model simply being the average of all these models. In the classification scenario it is determined by majority vote. 
+How does this idea extend to combining models? Quite simply, the example in my previous post was basically a bagging example; the idea where we resample and reconstruct the model, with the final model simply being the average of all these models. In the classification scenario it is determined by majority vote.
 
 So the steps are as follows:
 
@@ -73,14 +73,14 @@ Even creating the models is exactly the same because I used resampling, (except 
 ```r
 #' this portion of code is still the same as the stacked regression example.
 reg_results <- c()
-for(i in 1:1000) { 
+for(i in 1:1000) {
   Prestige.sample <- Prestige.train[sample(1:nrow(Prestige.train), sample(10:30, 1), replace=TRUE),]
   reg1 <- lm(prestige ~ education + log(income) + women, data=Prestige.sample)
   reg_results <- cbind(reg_results, as.vector(predict(reg1, Prestige)))
 }
 ```
 
-Now we can simply take the average of our predictions to get our final predictions. 
+Now we can simply take the average of our predictions to get our final predictions.
 
 ```
 #' since this is regression, we will take the "average" of the three models
@@ -99,11 +99,11 @@ The Loss function reveals (randomly) that it is an improvement (or not)!
 
 ### Classification Example
 
-Bagging can be further expanded to classification problems. Here we will use the `iris` dataset using linear discriminant analysis as our method of classification. This model isn't the "best" model, but merely to demonstrate how bagging can be better than non-bagged example. 
+Bagging can be further expanded to classification problems. Here we will use the `iris` dataset using linear discriminant analysis as our method of classification. This model isn't the "best" model, but merely to demonstrate how bagging can be better than non-bagged example.
 
 ```r
 library(MASS) # for lda
- 
+
 iris.train <- iris[c(20:40, 70:90, 115:135),]
 fit <- lda(Species ~ Sepal.Length + Sepal.Width, data=iris.train)
 ```
@@ -149,7 +149,7 @@ reg <- lm(prestige ~ education + log(income), data=Prestige)
 
 #' this portion of code is still the same as the stacked regression example.
 reg_results <- c()
-for(i in 1:1000) { 
+for(i in 1:1000) {
   Prestige.sample <- Prestige[sample(1:nrow(Prestige), sample(35:65, 1), replace=TRUE),]
   reg1 <- lm(prestige ~ education + log(income) + women, data=Prestige.sample)
   reg_results <- cbind(reg_results, as.vector(predict(reg1, Prestige)))
@@ -187,4 +187,3 @@ predictions <- apply(class_results, 1, function(x) Mode(x))
 sum(iris$Species == predict(fit, iris)$class)/length(iris$Species)
 sum(iris$Species == predictions)/length(iris$Species)
 ```
-

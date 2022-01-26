@@ -1,14 +1,14 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 We can think of boosting as some kind of weighted sample. Essentially we build models and have higher weights assigned to the
 observations which we score incorrectly. Our simple boosting algorithm is as follows:
 
 1.  Build a model, on a weighted sample of points
-2.  See which ones we score incorrectly/correctly and assign a penalty of 110%/90% 
+2.  See which ones we score incorrectly/correctly and assign a penalty of 110%/90%
 3.  Repeat 1.
 
 Then we can average out the predictions to get the final score. This should improve the model over a simple one.
@@ -93,24 +93,24 @@ Prediction neg pos
        neg 449  51
        pos  72 196
 
-               Accuracy : 0.8398         
+               Accuracy : 0.8398
                  95% CI : (0.812, 0.8651)
-    No Information Rate : 0.6784         
-    P-Value [Acc > NIR] : < 2e-16        
+    No Information Rate : 0.6784
+    P-Value [Acc > NIR] : < 2e-16
 
-                  Kappa : 0.641          
- Mcnemar's Test P-Value : 0.07133        
+                  Kappa : 0.641
+ Mcnemar's Test P-Value : 0.07133
 
-            Sensitivity : 0.8618         
-            Specificity : 0.7935         
-         Pos Pred Value : 0.8980         
-         Neg Pred Value : 0.7313         
-             Prevalence : 0.6784         
-         Detection Rate : 0.5846         
-   Detection Prevalence : 0.6510         
-      Balanced Accuracy : 0.8277         
+            Sensitivity : 0.8618
+            Specificity : 0.7935
+         Pos Pred Value : 0.8980
+         Neg Pred Value : 0.7313
+             Prevalence : 0.6784
+         Detection Rate : 0.5846
+   Detection Prevalence : 0.6510
+      Balanced Accuracy : 0.8277
 
-       'Positive' Class : neg            
+       'Positive' Class : neg
 
 > caret::confusionMatrix(PimaIndiansDiabetes$diabetes, predict.boost(mod_list, PimaIndiansDiabetes))
 Confusion Matrix and Statistics
@@ -120,23 +120,23 @@ Prediction neg pos
        neg 473  27
        pos  65 203
 
-               Accuracy : 0.8802          
+               Accuracy : 0.8802
                  95% CI : (0.8551, 0.9023)
-    No Information Rate : 0.7005          
-    P-Value [Acc > NIR] : < 2.2e-16       
+    No Information Rate : 0.7005
+    P-Value [Acc > NIR] : < 2.2e-16
 
-                  Kappa : 0.7274          
- Mcnemar's Test P-Value : 0.0001145       
+                  Kappa : 0.7274
+ Mcnemar's Test P-Value : 0.0001145
 
-            Sensitivity : 0.8792          
-            Specificity : 0.8826          
-         Pos Pred Value : 0.9460          
-         Neg Pred Value : 0.7575          
-             Prevalence : 0.7005          
-         Detection Rate : 0.6159          
-   Detection Prevalence : 0.6510          
-      Balanced Accuracy : 0.8809          
+            Sensitivity : 0.8792
+            Specificity : 0.8826
+         Pos Pred Value : 0.9460
+         Neg Pred Value : 0.7575
+             Prevalence : 0.7005
+         Detection Rate : 0.6159
+   Detection Prevalence : 0.6510
+      Balanced Accuracy : 0.8809
 
-       'Positive' Class : neg  
+       'Positive' Class : neg
 
 ```

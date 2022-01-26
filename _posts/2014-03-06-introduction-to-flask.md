@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [python]
+category: web micro log
+tags: [python]
 ---
 
 Flask is not something I haven't heard of before, but I thought I'll have a look at this microframework
@@ -19,7 +19,7 @@ app = Flask(__name__)
 @app.route('/')
 def get_tasks():
     return "Hello World"
-    
+
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
 ```
@@ -70,7 +70,7 @@ Read more on the main site (or the [quickstart](http://flask.pocoo.org/docs/quic
 Before we explore HTTP methods and forms lets look at templates. Templates in flask is quite simple, just create
 a new folder called "templates" and throw your html templates there.
 
-In order to demonstrate http methods, create a form to actually enter your information. 
+In order to demonstrate http methods, create a form to actually enter your information.
 
 ```html
 <html>
@@ -101,7 +101,7 @@ def todo():
     item = request.form['new_item']
     print(item)
     return redirect('/')
-   
+
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
 ```
@@ -112,16 +112,16 @@ Create a new template to print out all the printed out everything in the to do l
 
 ```html
 <html>
-<head>
-<title>All Item</title>
-</head>
-<body>
-<ul>
-\{% for el in todo %}
-<li>{{ el }}</li>
-\{% endfor %}
-</ul>
-</body>
+  <head>
+    <title>All Item</title>
+  </head>
+  <body>
+    <ul>
+      \{% for el in todo %}
+      <li>{{ el }}</li>
+      \{% endfor %}
+    </ul>
+  </body>
 </html>
 ```
 
@@ -148,13 +148,9 @@ def todo():
 @app.route('/result')
 def result():
     return render_template('entered_info.html', todo=todo_list)
-    
+
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
 ```
-    
+
 Now if you run the server, you will see all the items that you pass through the form.
-
-
-
-

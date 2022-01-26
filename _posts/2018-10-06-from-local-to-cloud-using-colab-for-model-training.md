@@ -1,12 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In this post I'll quickly go through my tips and tricks for using Colab in conjunction with my local environment. 
-
+In this post I'll quickly go through my tips and tricks for using Colab in conjunction with my local environment.
 
 ## Setup
 
@@ -65,4 +64,3 @@ drive.mount('/content/gdrive')
 
 !cp /content/gdrive/My Drive/path/to/py /content/myfile
 ```
-

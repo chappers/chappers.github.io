@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Recently I've been thinking about the design of interactive books. If you check out ideas shown by [Bret Victor](http://worrydream.com/), you can see
@@ -11,7 +11,7 @@ hardcopy format.
 
 I think the newspaper to digital news medium is one interesting medium which is worth considering and comparing.
 
-One aspect of the rise of gifs and tableau dashboards is that these articles still make sense and are 
+One aspect of the rise of gifs and tableau dashboards is that these articles still make sense and are
 beautiful despite the lack of interactivity. Unfortunately when [performing code exercises](http://worrydream.com/#!/LearnableProgramming)
 the interface isn't particularly beautiful or useful if it wasn't interactive. Now it is true that this interface
 is still going to be useless when it is in hardcopy form (the coding is useless except for rote learning

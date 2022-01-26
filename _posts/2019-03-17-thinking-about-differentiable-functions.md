@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 # Dirac Delta Function
@@ -22,8 +22,8 @@ dirac_delta <- function(x, a, loc=0){
 xrange = (-100:100)/100
 y = dirac_delta(xrange, a=a)
 
-ggplot() + 
-  aes(x=xrange) + 
+ggplot() +
+  aes(x=xrange) +
   aes(y=y)+
   geom_line()
 ```
@@ -40,8 +40,8 @@ gumbel_softmax <- function(x, tau=0.01, loc=0) {
 xrange = (-100:100)/100
 y = gumbel_softmax(xrange, loc=-0.5) - gumbel_softmax(xrange, loc=0.5)
 
-ggplot() + 
-  aes(x=xrange) + 
+ggplot() +
+  aes(x=xrange) +
   aes(y=y)+
   geom_line()
 ```
@@ -59,8 +59,8 @@ eps <- 1e-07
 xrange = (-100:100)/100
 y =  gumbel_softmax(xrange, loc=0-eps) - gumbel_softmax(xrange, loc=0+eps)
 
-ggplot() + 
-  aes(x=xrange) + 
+ggplot() +
+  aes(x=xrange) +
   aes(y=y)+
   geom_line()
 ```
@@ -71,7 +71,7 @@ What if you don't want a flat area - but instead minimum point of the range you'
 
 Perhaps if it is a constraint function you want it to increase over the point or area estimation.
 
-We can use the [softplus variant](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) to get this working. 
+We can use the [softplus variant](<https://en.wikipedia.org/wiki/Rectifier_(neural_networks)>) to get this working.
 
 ```r
 library(ggplot2)
@@ -88,8 +88,8 @@ eps <- 1e-07
 xrange = (-100:100)/100
 y =  gumbel_softplus(xrange, loc=0.5+eps)+gumbel_softplus_neg(xrange, loc=-0.5-eps)
 
-ggplot() + 
-  aes(x=xrange) + 
+ggplot() +
+  aes(x=xrange) +
   aes(y=y)+
   geom_line()
 ```
@@ -143,6 +143,3 @@ ggplot(data=soft_maxplus_df) +
   ) +
   scale_y_sqrt()
 ```
-
-
-

@@ -1,19 +1,17 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
-
 
 Is it really that hard to teach a software engineer machine learning?
 
-This is a thought experiment that I had; that implementing simple variations of popular algorithms which are commonly used is sufficient for a software engineer to build out pipelines and help the wider team be more effective. 
+This is a thought experiment that I had; that implementing simple variations of popular algorithms which are commonly used is sufficient for a software engineer to build out pipelines and help the wider team be more effective.
 
-Gradient Descent - Or how to iteratively find the "line of best fit"
---------------------------------------------------------------------
+## Gradient Descent - Or how to iteratively find the "line of best fit"
 
-One of the simplest algorithms you could use for line of best fit is simply doing an interval halving method, or a binary search method. Then to find the line of best fit, becomes a minimisation problem using "mean squared error". 
+One of the simplest algorithms you could use for line of best fit is simply doing an interval halving method, or a binary search method. Then to find the line of best fit, becomes a minimisation problem using "mean squared error".
 
 In some kind of Pseudo-code this would look like
 
@@ -171,9 +169,7 @@ accuracy_score(y, np.round(br.predict(X)))
 
 This approach still isn't very good for many reasons; but it is a step in the right direction in terms of understanding how algorithms may iteratively improve over time with addition of new data without delving into calculus. Of course directly optimising with respect to the loss function rather than treating it as a black box will serve to do better; or even using simulated annealing or genetic algorithms! Adding a form of regulariser or clipping will help with convergence and the coefficients which are provided.
 
-
-Simple Boost
-------------
+## Simple Boost
 
 One of the easiest way to understand boosting is to understand that it consists of iteratively reweighting observations which are passed into the "weak learner". We can use a rather naive approach to complete this:
 
@@ -195,7 +191,6 @@ Output final model M
 
 To write this in code, we'll first come up with decision stump model to demonstrate that this ensembling approach does better than the weak learner
 
-
 ```py
 class SimpleBoost(object):
     def __init__(
@@ -214,7 +209,7 @@ class SimpleBoost(object):
     def weight_scheme(self, y_true, y_pred):
         """
         Takes in true labels and prediction, uses this information
-        to determine what are the new (perturbed) weights. 
+        to determine what are the new (perturbed) weights.
 
         These weights are calculates to be:
         w = w * _new weight scheme_
@@ -257,8 +252,6 @@ print(accuracy_score(y, np.round(sb.predict(X))))
 
 There are a number of challenges with this algorithm - for example, we don't compute the step-size to determine what or how we want to ensemble the models (this is done typically using line search). The weighting scheme, in this scenario is based on accuracy and would not work for regression (in fact we need some kind of bounded loss function so that it can be weighted appropriate - this is why we typically use exponential loss or similar function). For an arbitrary scheme, one could use AnyBoost (i.e. Gradient Boosting) which allows residual boosting to kick in. Nevertheless this `SimpleBoost` algorithm provides a starting point for an almost "black box" approach to boosting relatively simple models.
 
-Wrap Up
--------
+## Wrap Up
 
-We've demonstrated how we can provide pseudo algorithms for building Machine Learning models iteratively, as well as a rough sketch for a Boosting algorithm. Both algorithms are purely for pedagogical reasons, but do not have much clout or weight from a theoretical perspective. It may be interesting to review theoretical properties another time and think about where these could be used in terms of having a black box optimiser. 
-
+We've demonstrated how we can provide pseudo algorithms for building Machine Learning models iteratively, as well as a rough sketch for a Boosting algorithm. Both algorithms are purely for pedagogical reasons, but do not have much clout or weight from a theoretical perspective. It may be interesting to review theoretical properties another time and think about where these could be used in terms of having a black box optimiser.

@@ -1,22 +1,21 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In this post we're going to look at Hoeffding rule splits, which are the basis for incremental decision tree algorithms like "Very Fast Decision Tree". 
+In this post we're going to look at Hoeffding rule splits, which are the basis for incremental decision tree algorithms like "Very Fast Decision Tree".
 
 In this post we will look at streaming patterns to enable this from a machine learning perspective (in the spirit of the $P^2$ percentile algorithm).
 
 The Hoeffding bound provides a probabilistic error based on the number of samples provided for a given metric. Let's suppose that there is random variable $x$, where the range is $R$ (probability of range is 1, and for information gain the range is $\log c$ for $c$ classes).
 
-
-The bound is given, that with probability $1-\delta$, the true mean of a variable is at least $\bar{r} - \epsilon$ where 
+The bound is given, that with probability $1-\delta$, the true mean of a variable is at least $\bar{r} - \epsilon$ where
 
 $$\epsilon = \sqrt{\frac{R^2 \log(1/\delta)}{2n}}$$
 
-What we actually interested is the metric (gini or otherwise) of a particular attribute $X_a$ split $G(X_a)$, and we want to choose the particular attribute where $G$ has the _smallest_ difference across all candidate splits; that is we want to choose $\Delta \bar{G} > \epsilon$ condition to hold with probability $1-\delta$. 
+What we actually interested is the metric (gini or otherwise) of a particular attribute $X_a$ split $G(X_a)$, and we want to choose the particular attribute where $G$ has the _smallest_ difference across all candidate splits; that is we want to choose $\Delta \bar{G} > \epsilon$ condition to hold with probability $1-\delta$.
 
 By the definition of gini impurity, it can hold a value between $0$ and $1$ (actually can bound it tigher dependent of the number of classes $c$: $R = \frac{c-1}{c}$), where it is:
 
@@ -26,12 +25,11 @@ Based on this, the target bound would be in the form:
 
 $$\epsilon = \sqrt{\frac{\log(1/\delta)}{2n}}$$
 
-So if we choose $\delta = 0.05$, then with $n = 25$ observed instances, we'll have $\epsilon = \sqrt(\log(20)/50) = 0.1613$, if $n = 100$ then $\epsilon = 0.08$ which suggests the more data (or evidence) that we "looser" the difference needs to be for us to be reasonably comfortable with the choice of split. 
+So if we choose $\delta = 0.05$, then with $n = 25$ observed instances, we'll have $\epsilon = \sqrt(\log(20)/50) = 0.1613$, if $n = 100$ then $\epsilon = 0.08$ which suggests the more data (or evidence) that we "looser" the difference needs to be for us to be reasonably comfortable with the choice of split.
 
-Figuring out the split
-----------------------
+## Figuring out the split
 
-The easiest variation to learning a split in an online manner, is to presume that the node is modeled by a gaussian naive bayes, since the naive examples makes the split meaningful. 
+The easiest variation to learning a split in an online manner, is to presume that the node is modeled by a gaussian naive bayes, since the naive examples makes the split meaningful.
 
 ```py
 import numpy as np

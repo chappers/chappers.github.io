@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [python]
+category: web micro log
+tags: [python]
 ---
 
 Recently I've been playing around with changing wallpapers, but I realised it is just so much work curating images to use. So I thought one way was to use Reddit and rely on various subreddits as inspiration.
@@ -78,4 +78,3 @@ for link in urllinks:
 else:
     print "%.2f links succeeded" % (float(i)/float(len(urllinks)))
 ```
-

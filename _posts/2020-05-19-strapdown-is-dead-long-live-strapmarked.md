@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 title: Strapdown is dead long live Strapmarked?
 ---
 
@@ -10,8 +10,8 @@ Okay, so [Strapdown](https://github.com/arturadib/strapdown) hasn't been updated
 
 Yes of course! The answer is actually fairly straightforward:
 
-*  Use [marked](https://github.com/markedjs/marked) to handle the markdown parsing
-*  Use any drop css framework for styling the page. You can [view a selection here](https://github.com/dohliam/dropin-minimal-css). 
+- Use [marked](https://github.com/markedjs/marked) to handle the markdown parsing
+- Use any drop css framework for styling the page. You can [view a selection here](https://github.com/dohliam/dropin-minimal-css).
 
 What does this look like? The html page could be:
 

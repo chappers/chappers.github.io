@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [js]
+category: web micro log
+tags: [js]
 ---
 
 [dc.js](http://dc-js.github.io/dc.js/) is quite a nice library which allows you to filter of multiple graphs intuitively.
@@ -39,7 +39,6 @@ Plotting both age and gender graphs simply meant specifying the type of graph (`
 
 </br>
 </br>
-
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>

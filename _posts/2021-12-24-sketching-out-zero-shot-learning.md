@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 How can we architect zero shot learning?
@@ -12,9 +12,9 @@ Perhaps the easiest way is to leverage existing models with ANN. Let me explain:
 1.  Find an existing model and extract the embedding
 2.  Use the embedding combined with kNN to learn new concepts quickly
 
-Hopefully this approach can quickly scale out datasets to different scenarios with little effort beyond engineering. 
+Hopefully this approach can quickly scale out datasets to different scenarios with little effort beyond engineering.
 
-One of the key issues is the lack of "easy" libraries/applications which can do this successfully. 
+One of the key issues is the lack of "easy" libraries/applications which can do this successfully.
 
 Some code:
 
@@ -30,7 +30,7 @@ from annoy import AnnoyIndex
 model = MobileNet(weights='imagenet', include_top=False)
 ```
 
-We use `MobileNet` for building a one-shot learner using a MetaLearning library `annoy`. 
+We use `MobileNet` for building a one-shot learner using a MetaLearning library `annoy`.
 
 ```py
 # build a dataset
@@ -46,7 +46,7 @@ for x in data:
     features = model.predict(x)
     batch_size = features.shape[0]
     vectors = features.reshape(batch_size, -1)
-    
+
     if t is None:
         f = vectors.shape[1]
         t = AnnoyIndex(f, 'angular')
@@ -72,4 +72,3 @@ output = t.get_nns_by_vector(x[0, :], k)
 # these are the k nearest neighbours
 # infer label based on output labels
 ```
-

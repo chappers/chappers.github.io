@@ -1,12 +1,12 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 title: Shortcodes in Hugo - Thinking about data lookup
 ---
 
-Its now been over 7 years since starting out this blog, and I've been thinking about a refresh! In this process I've looked at Hugo, another static site generator. 
+Its now been over 7 years since starting out this blog, and I've been thinking about a refresh! In this process I've looked at Hugo, another static site generator.
 
 # Shortcode
 
@@ -21,8 +21,8 @@ key:
 
 Then to access the variable in our shortcode we could use:
 
-
 <!-- {% raw %} -->
+
 ```
 {{- $scratch := newScratch }}
 {{- $targetkey := .Get "key" }}
@@ -32,6 +32,7 @@ Then to access the variable in our shortcode we could use:
     {{- end -}}
 {{- end }}
 ```
+
 <!-- {% endraw %} -->
 
 **How would you use this?**

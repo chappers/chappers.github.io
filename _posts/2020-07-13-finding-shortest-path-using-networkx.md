@@ -1,15 +1,15 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-One of the things I've been experimenting with is imitation learning in RL. As such one aspect is how to imitate experts which take the optimal route. Since I don't really care about writing a BFS algorithm (or A* etc), what's the easiest out-of-the-box method to use? Surprisingly, there aren't many examples online, so in this blog post I'll attempt to demonstrate how we can do this using `networkx`
+One of the things I've been experimenting with is imitation learning in RL. As such one aspect is how to imitate experts which take the optimal route. Since I don't really care about writing a BFS algorithm (or A\* etc), what's the easiest out-of-the-box method to use? Surprisingly, there aren't many examples online, so in this blog post I'll attempt to demonstrate how we can do this using `networkx`
 
 ## Setting up our maze
 
-We'll first setup our maze in a `gym`-like environment, just so that we have a consistent interface to everyone else. I actually did this in the `gym-minigrid` environment, but I'll leave that for a discussion on another day. 
+We'll first setup our maze in a `gym`-like environment, just so that we have a consistent interface to everyone else. I actually did this in the `gym-minigrid` environment, but I'll leave that for a discussion on another day.
 
 ```py
 import networkx as nx
@@ -87,26 +87,26 @@ class Maze(object):
 
         # up, down, left, right
         self.movement = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-    
+
     def reset(self):
         sample_pos = np.argwhere(self.maze == 0)
         agent, goal = np.random.choice(range(sample_pos.shape[0]), 2)
         self.agent_pos = tuple(list(sample_pos[agent]))
         self.goal = tuple(list(sample_pos[goal]))
-    
+
     def step(self, action):
         dx, dy = self.movement(action)
         new_x, new_y = self.agent_pos[0] + dx, self.agent_pos[1] + dy
         if self.maze[new_x, new_y] != 1:
             self.agent_pos = (new_x, new_y)
-        
+
         if self.agent_pos == self.goal:
             print("Final location found!")
 
     def set_agent(self, node):
         loc = get_node_number_rev(node, rows, cols)
         self.agent_pos = tuple(loc)
-    
+
     def render(self, ascii=True):
         maze_mapper = {
             0: " ",
@@ -116,7 +116,7 @@ class Maze(object):
         }
         maze = self.maze.copy()
         maze[self.goal] = 3
-        maze[self.agent_pos] = 2        
+        maze[self.agent_pos] = 2
         if ascii:
             print('\n'.join([''.join([maze_mapper[x] for x in r]) for r in maze.astype(int).tolist()]))
         return maze
@@ -124,7 +124,7 @@ class Maze(object):
 
 if __name__ == "__main__":
     from os import system
-    from time import sleep 
+    from time import sleep
 
     # let's (re) solve this using networkx
     maze_env = Maze()

@@ -1,11 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-This post is to quickly go through linear SVMs and decision boundaries. 
+This post is to quickly go through linear SVMs and decision boundaries.
 
 **Decision Rules in Binary Classification**
 
@@ -21,17 +21,17 @@ Or in other words, if treated as a decision boundary:
 
 $$x >= -\frac{b}{w}$$
 
-In the logistic regression scenario, as the linear component subsequently gets the softmax function applied. This would yield the logistic regression $p = \frac{1}{1+\exp(-wx - b)}$. then the decision boundary is in fact the same if the threshold is set to $p >= 0.5$. 
+In the logistic regression scenario, as the linear component subsequently gets the softmax function applied. This would yield the logistic regression $p = \frac{1}{1+\exp(-wx - b)}$. then the decision boundary is in fact the same if the threshold is set to $p >= 0.5$.
 
 Another approach is to use softmax function with temperature. This will naturally move towards a one hot encoding formulation for the decision boundary.
 
 $$\frac{1}{1+e^{-x/\tau}}$$
 
-Whereby, if $\tau < 1$ and approached zero, the boundaries would become more steep, and further apart, whereas if $\tau > 1$ was large, the probabilities would move closer and closer together. 
+Whereby, if $\tau < 1$ and approached zero, the boundaries would become more steep, and further apart, whereas if $\tau > 1$ was large, the probabilities would move closer and closer together.
 
-The consequences of this is if we compute axis parallel splits in decision trees for neural networks (see neural network decision forests), then we can recover the decision rule that is used to build the decision tree. 
+The consequences of this is if we compute axis parallel splits in decision trees for neural networks (see neural network decision forests), then we can recover the decision rule that is used to build the decision tree.
 
-How we implement this would be a discussion for another day. 
+How we implement this would be a discussion for another day.
 
 For the multiple predictors, the decision boundary interpretation becomes more complicated; as the splits are no longer axis parallel, even if we simply bring in one additional predictor; as the decision boundary is then a hyperplane.
 
@@ -73,9 +73,9 @@ In this case, the calculation for the decision boundary can be computed using [s
 
 $$\sigma(x_i) = \frac{e^{-Wx_i}}{\sum_{\forall j} e{-Wx_j}}$$
 
-where $x_i$ represents probability of instance $x$ belonging to class $i$, with $W$ being design matrix for purpose of clarity. 
+where $x_i$ represents probability of instance $x$ belonging to class $i$, with $W$ being design matrix for purpose of clarity.
 
-Again, assuming only a single predictor is chosen, we can make use of the max norm, as it would be an indication of discriminatory power (assuming that predictors are normalised). 
+Again, assuming only a single predictor is chosen, we can make use of the max norm, as it would be an indication of discriminatory power (assuming that predictors are normalised).
 
 Now since we care only for the decision boundary, and assuming that the threshold we choose is based highest probability (i.e. not a custom threshold), we can determine which category is chosen through
 
@@ -101,9 +101,3 @@ def get_decision_boundary(w, b, verbose=False):
 
 print(get_decision_boundary(w, b, True))
 ```
-
-
-
-
-
-

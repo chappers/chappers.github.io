@@ -1,15 +1,15 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 When considering how we would build airflow pipelines what considerations should we make?
 
-From an airflow perspective, the task runners are not a spark cluster, so the immediate item is we need to do a remote execution. There are Spark templates to do this, though of course a simple bash operator would work too. 
+From an airflow perspective, the task runners are not a spark cluster, so the immediate item is we need to do a remote execution. There are Spark templates to do this, though of course a simple bash operator would work too.
 
-Then in order to ensure idempotency (or no multiple jobs running) - we would probably a bash sensor operator in conjunction - although a more native Spark one would work as well. 
+Then in order to ensure idempotency (or no multiple jobs running) - we would probably a bash sensor operator in conjunction - although a more native Spark one would work as well.
 
 An overly simple example:
 
@@ -80,7 +80,7 @@ with DAG(
     default_args=default_args,
     start_date=datetime(2020, 12, 1),
     description='A simple tutorial DAG',
-    schedule_interval='@daily', 
+    schedule_interval='@daily',
     catchup=True
 ) as dag:
 
@@ -114,6 +114,4 @@ with DAG(
 
 These probably should be executed as non-bash operators - exercise for the reader; perhaps a better pattern than a `sensor` is the `ShortCircuitOperator` for example.
 
-
 _edit: this is slightly wrong - you probably need to guarentee idempotence in the Spark code, and the sensor - although it works, probably doesn't operate as expected_
-

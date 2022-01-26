@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 To play around with [tensor flow I used vagrant](https://github.com/gavinln/tensorflow-ipy). The first thing that happend was a bug due to an older version of virtualbox; which didn't solve itself as I needed to upgrade my vagrant installation...
@@ -26,13 +26,13 @@ Now you can run through the tensorflow examples! I would recommend the [tutorial
 We can give [`skflow` a try](https://github.com/google/skflow) which tries to mimic Scikit learn. To install this follow the instructions:
 
     sudo pip install git+git://github.com/google/skflow.git
-    
+
 Which should also install dependencies like `sklearn` (this might have to be done before installing `skflow`. This can be done using:
 
-    sudo apt-get install build-essential python-dev python-numpy python-setuptools python-scipy libatlas-dev libatlas3-base    
-    sudo apt-get install python-matplotlib    
+    sudo apt-get install build-essential python-dev python-numpy python-setuptools python-scipy libatlas-dev libatlas3-base
+    sudo apt-get install python-matplotlib
     sudo apt-get install python-sklearn
-    
+
 We can create a simple classifier example using Iris dataset by following the examples on the website:
 
 ```py
@@ -44,9 +44,8 @@ classifier.fit(iris.data, iris.target)
 score = metrics.accuracy_score(classifier.predict(iris.data), iris.target)
 print "Accuracy:", score
 ```
-    
-For some reason I couldn't get the deep neural net working; I will check it out a bit later! 
 
+For some reason I couldn't get the deep neural net working; I will check it out a bit later!
 
 ---
 

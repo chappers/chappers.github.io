@@ -1,22 +1,21 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-
-<!-- 
+<!--
 ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties
 ./bin/kafka-server-start ./etc/kafka/server.properties
 
 ./bin/ksql-server-start -daemon config/ksql-server.properties
 ./bin/ksql
 -->
-In this post we'll test out how we can deploy a machine learning model over KSQL when it has been successfully transcompiled. This leverages new features which I had a part in for adding new mathematical functions in KSQL. 
 
-Getting Started
----------------
+In this post we'll test out how we can deploy a machine learning model over KSQL when it has been successfully transcompiled. This leverages new features which I had a part in for adding new mathematical functions in KSQL.
+
+## Getting Started
 
 To get started ensure that you have Kafka and KSQL installed. You may need to install KSQL from source if it has not been updated in the monthly snapshots. For the purposes of this example, we will also leverage the inbuilt default topic generator in kafka:
 
@@ -25,7 +24,6 @@ To get started ensure that you have Kafka and KSQL installed. You may need to in
 ```
 
 Then when we use KSQL CLI tool, we should be able to see the topic when we use `SHOW TOPICS;`
-
 
 ```
 ksql> SHOW TOPIC;
@@ -62,7 +60,6 @@ In order to decompile to a model, imagine we have a simple logistic regression m
 
 $$y = \text{logit}(10 \times \text{ORDERUNITS} + 2)$$
 
-
 ```
 ksql> select 1/(1+exp(-10*orderunits-2)) from orders_raw limit 2;
 +---------------------+
@@ -74,12 +71,11 @@ ksql> select 1/(1+exp(-10*orderunits-2)) from orders_raw limit 2;
 
 And there we have it! A simple example of how we can deploy a logistic regression model on KSQL!
 
-Updating a Model over a Stream
-------------------------------
+## Updating a Model over a Stream
 
-Armed with this example, let's look at how we may train a model over a stream of data, and how it can then subsequently be transcompiled to a new Kafka stream. 
+Armed with this example, let's look at how we may train a model over a stream of data, and how it can then subsequently be transcompiled to a new Kafka stream.
 
-To do this we shall use KSQL API directly. 
+To do this we shall use KSQL API directly.
 
 ```py
 from ksql import KSQLAPI
@@ -106,7 +102,7 @@ while True:
         queries.append(next(query))
     except:
         # probably bad practise - but we'll get to that...
-        # the last output can be erroneous if it is incomplete and the 
+        # the last output can be erroneous if it is incomplete and the
         # stream terminated early - we probably want to handle that just a little bit better...
         break
 
@@ -127,15 +123,15 @@ model = SGDClassifier(max_iter=1000, tol=None, loss='log')
 model.fit(df[['price']], df['label'])
 ```
 
-Finally we can just use the coefficients of the model to generate (transcompile) the model as a SQL query. There are some Python libraries which can do this for you. In this case, since we're just using a logistic regression model, this is somewhat trivial to implement. 
+Finally we can just use the coefficients of the model to generate (transcompile) the model as a SQL query. There are some Python libraries which can do this for you. In this case, since we're just using a logistic regression model, this is somewhat trivial to implement.
 
 ```py
 # we can now generate a query with our new model!
 # we can use this to update the existing model or just straight query it...
-sql_query = """select ROWKEY, 1/(1+exp((-1*{coef}*orderunits)+(-1*{intercept}))) as proba 
+sql_query = """select ROWKEY, 1/(1+exp((-1*{coef}*orderunits)+(-1*{intercept}))) as proba
 from orders_raw limit 10;""".format(coef = model.coef_.flatten()[0],
                                     intercept=model.intercept_[0])
-query = client.query(sql_query, 
+query = client.query(sql_query,
                      stream_properties={"ksql.streams.auto.offset.reset": "earliest"},
                      idle_timeout=10)
 

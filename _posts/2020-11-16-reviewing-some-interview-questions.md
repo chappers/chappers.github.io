@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 This question has been bugging me, so I thought I'll do a write up for a Python Variation: https://stackoverflow.com/questions/12573512/to-find-all-the-overlapping-date-ranges-from-a-given-list-of-date-ranges
@@ -22,8 +22,8 @@ date_range = [
 
 # return a function which provides true, false, which maps to each element of the list if it is overlapping or not
 expected_output = [
-    True, 
-    True, 
+    True,
+    True,
     True,
     False
 ]
@@ -31,7 +31,7 @@ expected_output = [
 
 Solution:
 
-Its quite easy to provide a really naive solution based on SQL. The approach simply is to observe that this are in the range if: `a.start_time < b.end_time or b.start_time < a.end_time`. This lets us do a self-join to resolve this problem. However, this is a $O(n^2)$ solution which can lead to problems if the list of date ranges is very, very large. 
+Its quite easy to provide a really naive solution based on SQL. The approach simply is to observe that this are in the range if: `a.start_time < b.end_time or b.start_time < a.end_time`. This lets us do a self-join to resolve this problem. However, this is a $O(n^2)$ solution which can lead to problems if the list of date ranges is very, very large.
 
 In order to bring this down the $O(n log(n))$, we can use this approach:
 
@@ -89,4 +89,3 @@ print(find_overlap(date_range))
 print(find_overlap(date_range2))
 print(find_overlap(date_range3))
 ```
-

@@ -1,16 +1,16 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-Recently conversations have popped up on career advice [here](https://twitter.com/id_aa_carmack/status/1339777933871865857) and the reaction [here](https://news.ycombinator.com/item?id=25465579). 
+Recently conversations have popped up on career advice [here](https://twitter.com/id_aa_carmack/status/1339777933871865857) and the reaction [here](https://news.ycombinator.com/item?id=25465579).
 
 In general the advice could be summarised as:
 
-*  To get a job its quite important to specific learn things deeply, to understand how things fundamentally work
-*  But once you have the job, its important to to have breadth especially in environments which require problem solving
+- To get a job its quite important to specific learn things deeply, to understand how things fundamentally work
+- But once you have the job, its important to to have breadth especially in environments which require problem solving
 
 If we think about data science - it is the art of science and problem solving. Having technical depth generally doesn't help you actually deploy solutions out! Learning a tool well, but not understanding the fundamentals to apply to different contexts or other toolsets will only seek to stunt your career growth.
 
@@ -20,6 +20,6 @@ Perhaps the way forward would be:
 
 1.  Know your fundamentals very, very well
 2.  Choose a couple of areas you have interest in (i.e. more than one!), and grow out you knowledge through being an expert in your tools
-3.  Go back to 1). 
+3.  Go back to 1).
 
 Being flexible and adaptable is more important in the scenarios where the environment is generally unkind.

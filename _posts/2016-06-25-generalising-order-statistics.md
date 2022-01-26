@@ -1,12 +1,12 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Order statistics problems are very common in 2nd year statistics courses. Often they come in the following form:
 
->  Suppose \\(X_1, X_2, X_3, ..., X_k\\) is iid by some distribution \\(F\\). What is the pdf of \\(Y = max(X_1, X_2, X_3, ..., X_k) \\)?
+> Suppose \\(X_1, X_2, X_3, ..., X_k\\) is iid by some distribution \\(F\\). What is the pdf of \\(Y = max(X_1, X_2, X_3, ..., X_k) \\)?
 
 This problem is generally solved as follows:
 
@@ -14,10 +14,10 @@ $$ P(Y \leq x) = P(X_1 \leq x, ..., X_k \leq x) = F_X(x)^n $$
 
 How can we generalise this?
 
-The simple answer is using our understanding of combinatorics. If \\(X_(k)\\) is the \\(k\\) order of statistic,
+The simple answer is using our understanding of combinatorics. If \\(X\_(k)\\) is the \\(k\\) order of statistic,
 then:
 
-$$ P(X_{(k)} \leq x) = \sum_{n=k}^n {n \choose m} F(x)^m (1-F(x))^{n-m} $$
+$$ P(X*{(k)} \leq x) = \sum*{n=k}^n {n \choose m} F(x)^m (1-F(x))^{n-m} $$
 
 Since we can view the combinatorics, in the form that \\(P(\|\{i : X_i \leq m\}\| =m) = {n \choose m} F(x)^m (1-F(x))^{n-m} \\)
 
@@ -27,8 +27,8 @@ This then leads me to why I was thinking about this question in the first place.
 
 Suppose we have
 
-$$ A = X_{(m-p:m)} $$
-$$ B = Y_{(n-p:n)} $$
+$$ A = X*{(m-p:m)} $$
+$$ B = Y*{(n-p:n)} $$
 
 Where \\(X, Y \\) are iid with some distribution \\(F\\), and we can assume without loss of generality \\(m \geq n \geq p\\).
 
@@ -36,7 +36,7 @@ Then what is \\(P(A \geq B)\\)?
 
 Before I begin to answer this question, the motivation was quite simply this:
 
-*  Many companies have diversity hiring policies, which follow a line of selecting the top \\(p\\) candidates of both genders. Yet on consistent (anecdotal) evidence is that the majority gender always seems to consistently be stronger than the minority gender in the workplace. How much of this can be attributed to mere chance? (Note that this is based on my small sample size of experiences)
+- Many companies have diversity hiring policies, which follow a line of selecting the top \\(p\\) candidates of both genders. Yet on consistent (anecdotal) evidence is that the majority gender always seems to consistently be stronger than the minority gender in the workplace. How much of this can be attributed to mere chance? (Note that this is based on my small sample size of experiences)
 
 ## Convolutions
 
@@ -48,7 +48,7 @@ $$Z = A - B$$
 
 Then we are after \\(P(Z \geq 0)\\). Then what is the pdf of \\(Z\\)?
 
-$$ f_Z(z) = \int_{-\infty}^{\infty} f_X(x) f_Y(z-x) dx $$
+$$ f*Z(z) = \int*{-\infty}^{\infty} f_X(x) f_Y(z-x) dx $$
 
 Which unfortunately can't be simplified anymore.
 

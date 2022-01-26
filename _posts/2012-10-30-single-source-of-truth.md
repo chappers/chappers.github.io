@@ -1,10 +1,8 @@
 ---
 layout: post
-category : web micro log
-tags : [opinion, data mining]
+category: web micro log
+tags: [opinion, data mining]
 ---
-
-
 
 The biggest lesson I've learnt in my short time in analytics is being vigilant on sticking with a _single_ _source_ _of_ _truth_.
 
@@ -23,5 +21,3 @@ Of course data extracts should work the first time around! That in itself is a n
 Although I'm not thoroughly convinced of the agile philosophy, the idea that the product should be iteratively improved resonates heavily here. Software/code in this environment should never be considered 'finished' but rather in a continual state of improvement; in collaboration with stakeholders. This will mean that the code should be trimmed constantly rather than expanded.
 
 Of course code should run without errors, but not at the expense of making overly broad assumptions or vague statements for the sake of 'correctness'.
-
-

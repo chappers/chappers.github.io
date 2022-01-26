@@ -1,50 +1,62 @@
 ---
 layout: post
 title: SPA with FastAPI
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 Being on the hunt for better ways to prototype applications led me to try learning `vue.js` with Python's `FastAPI`. It turns out this combination is surprisingly potent!
 
 ```html
 <html>
-<title></title>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<body>
+  <body>
     <div id="app">
-        <textarea name="" id="content" cols="30" rows="10" v-on:keyup="myapi" v-model="content"></textarea>
-        <p id="output" v-model="output"></p>
+      <textarea
+        name=""
+        id="content"
+        cols="30"
+        rows="10"
+        v-on:keyup="myapi"
+        v-model="content"
+      ></textarea>
+      <p id="output" v-model="output"></p>
     </div>
 
     <script>
-        new Vue({
-            el: "#app",
-            data: {
-                title: '',
-                content: ''
-            },
-            methods: {
-                myapi() {
-                    return axios.post("/myapi", {
-                        content: this.content
-                    }, {
-                        headers: {
-                            'Content-type': 'application/json',
-                        }
-                    }).then((response) => {
-                        console.log(response.data);
-                        document.getElementById("output").textContent = response.data;
-                    });
+      new Vue({
+        el: "#app",
+        data: {
+          title: "",
+          content: "",
+        },
+        methods: {
+          myapi() {
+            return axios
+              .post(
+                "/myapi",
+                {
+                  content: this.content,
+                },
+                {
+                  headers: {
+                    "Content-type": "application/json",
+                  },
                 }
-            }
-        });
+              )
+              .then((response) => {
+                console.log(response.data);
+                document.getElementById("output").textContent = response.data;
+              });
+          },
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
 ```
 
@@ -53,7 +65,7 @@ from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 
-templates = Jinja2Templates(directory="templates") 
+templates = Jinja2Templates(directory="templates")
 
 app = FastAPI()
 

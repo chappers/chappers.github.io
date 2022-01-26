@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 If you use the `foreach` method, you can run an arbitrary Python function and use arbitrary Python objects. This means you could attach a `scikit-learn` model at the end of a Kafka stream!
@@ -54,6 +54,6 @@ df.writeStream.foreach(train_one).outputMode("append").trigger(once=True).start(
 m = get_model()
 import numpy as np
 m.predict(np.array([1]).reshape(1, -1))
-```  
+```
 
 Here is an example of how one could integrate `scikit-learn` with Spark structured streaming. It leverages the `foreach` pattern, which may not be the most effective way and could lead to race conditions. The better approach is probably to use a Python object explicitly with `open` and `close` methods.

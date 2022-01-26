@@ -1,23 +1,23 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 I'm currently working through my second assignment for CS7641 at Georgia Tech and I thought I'll record some of my personal notes and coments on the [ABAGAIL](https://github.com/pushkar/ABAGAIL) library. Since I'm not primarily a Java developer, working of this code obviously took longer than a seasoned Java developer. As such I wouldn't be surprised if the methods and approaches I used here are:
 
-*  Not efficient  
-*  Outright wrong!  
+- Not efficient
+- Outright wrong!
 
-Nevertheless, here are my attempts to extend the functionality in ABAGAIL. 
+Nevertheless, here are my attempts to extend the functionality in ABAGAIL.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oFvQsArCSXo" frameborder="0" allowfullscreen></iframe>
 
 # The Setup
 
-The first thing I tried (and failed) was to see if there was a good Jython IDE editor. There isn't one that I found that was easy enough to use. I ended up just coding in notepad which was infact more pleasant than trying to dive through confusing IDE settings. 
+The first thing I tried (and failed) was to see if there was a good Jython IDE editor. There isn't one that I found that was easy enough to use. I ended up just coding in notepad which was infact more pleasant than trying to dive through confusing IDE settings.
 
-With the Java IDE I settled on IntelliJ Community edition, simply because I have used Android studio before and they are quite similar. Building the `*.jar` files for ABAGAIL were rather trivial and I had no hiccups there. However by now I had already (unfortunately) wasted three nights fiddling around with settings and playing around with the sample `jython` code which was provided. In terms of actually making progress on the assignment, I can say I made none. 
+With the Java IDE I settled on IntelliJ Community edition, simply because I have used Android studio before and they are quite similar. Building the `*.jar` files for ABAGAIL were rather trivial and I had no hiccups there. However by now I had already (unfortunately) wasted three nights fiddling around with settings and playing around with the sample `jython` code which was provided. In terms of actually making progress on the assignment, I can say I made none.
 
 # Implementing my own `EvaluationFunction`
 
@@ -98,7 +98,6 @@ print "MIMIC: " + str(ef.value(mimic.getOptimal()))
 
 Which unsurprisingly comes to the right solution:
 
-
 ```
 RHC fitness :  6.996995
 RHC optimal :  6.000000
@@ -112,8 +111,6 @@ GA: 3.0
 MIMIC fitness :  6.983
 MIMIC optimal :  6.000000
 MIMIC: 7.0
-``` 
+```
 
 Hopefully its an interesting take on how you can combine Python and Java in a machine learning setting.
-
-

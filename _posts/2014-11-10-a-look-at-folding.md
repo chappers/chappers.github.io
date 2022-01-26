@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [haskell, j]
+category: web micro log
+tags: [haskell, j]
 ---
 
 Currently I'm sitting the [FP101x from edX](https://www.edx.org/course/delftx/delftx-fp101x-introduction-functional-2126). A portion of the homework was on `foldr` and `foldl` (i.e. right fold and left fold). This got me thinking how I might think about these ideas.
@@ -17,7 +17,7 @@ Prelude > foldl (-) 0 [1..4]
 
 Why are they different? How do they work?
 
-`foldl` is probably the intuitive one. It simply "inserts" the function between the elements. 
+`foldl` is probably the intuitive one. It simply "inserts" the function between the elements.
 
 ```hs
 foldl (-) 0 [1..4] -- 0-1-2-3-4 or with parenthesis ((((0-1)-2)-3)-4)
@@ -112,7 +112,3 @@ _10
 ```
 
 It is always interesting to examine how different programming languages express the same ideas.
-
-
-
-

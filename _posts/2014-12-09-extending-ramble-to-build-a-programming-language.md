@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 In a previous post, I looked at how I build Ramble and an example of a build a calculator. Since then, I have changed how the parser works and I thought it would be a good opportunity to demonstrate something you could do as a weekend hack in Ramble. Here I will take you through how to write a parser for a subset for a PL/0 language. I would probably need to spend a little more time to get the whole language working.
@@ -54,7 +54,7 @@ then <- function(p1, p2) {
 }
 ```
 
-This allows  iterating over `$results` to be much easier when using the `%using%` function.
+This allows iterating over `$results` to be much easier when using the `%using%` function.
 
 # What we are implementing
 
@@ -67,10 +67,10 @@ block = [ "const" ident "=" number {"," ident "=" number} ";"]
         [ "var" ident {"," ident} ";"]
         { "procedure" ident ";" block ";" } statement .
 
-statement = [ ident ":=" expression | "call" ident 
-              | "?" ident | "!" expression 
-              | "begin" statement {";" statement } "end" 
-              | "if" condition "then" statement 
+statement = [ ident ":=" expression | "call" ident
+              | "?" ident | "!" expression
+              | "begin" statement {";" statement } "end"
+              | "if" condition "then" statement
               | "while" condition "do" statement ].
 
 condition = "odd" expression |
@@ -91,13 +91,12 @@ Firstly, the expression grammar and lower has already been completed in my previ
 
 `condition` is implemented in a similar way, note that we can use `%using%` and then use `R` code to develop the actual condition.
 
-
 ```r
 condition <- (expr %then% (token(String("<="))
                            %alt% token(String(">="))
-                           %alt% symbol("=") 
+                           %alt% symbol("=")
                            %alt% symbol("<")
-                           %alt% symbol(">")) 
+                           %alt% symbol(">"))
                    %then% expr
                    %using% function(bool) {
                      if (bool[[2]] == "<") {
@@ -127,7 +126,7 @@ condition <- (expr %then% (token(String("<="))
                    })
 ```
 
-We can use `try` here in a similar way to `try, except` in Python. Which is helpful if the expression cannot be evaluated. We can also make using of `warning` which can raise helpful information in the console when running the parser. 
+We can use `try` here in a similar way to `try, except` in Python. Which is helpful if the expression cannot be evaluated. We can also make using of `warning` which can raise helpful information in the console when running the parser.
 
 ## statement
 
@@ -141,13 +140,13 @@ statement <- (((identifier() %then% token(String(":=")) %then% expr)
                  }
                  return(stateVar)
                })
-            %alt% (symbol("!") %then% identifier() 
+            %alt% (symbol("!") %then% identifier()
                     %using% function(stateVar) {
                       # this calls a defined function (procedure)
                       print(get(stateVar[[2]], envir = PL0))
                       return(stateVar)
                     })
-            %alt% (token(String("if")) %then% condition %then% token(String("then")) 
+            %alt% (token(String("if")) %then% condition %then% token(String("then"))
                     %then% statement %using% function(x) {
                       if(x[[2]]) {
                         return(x[[4]])
@@ -163,7 +162,7 @@ statement <- (((identifier() %then% token(String(":=")) %then% expr)
             )
 ```
 
-From its usage we will be able to understand better how this actually works. 
+From its usage we will be able to understand better how this actually works.
 
 For example, to assign 1 to `x`, increment `x` by 2, and print `x` we can write:
 
@@ -171,4 +170,3 @@ For example, to assign 1 to `x`, increment `x` by 2, and print `x` we can write:
 > invisible(statement("begin x := 1; x := x+2; ! x end"))
 [1] 3
 ```
-

@@ -1,12 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-
-In an effort to learn something new and speed up some existing experiments, I've started dipping my toes into the Nim programming language. 
+In an effort to learn something new and speed up some existing experiments, I've started dipping my toes into the Nim programming language.
 
 In theory it should offer a substatial speed up to parts of my Python code but we'll see what actually happens. Here are some patterns which I'm sure I'll need to refer multiple times in the future.
 
@@ -44,4 +43,3 @@ Output:
         Sort by idx 2
 {3: [2.0, -2.0, -1.0, 2.0], 1: [0.0, 0.0, -1.0, 0.0], 2: [1.0, -1.0, 10.0, 1.0]}
 ```
-

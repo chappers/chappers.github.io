@@ -1,15 +1,15 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-There have been several different blog posts which talk about Encoder Decoder mechanisms and annotate their implementation. In this blog post we will do like-wise and annotate the ["Plan, Attend, Generate: Planning for Sequence-to-Sequence Models"](https://papers.nips.cc/paper/7131-plan-attend-generate-planning-for-sequence-to-sequence-models) which was part of NIPS 2017. 
+There have been several different blog posts which talk about Encoder Decoder mechanisms and annotate their implementation. In this blog post we will do like-wise and annotate the ["Plan, Attend, Generate: Planning for Sequence-to-Sequence Models"](https://papers.nips.cc/paper/7131-plan-attend-generate-planning-for-sequence-to-sequence-models) which was part of NIPS 2017.
 
 Although this isn't a particular famous or popular paper (with 5 citations); it is a generalisation of a RL approach called STRAW from ["Strategic Attentive Writer for Learning Macro-Actions"](https://arxiv.org/abs/1606.04695) which was part of NIPS 2016.
 
-This post is written and based heavily on the implementation and post ["The Annotated Encoder-Decoder with Attention"](https://bastings.github.io/annotated_encoder_decoder/) which in turn was the basis for "Plan, Attend, Generate" (PAG). 
+This post is written and based heavily on the implementation and post ["The Annotated Encoder-Decoder with Attention"](https://bastings.github.io/annotated_encoder_decoder/) which in turn was the basis for "Plan, Attend, Generate" (PAG).
 
 Although this isn't the official implementation - we will try our best to adhere to the implementation and notes within the original paper and talk through the assumptions which I make when implementing the model. There is an [official implementation which I will reference](https://github.com/Dutil/PAG/blob/3e9f9beac6072cdc1aabaa5f015574402b12929c/planning.py#L685) - however I have found it difficult to align all parts of the code together
 
@@ -23,9 +23,9 @@ The model architecture is shown below; as presented in the paper. The overarchin
 
 ## Encoder
 
-The encoder used is the _same_ encoder as per the attention-based neural machine translation paper (Attention-NMT). It is a bidirection RNN, which we will use a Bi-GRU in this scenario. 
+The encoder used is the _same_ encoder as per the attention-based neural machine translation paper (Attention-NMT). It is a bidirection RNN, which we will use a Bi-GRU in this scenario.
 
-For each input position $i$, an annotation vector $h_i$ is created by generating both the forward and backward encoder states; this will contain the full context for position $i$ as it will have both information on preceding and proceeding token information. Typically, this information would have an embedding vector formed as well so that the model can exploit tokens which are similar. 
+For each input position $i$, an annotation vector $h_i$ is created by generating both the forward and backward encoder states; this will contain the full context for position $i$ as it will have both information on preceding and proceeding token information. Typically, this information would have an embedding vector formed as well so that the model can exploit tokens which are similar.
 
 ## Decoder
 
@@ -37,15 +37,15 @@ Where $y_t$ is the previously generated token, and $\psi_t$ is the context obtai
 
 Where does the difference lie?
 
-In the attention mechanism! Rather than simply creating a mechanism with attention, we also add a _planning_ mechanism, which is _generated_ at each time step of the decoder - leading to the name "Planning, Attend, Generate". 
+In the attention mechanism! Rather than simply creating a mechanism with attention, we also add a _planning_ mechanism, which is _generated_ at each time step of the decoder - leading to the name "Planning, Attend, Generate".
 
 **Attend**
 
-The "attend" (or alignment) mechanism is formed through generating a candidate alignment plan $A_t$; based on the number of steps we "look ahead". For the $i$th look ahead step, it is generated from 
+The "attend" (or alignment) mechanism is formed through generating a candidate alignment plan $A_t$; based on the number of steps we "look ahead". For the $i$th look ahead step, it is generated from
 
 $$A_t[i] = f_{\text{align}}(\textbf{s}_{t-1}, \textbf{h}_j, \beta_t^i, \textbf{y}_t)$$
 
-where the alignment vector for the first time step (i.e. $A_t[0]$) is the **attention mechanism** of interest. In this scenario $f_{\text{align}}$ is presented as a MLP, with $\beta_t^i$ to be the summary of the alignment matrix at $i$th planning step for time $t-1$. 
+where the alignment vector for the first time step (i.e. $A_t[0]$) is the **attention mechanism** of interest. In this scenario $f_{\text{align}}$ is presented as a MLP, with $\beta_t^i$ to be the summary of the alignment matrix at $i$th planning step for time $t-1$.
 
 **Planning**
 
@@ -99,7 +99,7 @@ The EncoderDecoder class is almost identical to Attention-NMT. The differences a
 ```py
 class EncoderDecoder(nn.Module):
     """
-    A (mostly) standard Encoder-Decoder architecture. Base for this and many 
+    A (mostly) standard Encoder-Decoder architecture. Base for this and many
     other models.
     """
 
@@ -178,7 +178,7 @@ class EncoderDecoder(nn.Module):
         )
 ```
 
-We also make use of our embeddings and generators which are simply one layer items. Of course for embeddings you could use the inbuilt embedding as well if the sequences are word tokens. 
+We also make use of our embeddings and generators which are simply one layer items. Of course for embeddings you could use the inbuilt embedding as well if the sequences are word tokens.
 
 ```py
 class ContinuousEmbedding(nn.Module):
@@ -206,7 +206,7 @@ class Generator(nn.Module):
 
 ## Encoder
 
-The encoder is exactly the same as Attention-NMT. As PyTorch enables much of this out of the box, there's very little to worry about. We make use of the utility functions as part of pytorch to handle padding for varying sentence lengths as well. 
+The encoder is exactly the same as Attention-NMT. As PyTorch enables much of this out of the box, there's very little to worry about. We make use of the utility functions as part of pytorch to handle padding for varying sentence lengths as well.
 
 ```py
 class Encoder(nn.Module):
@@ -248,7 +248,7 @@ class Encoder(nn.Module):
 
 ## Decoder
 
-The decoder is a conditional GRU. Again we don't change things too much from the Attention-NMT approach, as the difference lies within the PAG mechanism. The largest difference is the requirement to maintain some form of state. 
+The decoder is a conditional GRU. Again we don't change things too much from the Attention-NMT approach, as the difference lies within the PAG mechanism. The largest difference is the requirement to maintain some form of state.
 
 ```py
 
@@ -337,7 +337,7 @@ class Decoder(nn.Module):
         commit_plan=None,
     ):
         """Unroll the decoder one step at a time.
-        
+
         trg_embed       = encoder_hidden,
         encoder_hidden  = encoder_final,
         encoder_final   = src_mask[[0], :, :],
@@ -428,9 +428,9 @@ class Decoder(nn.Module):
 
 ## Plan, Attend, Generate
 
-To implement the PAG mechanism, we take some liberties in how it was done in the original paper. The original paper does not specify in great detail how each component was contructed; though we note the similarities between Attention-NMT and PAG approaches. 
+To implement the PAG mechanism, we take some liberties in how it was done in the original paper. The original paper does not specify in great detail how each component was contructed; though we note the similarities between Attention-NMT and PAG approaches.
 
-Starting with the _update_ layer - this one is one of the easier ones as it needs only combine information on $\mathbf{h}$ and $\mathbf{s}$. In order to effectively combine them together, embedding both inputs is created so that they can be safely combined through addition. The embeddings both us `tanh` as to safely allow them to shift together than `sigmoid` is applied to generate the weighted sum. 
+Starting with the _update_ layer - this one is one of the easier ones as it needs only combine information on $\mathbf{h}$ and $\mathbf{s}$. In order to effectively combine them together, embedding both inputs is created so that they can be safely combined through addition. The embeddings both us `tanh` as to safely allow them to shift together than `sigmoid` is applied to generate the weighted sum.
 
 ```py
 class PAGGenerate(nn.Module):
@@ -511,18 +511,18 @@ class PAGPlan(nn.Module):
         return commit_vector
 ```
 
-The attend mechanism borrows heavily from the attention mechanism in Attend-NMT; the only difference is that if $\beta$ and $y$ tokens are generated then the embedding is like-wise added before the final alignment plan is generated. 
+The attend mechanism borrows heavily from the attention mechanism in Attend-NMT; the only difference is that if $\beta$ and $y$ tokens are generated then the embedding is like-wise added before the final alignment plan is generated.
 
 ```py
 class PAGAttend(nn.Module):
     """Implements Plan Attend Generate (MLP) attention as per here:
     This performs "attend" step
-    
-    Francis Dutil, Caglar Gulcehre, Adam Trischler, Yoshua Bengio, Plan, Attend, Generate: 
+
+    Francis Dutil, Caglar Gulcehre, Adam Trischler, Yoshua Bengio, Plan, Attend, Generate:
     Planning for Sequence-to-Sequence Models (NIPS 2017)
 
     If no history (previous action plan) or previous tokens are generated, it will
-    degerate to Bahdanau Attention: 
+    degerate to Bahdanau Attention:
     "Neural Machine Translation by Jointly Learning to Align and Translate"
     """
 
@@ -809,8 +809,7 @@ net = EncoderDecoder(
 
 At a later stage I'll try running this over a proper dataset to see the performance!
 
-
-_Update 21 Feb 2020_ 
+_Update 21 Feb 2020_
 
 We can create a lighter weight version based on [Tensorflow port and tutorial](https://www.tensorflow.org/tutorials/text/nmt_with_attention).
 
@@ -1111,8 +1110,3 @@ print(
     "decoder_state", decoder_state.shape, "attention_weights", attention_weights.shape
 )
 ```
-
-
-
-
-

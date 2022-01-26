@@ -2,8 +2,8 @@
 :root {
   /* Set sans-serif & mono fonts */
   --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
-  "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
-  "Helvetica Neue", sans-serif;
+    "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
   /* Default (light) theme */
@@ -52,12 +52,11 @@ body {
   font-size: 1.15rem;
   line-height: 1.5;
   display: grid;
-  grid-template-columns:
-    1fr min(70rem, 90%) 1fr;
+  grid-template-columns: 1fr min(70rem, 90%) 1fr;
   margin: 0;
 }
 
-body>* {
+body > * {
   /* margin: 0 auto;
   max-width: 750px;
   padding: 2rem; */

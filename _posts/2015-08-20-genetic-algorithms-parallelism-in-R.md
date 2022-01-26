@@ -1,10 +1,10 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
-The easiest way to get some performance gain when using genetic algorithms in R (using the library GA and on Windows) is to set parallel to `snow`. This is a documented method, but not exactly clear. 
+The easiest way to get some performance gain when using genetic algorithms in R (using the library GA and on Windows) is to set parallel to `snow`. This is a documented method, but not exactly clear.
 
 ```r
 library(GA)

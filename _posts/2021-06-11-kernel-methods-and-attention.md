@@ -1,11 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In the previous post, we looked at SpaCy's default classification model. But what is it actually? The short version is it uses the "Hierarachical Attention Networks" (Yang, Zichao et al, ACL 2016). 
+In the previous post, we looked at SpaCy's default classification model. But what is it actually? The short version is it uses the "Hierarachical Attention Networks" (Yang, Zichao et al, ACL 2016).
 
 In this post, we won't directly talk about this model, but instead talk informally about attention and their relationship to kernel methods. This post is based on slides here, but I'll try to give my own (informal) flavour "Attention: the Analogue of Kernels in Deep Learning".
 
@@ -23,8 +23,8 @@ This intuition is important, as you will see these patterns pop up in this like 
 
 There are lots of different post expressing this, the simpliest variation I've seen is this:
 
-* Source vector $s$
-* Target vector $t$
+- Source vector $s$
+- Target vector $t$
 
 Then a transformer is, where $\alpha$ is attention weights and $t^\prime$ is the output:
 
@@ -32,21 +32,21 @@ $$a_{ij} = \frac{(W^Qt_i)^\top(W^K s_j)}{\sqrt{d}}$$
 $$\alpha_{ij} = \frac{\exp(a_{ij})}{\sum_{\forall j} \exp(a_{ij})}$$
 $$t^\prime_i = \sum_{\forall j} \alpha_{ij} W^V s_j$$
 
-In NLP one possible formulation is if hypothetically a document is represented through a word count vector, where the $i$-th element is the count of the $i$-th word in our vocabulary, then the _attention weight_ $i, j$ is the amount of weight the $i$-th word has in relation to the $j$-th word. Note that in general the scores would not be symetric, that is $a_{ij} \neq a_{ji}$ - (otherwise we'll just be learning an identity matrix). 
+In NLP one possible formulation is if hypothetically a document is represented through a word count vector, where the $i$-th element is the count of the $i$-th word in our vocabulary, then the _attention weight_ $i, j$ is the amount of weight the $i$-th word has in relation to the $j$-th word. Note that in general the scores would not be symetric, that is $a_{ij} \neq a_{ji}$ - (otherwise we'll just be learning an identity matrix).
 
-When you put everything together, this is just a series of matrix multiplications, which demonstrates how this is "learnable". 
+When you put everything together, this is just a series of matrix multiplications, which demonstrates how this is "learnable".
 
-With this you have a project of itself which attends to, or provides an embedding which shows "importance". 
+With this you have a project of itself which attends to, or provides an embedding which shows "importance".
 
 **An aside**
 
 How might we project a vector representing a whole document to a set of weights which show importance in an unsupervised manner?
 
-Simple answer is TFIDF! However tfidf doesn't take into account "context", whereas in this case the presence of other words in the document would change the weighting score. 
+Simple answer is TFIDF! However tfidf doesn't take into account "context", whereas in this case the presence of other words in the document would change the weighting score.
 
 ## A silly example
 
-To demostrate this, let's try to build an "attention" model, where only $W^V$ is learned, and $W^Q, W^K$ are generated randomly. 
+To demostrate this, let's try to build an "attention" model, where only $W^V$ is learned, and $W^Q, W^K$ are generated randomly.
 
 ```py
 import numpy as np
@@ -169,7 +169,7 @@ class SimpleAttention(TransformerMixin):
 pipeline = make_pipeline(FeatureUnion([
     ('sa', SimpleAttention(50)),
     ('tfidf', TfidfVectorizer(max_features=50))
-]), 
+]),
     LinearSVC())
 pipeline.fit(twenty_train.data, twenty_train.target)
 print(pipeline.score(twenty_train.data, twenty_train.target))
@@ -177,10 +177,10 @@ print(pipeline.score(twenty_train.data, twenty_train.target))
 
 # Final Thoughts
 
-We gave a simple example of how we can think of attention models, and how SpaCy integrates them. We showed the analogy to what we might be more familiar with in the ML space. 
+We gave a simple example of how we can think of attention models, and how SpaCy integrates them. We showed the analogy to what we might be more familiar with in the ML space.
 
 There are some things which are unaddressed!
 
-*  use of GRUs - most word embeddings used are a sequence of tokens; not a bag of words!
+- use of GRUs - most word embeddings used are a sequence of tokens; not a bag of words!
 
-We'll leave that as an exercise for the reader. I purposely excluded it as it detracts from learning/understanding more. 
+We'll leave that as an exercise for the reader. I purposely excluded it as it detracts from learning/understanding more.

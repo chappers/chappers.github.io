@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 There are some things that I don't quite understand, but I thought that writing the high level information about it may help my intuition. Judging from the title it is the idea of being "Probably Approximately Correct" (PAC) in the realm of machine learning.
@@ -16,14 +16,14 @@ $$ m \ge \frac{1}{\epsilon} (ln |H| + ln (1/\delta))$$
 
 Which we hold for _any consistent learner_ to successfully learn any target concept in \\(H\\).
 
-What do we mean by a consistent learner? Well a consistent learner is a leaning algorithm that outputs a hypothesis that commits zero errors over the training examples. 
+What do we mean by a consistent learner? Well a consistent learner is a leaning algorithm that outputs a hypothesis that commits zero errors over the training examples.
 
 But such an example is often unreasonable. What if we relax such an assumption?
 
 # For agnostic learners...
 
 We can create a probability which does this too. It would simply be the following:
- 
+
 $$ m \ge \frac{1}{2\epsilon^2} (ln |H| + ln (1/\delta))$$
 
-which provides the agnostic case. 
+which provides the agnostic case.

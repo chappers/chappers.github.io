@@ -1,12 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-
-Writing aggregated features is not new or novel. The question is how can we make it scriptable? 
+Writing aggregated features is not new or novel. The question is how can we make it scriptable?
 
 [Tecton offers some insights to how this could be done](https://github.com/tecton-ai-ext/tecton-examples/blob/main/fraud_model_end_to_end/1%20-%20tecton_features/features/transaction_aggregates.py):
 
@@ -28,7 +27,7 @@ transaction_aggregates = TemporalAggregateFeaturePackage(
 )
 ```
 
-But how would we do this without Tecton? PySpark `window` functions offer some insight to how we could generalise it. 
+But how would we do this without Tecton? PySpark `window` functions offer some insight to how we could generalise it.
 
 ```py
 from pyspark.sql import SparkSession
@@ -48,7 +47,7 @@ customer_trans_raw = spark.sql("""
         t.transaction_time,
         1 as transaction,
         t.amount as amount
-    from 
+    from
         transactions as t
         inner join sessions as s
         on t.session_id = s.session_id
@@ -80,7 +79,7 @@ Output would look something like this:
 
 ```
 In [ ]: feats_2day.toPandas().head()
-Out[ ]:                                                                        
+Out[ ]:
    customer_id    transaction_time  mean_amount  sum_transaction  sum_amount
 0            2 2013-12-31 11:00:00    77.422366               93     7200.28
 1            4 2013-12-31 11:00:00    80.070459              109     8727.68
@@ -89,7 +88,7 @@ Out[ ]:
 4            3 2013-12-31 11:00:00    67.060430               93     6236.62
 
 In [ ]: feats_1week.toPandas().head()
-Out[ ]:                                                                        
+Out[ ]:
    customer_id    transaction_time  mean_amount  sum_transaction  sum_amount
 0            5 2013-12-26 11:00:00    80.375443               79     6349.66
 1            2 2013-12-26 11:00:00    77.422366               93     7200.28

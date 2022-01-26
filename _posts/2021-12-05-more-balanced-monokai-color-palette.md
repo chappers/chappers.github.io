@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 Inspired by Dracula's geometric color palette, here is my attempt at creating a similar variation with Monokai:
@@ -108,4 +108,4 @@ if __name__ == "__main__":
 
 ```
 
-Now would I actually use this? I'm not too sure. Sticking with the defaults rather than moving things around is generally a wise idea. Though some things just have "bad" defaults (like the default macOS terminal). I might play around and see how far I get, but deviating too far from monokai defaults might be more pain than its worth, especially when continually resetting machines etc. 
+Now would I actually use this? I'm not too sure. Sticking with the defaults rather than moving things around is generally a wise idea. Though some things just have "bad" defaults (like the default macOS terminal). I might play around and see how far I get, but deviating too far from monokai defaults might be more pain than its worth, especially when continually resetting machines etc.

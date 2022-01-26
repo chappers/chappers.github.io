@@ -1,12 +1,12 @@
 ---
 layout: post
-category : web micro log
-tags : [android, java]
+category: web micro log
+tags: [android, java]
 ---
 
 **This is a series of post as I will hopefully build a simple wallpaper app.**
 
-In this post, we will build a simple "guess the number game". There will be a input area, which you enter you guess, and simple prompt to tell you whether your guess was too high or too low. 
+In this post, we will build a simple "guess the number game". There will be a input area, which you enter you guess, and simple prompt to tell you whether your guess was too high or too low.
 
 ![lower higher layouts](https://raw2.github.com/chappers/chappers.github.com/master/img/android/lowerhigher/layout.png)
 
@@ -71,10 +71,9 @@ In this post, we will build a simple "guess the number game". There will be a in
 </RelativeLayout>
 ```
 
-This should be nothing new regarding to what you would have seen before. Perhaps the only thing slightly more interesting is using the `android:inputType="numberSigned"` which provides the keyboard type to your device. 
+This should be nothing new regarding to what you would have seen before. Perhaps the only thing slightly more interesting is using the `android:inputType="numberSigned"` which provides the keyboard type to your device.
 
-`.java`
--------
+## `.java`
 
 This is where all the action will happen.
 
@@ -87,7 +86,7 @@ Random rand = new Random();
 int randNum = rand.nextInt(9)+1;
 ```
 
-This will produce a random integer between 1-10 to the variable `randNum`. 
+This will produce a random integer between 1-10 to the variable `randNum`.
 
 ###Adding Activity to the button###
 
@@ -127,7 +126,7 @@ Lastly we have to fill out what the dialogue actually does in the `restartGameAl
 
 The gist of creation of a dialogue is the follow:
 
-1. Use `AlertDialog.Builder` to create a new `Builder`. 
+1. Use `AlertDialog.Builder` to create a new `Builder`.
 2. Set up the framework of the `Builder`, including things like, the title, message, button text, and button actions (similiar to above)
 3. Run the `create()` method to actually create the `AlertDialog`.
 4. Run the `show()` method to finally display the dialogue.
@@ -155,6 +154,3 @@ private void restartGameAlert(View v) {
 ```
 
 This should produce a simple working game in Android!
-
-
-

@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 title: Onnx API and Retreiving Intermediary Output
 ---
 
@@ -10,10 +10,10 @@ It's quite frustrating trying to navigate through comments and posts on how to d
 
 **Problme Statement**: How do we get intermediary layer output as part of an ONNX model?
 
-This approach has many issues raised, with no completely working code. Some of the issues listed are here: 
- 
-*  https://github.com/microsoft/onnxruntime/issues/2119
-*  https://github.com/microsoft/onnxruntime/issues/1455
+This approach has many issues raised, with no completely working code. Some of the issues listed are here:
+
+- https://github.com/microsoft/onnxruntime/issues/2119
+- https://github.com/microsoft/onnxruntime/issues/1455
 
 and many more. To do this in a naive way is:
 
@@ -25,7 +25,7 @@ import numpy as np
 model = load("squeezenet1.1.onnx")
 rep = backend.prepare(model, 'CPU')
 
-# the input for this is a picture of size 224 x 224 with all values moved in 0, 1. 
+# the input for this is a picture of size 224 x 224 with all values moved in 0, 1.
 # try with random input first
 X = np.random.normal(size=(1, 3, 224, 224)).astype(np.float32)
 X += np.abs(np.min(X))
@@ -34,7 +34,7 @@ X /= np.max(X)
 rep.run(X)[0].shape
 ```
 
-If you try running the model, as the parameters in the graph nodes are inferred and not known before the graph is built - there is no way to directly output the intermediary layer. Another item to consider we completely rebuild the ONNX models which stops at the target intermediary layer - however we won't be going through this approach in this post. 
+If you try running the model, as the parameters in the graph nodes are inferred and not known before the graph is built - there is no way to directly output the intermediary layer. Another item to consider we completely rebuild the ONNX models which stops at the target intermediary layer - however we won't be going through this approach in this post.
 
 ## Solution
 
@@ -51,10 +51,9 @@ model.graph.output.extend([intermediate_layer_value_info])
 save(model, model_path)
 ```
 
-From here, we can load the model, and then use `rt.InferenceSession`. 
+From here, we can load the model, and then use `rt.InferenceSession`.
 
 Putting it altogether would look like this:
-
 
 ```py
 import onnxruntime as rt
@@ -85,7 +84,3 @@ batch_img = np.stack([img]).astype(np.float32)
 output = sess.run(None, {'data': batch_img})
 feature_vector = output[1].reshape(batch_img.shape[0], -1)  # index 1 is intermediate layer
 ```
-
-
-
-

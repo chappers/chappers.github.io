@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 <!-- progressive model validation using metrics with hoeffding bounds is in the onlineml river items
@@ -12,29 +12,28 @@ In Python there is [Gooey](https://github.com/chriskiehl/Gooey) which generates 
 
 There are a few challenges with this. For example, from the standard library in Nim, there is no way to automatically assign and create types to arguments. Instead the standard library only supports:
 
-*  flags
-*  key value pairs
-*  argument input
+- flags
+- key value pairs
+- argument input
 
-which assumes everything is also a string argument. 
+which assumes everything is also a string argument.
 
 To start off with, lets make some simplifying assumptions:
 
-*  we will only support key-value pairs
-*  we will store everything in a table (i.e. a hash table)
-*  the program will only take in a table as input
+- we will only support key-value pairs
+- we will store everything in a table (i.e. a hash table)
+- the program will only take in a table as input
 
-With that we can start constructing our program. 
-
+With that we can start constructing our program.
 
 ```nim
 # these are the fields we generate
 type optNames = enum
   hello, world
 
-# no need to touch these, these hold the values of 
+# no need to touch these, these hold the values of
 # various things
-type 
+type
   argEntry = array[optNames, Entry]
 var optEntry: argEntry
 var optTable = initTable[string, string]()
@@ -51,7 +50,7 @@ proc run() =
 So then we can create something with the argparser which will run correctly:
 
 ```nim
-proc cmdlineMain*() = 
+proc cmdlineMain*() =
   # usage: nim c -r <file.nim> --hello:123 --world=what
   var p = initOptParser(commandLineParams())
   while true:
@@ -70,11 +69,11 @@ cmdlineMain()
 Then we can create something similar with `nim/ui`.
 
 ```nim
-proc forceQuit(w: Window) = 
+proc forceQuit(w: Window) =
   destroy(w)
   system.quit()
 
-proc runQuit(w: Window) = 
+proc runQuit(w: Window) =
   # run the program first and then quit
   for n in optNames:
     optTable[$n] = optEntry[n].text
@@ -87,12 +86,12 @@ proc guiMain*() =
   var mainwin: Window
   var group: Group
   let mainBox = newVerticalBox(true)
-  
+
   mainwin = newWindow("Hello World", 640, 480, true)
   mainwin.margined = true
   mainwin.onClosing = (proc (): bool = return true)
   mainwin.setChild(mainBox)
-  
+
   # generate the fields from optName
   for n in optNames:
     group = newGroup($n)
@@ -115,6 +114,3 @@ mainLoop()
 ```
 
 Next time maybe we'll look at extending it to flags and other items.
-
-
-

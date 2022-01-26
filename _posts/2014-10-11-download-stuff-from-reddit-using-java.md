@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [java]
+category: web micro log
+tags: [java]
 ---
 
 Previously I've looked at how to download stuff from Reddit. So I thought I'll re-apply the same code, but using Java. Here is the same code to do just that.
@@ -45,7 +45,7 @@ public class getWallpaper {
 
     static void wallpaperLinks(JSONObject json) {
         String[] wallpapers;
-        JSONArray data = json.getJSONObject("data").getJSONArray("children"); 
+        JSONArray data = json.getJSONObject("data").getJSONArray("children");
         // the children is where the information is contained
 
         for (int i = 0; i < data.length(); i++) {
@@ -77,10 +77,8 @@ public class getWallpaper {
 }
 ```
 
-The first two methods `subredditJson` and `readAll` are for grabbing the required `json` file from Reddit. 
+The first two methods `subredditJson` and `readAll` are for grabbing the required `json` file from Reddit.
 
 The next two methods `wallpaperLinks` and `downloadFile` are for extracting the particular image links and downloading the required information using Java.
 
 What made this project interesting was learning about different libraries for JSON, in particular, the JSON library used in Android is Android specific. This is also roughly three times as much code as the Python implementation, demonstrating to me at least, the beauty that is in Python (at least compared to Java).
-
-

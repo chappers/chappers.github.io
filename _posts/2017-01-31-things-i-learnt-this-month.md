@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 I've always tried to regularly string together something interesting that I've picked up
@@ -9,13 +9,12 @@ this month however, was a bit of a strange month; the many things that I've pick
 weren't necessarily _difficult_ but in some ways _obvious_ to people who might have been
 a bit more observant (or should have been obvious to me earlier!)
 
-Neural Networks
----------------
+## Neural Networks
 
 This month two insights which I had already knew, but never managed to piece together finally clicked:
 
-*  Neural networks can be framed in terms of a composition of functions; firstly a linear component and then a non-linear component
-*  Neural networks have the ability to approximate any function.
+- Neural networks can be framed in terms of a composition of functions; firstly a linear component and then a non-linear component
+- Neural networks have the ability to approximate any function.
 
 ### On the requirement of non-linear portion of a neural network
 
@@ -30,21 +29,18 @@ For each layer in a neural network it has:
 
 Without the non-linear component, a neural network is only able to estimate linear models, as it would simply be multiple dot products of weight matrices.
 
-
-On Feature Learning for Natural Language Processing
----------------------------------------------------
+## On Feature Learning for Natural Language Processing
 
 Perhaps this was a stupid thought which I didn't think through clearly, but one question which I had in my mind was simply, is there "one NLP algorithm to rule them all". The answer unsurprisingly "no".
-
 
 As a simple example is if we create binary classifier based on the presence on a bunch of words; then anything besides a binary representation would have an inferior representation. This demonstrates that in text mining there is "no free lunch" (which can be seen of course in the no free lunch theorem).
 
 The consequence of this is to consider encodings which take into account different representation of words. For example a "feature rich encoding" can be constructed through:
 
-*  TFIDF
-*  POS tagging with TFIDF
-*  NER tagging with TFIDF
-*  word2vec
+- TFIDF
+- POS tagging with TFIDF
+- NER tagging with TFIDF
+- word2vec
 
 It may not out perform a particular representation, but its average performance is likely to be "good enough".
 

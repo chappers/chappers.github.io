@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 title: Revisiting TangleJS
 ---
 
@@ -17,7 +17,6 @@ Let's look at some of these components and see what we can do with it in a more 
 And you want some javascript to do some computation off the values in the slider! The question then is: "How exactly do we do this?"
 
 Let's take a look at [`mithril.js`](https://mithril.js.org):
-
 
 <div id="m-slider1"></div>
 
@@ -43,30 +42,31 @@ var slider = {
 m.mount(root, slider)
 </script>
 
-
 ```html
 <div id="m-slider1"></div>
 
 <script>
-var root = document.getElementById("m-slider1")
-var val = 20 // setting val
+  var root = document.getElementById("m-slider1");
+  var val = 20; // setting val
 
-var slider = {
-  view: function (scope) {
-    return m("main", [
+  var slider = {
+    view: function (scope) {
+      return m("main", [
         m("p", "range input: " + val),
         m("input[type=range]", {
-            min:0,
-            max:100,
-            step:2,
-            value: val,
-            oninput: function(){val = this.value;}
-        })
-    ])
-  }
-}
+          min: 0,
+          max: 100,
+          step: 2,
+          value: val,
+          oninput: function () {
+            val = this.value;
+          },
+        }),
+      ]);
+    },
+  };
 
-m.mount(root, slider)
+  m.mount(root, slider);
 </script>
 ```
 
@@ -106,33 +106,47 @@ m.mount(mslider2, cookieSlider)
 <div id="m-slider2"></div>
 
 <script>
-var mslider2 = document.getElementById("m-slider2")
-var cookies = 2 // setting val
+  var mslider2 = document.getElementById("m-slider2");
+  var cookies = 2; // setting val
 
-var cookieCalculator = function(cookies) {return cookies*50}
+  var cookieCalculator = function (cookies) {
+    return cookies * 50;
+  };
 
-var cookieSlider = {
-  view: function (scope) {
-    return m("main", [
-        m("label", {
-            for:"slider2"
-        }, "Cookies: "+cookies),
+  var cookieSlider = {
+    view: function (scope) {
+      return m("main", [
+        m(
+          "label",
+          {
+            for: "slider2",
+          },
+          "Cookies: " + cookies
+        ),
         m("input[type=range]", {
-            min:0,
-            max:10,
-            step:1,
-            value: cookies,
-            id: "slider2", 
-            oninput: function(){cookies = this.value;}
+          min: 0,
+          max: 10,
+          step: 1,
+          value: cookies,
+          id: "slider2",
+          oninput: function () {
+            cookies = this.value;
+          },
         }),
-        m("p", "When you eat "+ cookies + " cookies, you consume " + cookieCalculator(cookies) + " calories.")
-    ])
-  }
-}
+        m(
+          "p",
+          "When you eat " +
+            cookies +
+            " cookies, you consume " +
+            cookieCalculator(cookies) +
+            " calories."
+        ),
+      ]);
+    },
+  };
 
-m.mount(mslider2, cookieSlider)
+  m.mount(mslider2, cookieSlider);
 </script>
 ```
 
 Unfortunately it doesn't look as pretty as we would like - more on that next time!
-

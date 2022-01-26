@@ -1,10 +1,9 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
-
 
 Typically when we think of transfer learning, we naturally think of Deep Learning algorithms. Afterall it makes it easy to "transfer" learnings from a _similar_ problem to a the current domain. For example, we can generate image features from one domain and use it to "kick-start" another problem. Can we do the same thing for other machine learning problems?
 
@@ -12,11 +11,11 @@ Typically when we think of transfer learning, we naturally think of Deep Learnin
 
 I like to think of transfer learning as an extension of online learning, in the sense that we can learn off another problem, and without retaining any knowledge of the underlying dataset, used that information to inform us better on how we should go ahead and tackle new information for our machine learning problem.
 
-In this sense there are a few obvious ways how we can encode this knowledge. 
+In this sense there are a few obvious ways how we can encode this knowledge.
 
 1.  We can use an algorithm to come up with a compressed representation of historical data!
 
-One way of doing this is if we have an algorithm that can come up with a compressed representation which can be learnt in an online fashion - we can then use this to retain knowledge to then transfer them to a batch model. Based on this we will come up with a naive approach to "transfer" some learnings of historical datasets which we can no-longer see. 
+One way of doing this is if we have an algorithm that can come up with a compressed representation which can be learnt in an online fashion - we can then use this to retain knowledge to then transfer them to a batch model. Based on this we will come up with a naive approach to "transfer" some learnings of historical datasets which we can no-longer see.
 
 ## Naive Transfer Learning
 
@@ -25,11 +24,11 @@ On easy way to approach transfer learning is to make use of surrogate modelling.
 To firstly prepare some information to "transfer" learnings to:
 
 ```
-1.  Fit a model to the original data 
+1.  Fit a model to the original data
 2.  Construct a supervised kernel based on supervised learning algorithm of choice
 ```
 
-The kernel will allow you to transform your data into a representation which assists in how the original machine learning model understood the data in terms of what is predictive and is not. 
+The kernel will allow you to transform your data into a representation which assists in how the original machine learning model understood the data in terms of what is predictive and is not.
 
 For new data where we wish to use this information:
 

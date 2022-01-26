@@ -1,11 +1,10 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 ** Here are some of my notes for International Speech Contest at Toastmasters. This is not my speech, but rather an altered version to make it more suitable for reading. **
-
 
 Being Australian born Chinese generally would mean that you would hear things like
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 The chances are if you are reading this, you are not average. You are probably above average. According to [Time](http://time.com/2909743/americans-reading/)
@@ -23,6 +23,6 @@ There is the expectation that we give the same canned response and not probe any
 
 Stupid questions can often reflect truths which we are generally quite ignorant of. For example:
 
->  Why should I expect a 25 year old teacher to be paid less than a 25 year old lawyer?
+> Why should I expect a 25 year old teacher to be paid less than a 25 year old lawyer?
 
 One could come up with many reasons, with the one (possibly incorrect) being that it is more difficult to become a lawyer than a teacher, hence the supply is restricted and the expected income would be higher. Yet in my experience, we fail to accept "cut-throat" occupations with high failure rates and high respective incomes with the understanding that those who made it through would probably be successful in most other fields in which they decided to pursue, as such our perception of average is skewed.

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [r]
+category: web micro log
+tags: [r]
 ---
 
 Using API calls is probably the easiest way to geocode address. Here is some sample R code which demonstrates how this can be done using two different sites:
@@ -11,7 +11,7 @@ library(rjson)
 
 address = "321 kent st, sydney,nsw 2000, australia"
 format  = "json"
-addressdetails = 0 
+addressdetails = 0
 
 
 # nominatim API has a "fair usage" policy but is more or less unlimited
@@ -32,7 +32,7 @@ kentst[[1]]$lat
 [1] "-33.8677586"
 '
 
-# mapquest is actually unlimited, but you have to signup 
+# mapquest is actually unlimited, but you have to signup
 # for a free account, it too has a "fair usage" policy
 # which means they might degrade the speed of your API calls
 # it is under a community license (uses open data), though
@@ -59,6 +59,6 @@ $lat
 
 It is important to realse the constraints of this method, as it needs to lookup
 every individual item. You will also have to be careful of the various use policies
-for each method. 
+for each method.
 
-Pay solutions are obviously better and more robust, but hopefully this provides a glimpse into what can be done cheaply if you don't have too much data. 
+Pay solutions are obviously better and more robust, but hopefully this provides a glimpse into what can be done cheaply if you don't have too much data.

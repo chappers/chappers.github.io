@@ -1,17 +1,15 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
-
 
 Keras is an interesting framework which allows one to easily define
 and train neural networks. After a long time "avoiding" deep learning
 libraries, I have finally taken a dive using Keras. Here are some notes and
 examples for getting started!
 
-Multinomial Regression
--------------------
+## Multinomial Regression
 
 The corner stone of any neural network is the last layer plus activation function.
 If we use the activation function being the softmax function, we will essentially have
@@ -140,17 +138,16 @@ Accuracy is 0.87
 
 One can arbitarily extend this by adding more dense layers, but that isn't very interesting...
 
-Image examples
---------------
+## Image examples
 
 Keras does provide nice examples for image modelling. If you look at the provided
 code. However it need not be as difficult as their provided example.
 
 Recall that if we want to build a CovNet for image classification, we need [3 components](http://cs231n.github.io/convolutional-networks/):
 
-1.  Convolution Layer - this performs the convolution filters  
-2.  Pooling - this performs the downsampling operation  
-3.  Fully connected layer - this is the normal dense neural network layer  
+1.  Convolution Layer - this performs the convolution filters
+2.  Pooling - this performs the downsampling operation
+3.  Fully connected layer - this is the normal dense neural network layer
 
 Amazingly the model seems to do pretty well without pooling or even a fully connected layer (see example below)!
 
@@ -193,6 +190,7 @@ Test score: 0.153921858574
 Test accuracy: 0.9555
 """
 ```
+
 And using the notMNIST code:
 
 ```py
@@ -236,10 +234,7 @@ Test accuracy: 0.941
 
 These results fully demonstrate how (relatively) easy it is to define and create our own neural networks in Keras.
 
-
-
-Full code
----------
+## Full code
 
 Logistic regression:
 
@@ -333,7 +328,6 @@ print('Test accuracy:', score[1])
 ```
 
 notMNIST (code borrowed from the [udacity example](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/udacity) within the tensorflow documentation)
-
 
 ```py
 from six.moves.urllib.request import urlretrieve
@@ -489,7 +483,7 @@ def merge_datasets(pickle_files, train_size, valid_size=0):
     start_v, start_t = 0, 0
     end_v, end_t = vsize_per_class, tsize_per_class
     end_l = vsize_per_class+tsize_per_class
-    for label, pickle_file in enumerate(pickle_files):             
+    for label, pickle_file in enumerate(pickle_files):
         try:
             with open(pickle_file, 'rb') as f:
                 letter_set = pickle.load(f)

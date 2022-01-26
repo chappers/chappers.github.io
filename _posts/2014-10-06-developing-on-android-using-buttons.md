@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [android, java]
+category: web micro log
+tags: [android, java]
 ---
 
 **This is a series of post as I will hopefully build a simple wallpaper app.**
@@ -45,7 +45,7 @@ Here is my `.xml`, it is okay if your one is different!
         android:layout_alignParentEnd="true" />
 ```
 
-Now that the layout is complete, we may want to add or alter the values in `string.xml`. Here is what my one looks like. 
+Now that the layout is complete, we may want to add or alter the values in `string.xml`. Here is what my one looks like.
 
 ```xml
     <string name="app_name">SimpleButton</string>
@@ -68,7 +68,7 @@ The auto-complete function in Android studio will give you the boiler plate if y
         });
 ```
 
-Now we simply have to define the activity within `onClick` to incrememt the text in our layout. One way would be to create a counter within the class and increment it globally, assigning it via `setText()`. 
+Now we simply have to define the activity within `onClick` to incrememt the text in our layout. One way would be to create a counter within the class and increment it globally, assigning it via `setText()`.
 
 This would look something like this:
 

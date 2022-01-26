@@ -1,31 +1,31 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 If you are to look at the collection of guitar music which my dad owns, you will find that a fair amount of it is handwritten using the ziffersystem. This is due to his very strong sense of relative pitch. The the natural question is how might we convert this to a more traditional system? Indeed you can do it using [Jianpu-ly](http://people.ds.cam.ac.uk/ssb22/mwrhome/jianpu-ly.html) (at least judging by the website, I haven't actually tried it myself). But I thought I could quickly implement something that "works" using Pyparsing in Python. So here it is!
 
 Below is my thoughts on implementing such a system, but note that it doesn't support everything. A list of things which are missing include:
 
-*  Key and time signatures
-*  Tuplets
-*  Repeats
-*  Any kind of slur or tie markings
-*  Chords
-*  Lyrics
-*  Dynamics
+- Key and time signatures
+- Tuplets
+- Repeats
+- Any kind of slur or tie markings
+- Chords
+- Lyrics
+- Dynamics
 
 The only focuses are on pitch and duration, with the simple assumption that everything is in C major.
 
 # Parsing
 
-Using [Pyparsing](http://pyparsing.wikispaces.com/) is really easy once you get a hang of how to use it. 
+Using [Pyparsing](http://pyparsing.wikispaces.com/) is really easy once you get a hang of how to use it.
 
 ## Pitch
 
 ```python
-pitch = (Literal('0') | Literal('1') | Literal('2') | Literal('3') | 
+pitch = (Literal('0') | Literal('1') | Literal('2') | Literal('3') |
          Literal('4') | Literal('5') | Literal('6') | Literal('7')).setResultsName("pitch")
 ```
 
@@ -42,8 +42,8 @@ accidentals = (Literal('#') | Literal('b') | Literal('@')).setResultsName("accid
 Dealing with duration is slightly different, because we want to have one or more dashes or one or more underscores (underscores would be our underlining).
 
 ```python
-minim = OneOrMore('-') 
-quaver = OneOrMore('_') 
+minim = OneOrMore('-')
+quaver = OneOrMore('_')
 dotted = Literal('.')
 ```
 
@@ -88,7 +88,7 @@ accidental_mapping = {'#' : 'sharp',
                       'b' : 'flat'}
 ```
 
-These all relate the lilypond specific notation, for example, the mapping from `0:r` refers to how rests are labelled `r` in lilypond. 
+These all relate the lilypond specific notation, for example, the mapping from `0:r` refers to how rests are labelled `r` in lilypond.
 
 Next we must think how we can convert a single note, and then use that as the basis to iterate over all our music:
 
@@ -105,7 +105,7 @@ def convert_duration(note):
         return duration_mapping[dur_note[:-1]] + '.'
     else:
         return duration_mapping[dur_note]
-        
+
 def convert_accidental(note):
     try:
         return accidental_mapping[note['accidental']]
@@ -158,7 +158,6 @@ e4 d4 c4 d4 e4 e4 e2 d4 d4 d2 e4 g4 g2 e4 d4 c4 d4 e4 e4 e4 e4 d4 d4 e4 d4 c1
 
 ![Mary had a little lamb](/img/ziff/mary.png)
 
-
 **Misc**
 
 ```python
@@ -174,5 +173,3 @@ e4 d4 c4 dflat4 e4 r4 e2 dsharp4 d4 d2 e4 g4 g2 e4 d2. c4 d4 e4 e4 e4 e4 d4 d4 e
 ```
 
 ![Misc](/img/ziff/misc.png)
-
-

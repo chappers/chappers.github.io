@@ -1,14 +1,14 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 To get dual subtitles working with chinese, pinyin and english, we can try running the following:
 
-*  [DualSub](http://bonigarcia.github.io/dualsub/index.html)
-*  [xpinyin](https://pypi.org/project/xpinyin/)
+- [DualSub](http://bonigarcia.github.io/dualsub/index.html)
+- [xpinyin](https://pypi.org/project/xpinyin/)
 
 Then to convert a file in python we can run:
 

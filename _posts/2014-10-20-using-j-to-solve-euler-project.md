@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [j]
+category: web micro log
+tags: [j]
 ---
 
 Today I thought I'll have a quick look at J and how to use J to solve some Euler project problems. This post will go through one possible way to solve the first Euler project problem.
@@ -20,11 +20,11 @@ Today I thought I'll have a quick look at J and how to use J to solve some Euler
 18
 ```
 
-We can see that "normal" order of operations is ignored! 
+We can see that "normal" order of operations is ignored!
 
 ## Assigning things
 
-We can assign things by using `=:` 
+We can assign things by using `=:`
 
 ```
   x =: 1
@@ -35,7 +35,7 @@ We can assign things by using `=:`
 This is rather unspectacular. We can assign arrays in this fashion too:
 
 ```
-  x =: 1 2 3 
+  x =: 1 2 3
   x
 1 2 3
 ```

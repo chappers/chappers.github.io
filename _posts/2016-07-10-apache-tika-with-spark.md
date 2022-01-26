@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Since there isn't really any tutorial on this (possibly because its too simplistic)

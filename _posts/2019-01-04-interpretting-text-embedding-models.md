@@ -1,17 +1,17 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 _This post borrows code from [https://github.com/hiranumn/IntegratedGradients](https://github.com/hiranumn/IntegratedGradients) which in itself is based on the Integrated Gradients paper which was part of the WHI workshop at ICML 2018_
 
-Interpretting word embedding models is fairly difficult - how do we know what words (or phrases) were an indication of why a particular instance was predicted in a certain way? 
+Interpretting word embedding models is fairly difficult - how do we know what words (or phrases) were an indication of why a particular instance was predicted in a certain way?
 
-In this post we primarily go through the code that can be used to describe this. Part of the challenge isn't so much whether it is possible or not; but rather how do we leverage existing techniques to help guide us towards something that is usable. 
+In this post we primarily go through the code that can be used to describe this. Part of the challenge isn't so much whether it is possible or not; but rather how do we leverage existing techniques to help guide us towards something that is usable.
 
-Part of the challenge is that embedding layers by themselves have no concept of gradient. The reason for this is that embedding layers are merely a lookup action (that is we look up a word to get the vector), and by themselves alone do not have a gradient which we can action on. 
+Part of the challenge is that embedding layers by themselves have no concept of gradient. The reason for this is that embedding layers are merely a lookup action (that is we look up a word to get the vector), and by themselves alone do not have a gradient which we can action on.
 
 Instead the resolution is to attempt to derive the attribution of the embedding to the word itself. How I approached this is by creating a separate function which grabs the embedding itselve, and allowing gradient explanation methods to use this as input instead:
 
@@ -54,7 +54,7 @@ df_embed = pd.DataFrame(word_embed, columns=["c{}".format(x) for x in range(word
 df_embed['words'] = col_names
 ```
 
-and replicate the pooling mechanism. In this scenario, we used max pooling, which makes it easy; then we can pull out the words which did surface as part of the max pooling and highlight them, as well as the contribution to the model. 
+and replicate the pooling mechanism. In this scenario, we used max pooling, which makes it easy; then we can pull out the words which did surface as part of the max pooling and highlight them, as well as the contribution to the model.
 
 ```py
 # get max of every column
@@ -63,11 +63,11 @@ embed_max_colwise = np.max(word_embed, axis=0).tolist()
 def get_max_value_only(df, colname, val, keep_col=['words']):
     # if the value is not a max value then let's set it to zero...
     df_ = df[df[colname] == val].copy()
-    keep_cols = [colname] + keep_col    
+    keep_cols = [colname] + keep_col
     return df_[keep_cols]
 
 def get_colnames(df, colname, word_col):
-    return '_'.join(df[df[colname] > 0][word_col].tolist())    
+    return '_'.join(df[df[colname] > 0][word_col].tolist())
 
 df_embed_ = pd.concat([get_max_value_only(df_embed, "c{}".format(col_idx), el) for col_idx, el in enumerate(embed_max_colwise)], sort=False)
 df_embed_ = df_embed_.groupby(["words"]).max().reset_index()
@@ -77,7 +77,7 @@ df_embed_ = df_embed_.fillna(0)
 col_names = [get_colnames(df_embed_, "c{}".format(x), 'words')+"-{}".format(x) for x in range(500)]
 ```
 
-The result is that we now have what the purported column names for the max pooling operation (i.e. the embedding), and the contribution based on the embedding layer. 
+The result is that we now have what the purported column names for the max pooling operation (i.e. the embedding), and the contribution based on the embedding layer.
 
 From here it is fairly trivial to compute the information by essentially zipping up the information together.
 

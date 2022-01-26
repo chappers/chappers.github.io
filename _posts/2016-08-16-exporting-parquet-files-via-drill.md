@@ -1,23 +1,22 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 A problem I've been struggling with is this:
 
->  How can I export/import a parquet file without Spark?
+> How can I export/import a parquet file without Spark?
 
-There are various efforts in the form of Apache Arrow, and a Python Parquet package which allows you to read, but how might one export the data? 
+There are various efforts in the form of Apache Arrow, and a Python Parquet package which allows you to read, but how might one export the data?
 
-Enter Apache Drill
-------------------
+## Enter Apache Drill
 
 This isn't exactly a new approach, but rather I thought I'll document what I did to get it working _locally_ as there aren't any really clear instructions online!
 
 Firstly start [Apache drill as shown in the tutorial](https://drill.apache.org/docs/starting-drill-on-windows/).
 
-Next the connection settings to the Apache drill JDBC interface is show below. Make sure that the `jdbc` url is what is shown below; **not** `jdbc:drill:zk=local` as it will not work. 
+Next the connection settings to the Apache drill JDBC interface is show below. Make sure that the `jdbc` url is what is shown below; **not** `jdbc:drill:zk=local` as it will not work.
 
 ```r
 library(RJDBC)
@@ -30,8 +29,8 @@ conn <- dbConnect(drv, "jdbc:drill:drillbit=localhost")
 
 My `dfs` configuration is shown below. The key highlights are:
 
-*  connection field should be `file:///`
-*  make use of your workspaces and the location to navigate effectively.
+- connection field should be `file:///`
+- make use of your workspaces and the location to navigate effectively.
 
 This can be accessed under `http://localhost:8047/storage` after drill is running (assuming defaults are all used!)
 
@@ -61,23 +60,17 @@ This can be accessed under `http://localhost:8047/storage` after drill is runnin
   "formats": {
     "psv": {
       "type": "text",
-      "extensions": [
-        "tbl"
-      ],
+      "extensions": ["tbl"],
       "delimiter": "|"
     },
     "csv": {
       "type": "text",
-      "extensions": [
-        "csv"
-      ],
+      "extensions": ["csv"],
       "delimiter": ","
     },
     "tsv": {
       "type": "text",
-      "extensions": [
-        "tsv"
-      ],
+      "extensions": ["tsv"],
       "delimiter": "\t"
     },
     "parquet": {
@@ -85,24 +78,18 @@ This can be accessed under `http://localhost:8047/storage` after drill is runnin
     },
     "json": {
       "type": "json",
-      "extensions": [
-        "json"
-      ]
+      "extensions": ["json"]
     },
     "avro": {
       "type": "avro"
     },
     "sequencefile": {
       "type": "sequencefile",
-      "extensions": [
-        "seq"
-      ]
+      "extensions": ["seq"]
     },
     "csvh": {
       "type": "text",
-      "extensions": [
-        "csvh"
-      ],
+      "extensions": ["csvh"],
       "extractHeader": true,
       "delimiter": ","
     }
@@ -110,13 +97,12 @@ This can be accessed under `http://localhost:8047/storage` after drill is runnin
 }
 ```
 
-Writing to Parquet
-------------------
+## Writing to Parquet
 
 To write to a parquet file, drill will need to take in another file and output the new table:
 
 ```python
-dbGetQuery(conn, paste0("create table dfs.output.iris as ", 
+dbGetQuery(conn, paste0("create table dfs.output.iris as ",
     "select * from dfs.root.`iris.csv`", collapse=" "))
 ```
 
@@ -128,8 +114,8 @@ Notice that I had to create a `csv` file first! Drill can not even be used to in
 
 This naturally leads to how can I potentially import an R object? Approaches could be:
 
-* Write to an intermediary file format, like `csv`
-* Write to a sqlite database - this should be better as it will better preserve data types of the R data frame object.
+- Write to an intermediary file format, like `csv`
+- Write to a sqlite database - this should be better as it will better preserve data types of the R data frame object.
 
 ### Setting up SQLite
 
@@ -175,14 +161,13 @@ dbGetQuery(conn, "select * from sqlite.iris")
 If this works correctly, we can then write to parquet this way:
 
 ```
-dbGetQuery(conn, paste0("create table dfs.output.iris2 as ", 
+dbGetQuery(conn, paste0("create table dfs.output.iris2 as ",
     "select * from sqlite.iris", collapse=" "))
 ```
 
 And that is it! You should be able to export (and import) parquet files using R and drill.
 
-Python
-======
+# Python
 
 Given that everything is set up as above, python is much easier:
 
@@ -212,14 +197,8 @@ df1.to_sql('dummy', sqliteconn)
 drill.query("select * from sqlite.dummy").to_dataframe()
 
 # write to parquet:
-drill.query("""create table dfs.output.dummy as 
+drill.query("""create table dfs.output.dummy as
 select * from sqlite.dummy""")
 ```
 
 This could be a simple approach to convert data to Parquet format!
-
-
-
-
-
-

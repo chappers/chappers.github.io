@@ -1,14 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-Because I couldn't find an example onlline...Here is a "combined" example to respond to keyboard events based on compiling some examples online. 
+Because I couldn't find an example onlline...Here is a "combined" example to respond to keyboard events based on compiling some examples online.
 
 Now time to automatically port some stuff over...
-
 
 ```
 import kivy
@@ -34,7 +33,7 @@ class MyKeyboardListener(BoxLayout):
             # to change the keyboard layout.
             pass
         self._keyboard.bind(on_key_down=self._on_keyboard_down)
-        
+
 
     def _keyboard_closed(self):
         print('My keyboard have been closed!')

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 Okay, so you've looked at `sparkhello`; now what? How can I extend and make use of some scala code!

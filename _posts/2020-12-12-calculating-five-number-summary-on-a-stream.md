@@ -1,35 +1,35 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In this post we'll talk briefly about the `P2` algorithm, which will allow one to calculate percentiles on a stream (approximately)! 
+In this post we'll talk briefly about the `P2` algorithm, which will allow one to calculate percentiles on a stream (approximately)!
 
-This post is more about implementing the algorithm, and I'll leave the discussion around what it does to a later stage. 
+This post is more about implementing the algorithm, and I'll leave the discussion around what it does to a later stage.
 
-Implementation
-==============
+# Implementation
 
 For percentile, which isn't the minimum of maximum, we require keeping tabs of 5 markers:
 
-*  The minimum
-*  $p/2$ quantile
-*  $p$ quantile
-*  $(1+p)/2$ quantile
-* The maximum
+- The minimum
+- $p/2$ quantile
+- $p$ quantile
+- $(1+p)/2$ quantile
+- The maximum
 
 ```py
+
 ```
 
 In this format, we need to retain a few items:
 
-*  marker heights
-*  marker positions
-*  desired marker positions
+- marker heights
+- marker positions
+- desired marker positions
 
-Because we have 5 marker points, then the algorithm only kicks in when we have at least 5 points. 
+Because we have 5 marker points, then the algorithm only kicks in when we have at least 5 points.
 
 ```py
 import numpy as np
@@ -70,7 +70,7 @@ class ApproxQuantile1D(object):
             self.q.append(x)
             self.q = sorted(self.q)
             return self
-        
+
         # part B
         if x <= self.q[0]:
             self.q[0] = x  # new min
@@ -88,7 +88,7 @@ class ApproxQuantile1D(object):
             k = 3
         else:
             raise Exception("All cases should have been covered?")
-        
+
         # item 2 in algorithm - increment markers
         for i in range(k+1, 5):
             self.n[i] += 1
@@ -107,7 +107,7 @@ class ApproxQuantile1D(object):
                     self.q[i] = self.linear(i, d_sign)
                 self.n[i] += d_sign
         return self
-    
+
     def parabolic(self, i, d):
         # copy from paper
         i = int(i)
@@ -128,7 +128,7 @@ class ApproxQuantile1D(object):
             return self.q[4]
         if len(self.q) < 5:
             target_index = int(int(len(self.q) * self._p))
-            return self.q[target_index]        
+            return self.q[target_index]
         return self.q[2]
 
 class FiveNumberSummary(object):
@@ -167,4 +167,3 @@ print("summary for X2", [np.percentile(X2, p) for p in [0, 25, 50, 75, 100]])
 ```
 
 The original paper "The $P^2$ Algorithm for Dynamic Statistical Computing Calculation of Quantiles and Histograms Without Storing Observations" can be found here: https://www.cse.wustl.edu/~jain/papers/ftp/psqr.pdf
-

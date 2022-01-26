@@ -1,12 +1,12 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 What is interesting when you actually start using things that you build beyond simply just toys.
 
-Recently I had a conversation with a colleague on why you shouldn't use [regex to parse xml data](http://blog.codinghorror.com/parsing-html-the-cthulhu-way/). The main points for why it should be permissible are mostly around practicality, and that our jobs might be ad-hoc. This begged the question; if we weren't going to use a library and wanted to parse XML files how would we do it in R in particular. 
+Recently I had a conversation with a colleague on why you shouldn't use [regex to parse xml data](http://blog.codinghorror.com/parsing-html-the-cthulhu-way/). The main points for why it should be permissible are mostly around practicality, and that our jobs might be ad-hoc. This begged the question; if we weren't going to use a library and wanted to parse XML files how would we do it in R in particular.
 
 This allowed me to revist Ramble, to see if it was (somewhat) up for the task.
 
@@ -22,7 +22,6 @@ Parse:
 In the code I had I did nothing to ensure that the XML file was valid; since I merely tokenized the data.
 
 Here is the code below:
-
 
 ```r
 
@@ -49,7 +48,7 @@ xmlParser <- (many(startTag %alt% singleTag) %then%
 
 startTag <- (
   symbol("<") %then%
-    identifier() %then% 
+    identifier() %then%
     many(attributes) %then%
   symbol(">") %using% function(x) {
     els <- unlist(c(x))
@@ -60,7 +59,7 @@ startTag <- (
 
 endTag <- (
   symbol("</") %then%
-    identifier() %then% 
+    identifier() %then%
   symbol(">") %using% function(x) {
     return(unlist(c(x)))
   }
@@ -68,7 +67,7 @@ endTag <- (
 
 singleTag <- (
   symbol("<") %then%
-    identifier() %then% 
+    identifier() %then%
     many(attributes) %then%
     symbol("/>") %using% function(x) {
       els <- unlist(c(x))
@@ -77,7 +76,7 @@ singleTag <- (
 )
 
 attributes <- (
-  identifier() %then% 
+  identifier() %then%
     symbol("=") %then%
     quoteString
   )
@@ -87,10 +86,9 @@ quoteString <- (
     many(satisfy(function(x) {return(!!length(grep('[^"]+', x)))})) %then%
     symbol('"') %using% function(x) {
       return(paste0(unlist(c(x)), collapse=""))
-    } 
+    }
   )
 
 xmlParser(xml)
 
 ```
-

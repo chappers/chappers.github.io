@@ -1,16 +1,15 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-When we're moving towards time series or transactional data; it is interesting to think about how features are generated and how we perform data mining within this context. The "state of the art" approaches may involve simply throwing neural networks on it, however it may be challenging when additional engineering constraints are put on top. The good news is that this can be solved through purely engineering approaches; rather than fancy algorithms or theorems. 
+When we're moving towards time series or transactional data; it is interesting to think about how features are generated and how we perform data mining within this context. The "state of the art" approaches may involve simply throwing neural networks on it, however it may be challenging when additional engineering constraints are put on top. The good news is that this can be solved through purely engineering approaches; rather than fancy algorithms or theorems.
 
-In this post we'll look briefly at using convolution operations to deal with feature generation over transaction information. 
+In this post we'll look briefly at using convolution operations to deal with feature generation over transaction information.
 
-Setting up the Data
-===================
+# Setting up the Data
 
 To setup the dataframe, one of the ways to do this is similar to the approach taken by [`sktime`](https://alan-turing-institute.github.io/sktime/examples/loading_data.html)
 
@@ -22,6 +21,7 @@ index |   dim_0   |   dim_1   |    ...    |  dim_c-1
   ... |    ...    |    ...    |    ...    |    ...
    n  | pd.Series | pd.Series | pd.Series | pd.Series
 ```
+
 Then to consider how we would model the data; we would have each observation followed by a sparse representation of transactional data. From here it is "easy" to calculate how we convole and pool features:
 
 ```py
@@ -37,12 +37,11 @@ max_pool = skimage.measure.block_reduce(convolve_res, (1, 7,), np.max)
 
 This will naturally convolve the output into the correct form provided the data is in the right format.
 
-Modelling the Data and Next Steps
-=================================
+# Modelling the Data and Next Steps
 
-One item which is still unsolved in my mind is how do we model this data? In a database, transactional information is generally in EAV related format - where by the data is long rather than wide. However it will need to be changed to a wide format. If we collapse items into a single observation then it would work "successfully" from the perspective of the `pd.DataFrame`. 
+One item which is still unsolved in my mind is how do we model this data? In a database, transactional information is generally in EAV related format - where by the data is long rather than wide. However it will need to be changed to a wide format. If we collapse items into a single observation then it would work "successfully" from the perspective of the `pd.DataFrame`.
 
-To demonstrate an example of how this may operate in the real-world, we will make use of the customer transaction information which is automatically generated within `featuretools`. 
+To demonstrate an example of how this may operate in the real-world, we will make use of the customer transaction information which is automatically generated within `featuretools`.
 
 ```py
 import skimage.measure
@@ -60,14 +59,14 @@ data = ft.demo.load_mock_customer()
 # data['customers'].merge(data['sessions']).shape # (35, 7)
 
 # what we do instead is collapse `customer_id`, and have everything as a sparse
-# series, so when we join it stays having 5 rows. 
+# series, so when we join it stays having 5 rows.
 sessions = data['sessions'].copy()
 sessions['session_start'] = QuantileTransformer(n_quantiles=100).fit_transform(
       np.array(sessions['session_start'].astype(int).tolist()).reshape(-1, 1)
    )
 sessions['session_start'] = np.round(sessions['session_start'] * 100).astype(int)
 sessions_gb = sessions.groupby(['customer_id', 'device'])
-# we want to group by device and session_start; that is 
+# we want to group by device and session_start; that is
 # we want columns to be "desktop/mobile", with pd.Series("session_start")
 # get the min and max of the series
 
@@ -100,5 +99,3 @@ customer_sessions['tablet'] = conv_avgpool(customer_sessions['tablet'])
 ```
 
 This demonstrates how we can use convolution and extend how we may denormalise data structures into convolution frameworks such as tensorflow for our workflows. This is obviously more work compared with the single liner as part of `featuretools`; however, this concept may allow us to think about how we scale and provide real-time approaches moving forward.
-
-

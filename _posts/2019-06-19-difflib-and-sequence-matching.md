@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 How do we detect plagiarism?
@@ -51,4 +51,3 @@ text2 says hello worlds: because there :are multiple
 ```
 
 From here we can begin to extract similar phrases and text simply using the standard library in Python.
-

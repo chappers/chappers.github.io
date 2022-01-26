@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 I've been working on extension on some of my publications, namely in the gams space, where I've put the code here: https://github.com/charliec443/TreeGrad2

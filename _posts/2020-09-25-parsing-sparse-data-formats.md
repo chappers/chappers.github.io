@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 I've been thinking about transferring data in a sparse manner. Now in production systems you probably don't want to go around defining custom formats. In fact its probably preferrable to use `jsonlines` format instead of what is shown below.
@@ -21,7 +21,7 @@ Examples of this format is:
 x:1 "col1":100 desc:"Hello world"
 ```
 
-Basically this is a "flattened" YAML format which doesn't respect `\n` or `\t` characters, instead they're treated as spaces, so long as its not enclosed in a string. 
+Basically this is a "flattened" YAML format which doesn't respect `\n` or `\t` characters, instead they're treated as spaces, so long as its not enclosed in a string.
 
 ```py
 import csv
@@ -96,4 +96,4 @@ output = vw2dict('x:1 x:3 col1:"hello world" desc:"1 : 2"')
 # {'x': [1.0, 3.0], 'col1': 'helloworld', 'desc': '1:2'}
 ```
 
-This essentially means we've implemented a multi-pass parser for our simple language. 
+This essentially means we've implemented a multi-pass parser for our simple language.

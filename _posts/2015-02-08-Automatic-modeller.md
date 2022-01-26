@@ -1,16 +1,16 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
-How can you build an auto-modeller? 
+How can you build an auto-modeller?
 
-Off the back of my first assignment (which we've been given permission to share with others) I thought I'll begin to generalise some of my code so that I could apply a bunch of classifiers on a data set and produce some graphs and summaries to be able to hopefully make an informed decision on what action you would take next. 
+Off the back of my first assignment (which we've been given permission to share with others) I thought I'll begin to generalise some of my code so that I could apply a bunch of classifiers on a data set and produce some graphs and summaries to be able to hopefully make an informed decision on what action you would take next.
 
 The goal of such a script wouldn't be to remove all human knowledge (domain knowledge in building orthogonal data sets will still build applying models naively), but if it can even meet 50% of what a human can do, that is important information in estimated the amount of effort needed or even the feasibility of the problem on hand.
 
-See [here](http://chappers.github.io/automatic-modeller/) for the project repository. 
+See [here](http://chappers.github.io/automatic-modeller/) for the project repository.
 
 # Building an Automatic Classifier
 
@@ -18,9 +18,9 @@ Essentially the idea is we use the `caret` library and train a bunch of models. 
 
 ## Stratified Sampling
 
-The important thing to do is stratified sampling. This ensures that our random sampling is somewhat "fair". Although this probably isn't the only way and is actually quite limited. 
+The important thing to do is stratified sampling. This ensures that our random sampling is somewhat "fair". Although this probably isn't the only way and is actually quite limited.
 
-The function below shows the strength of the `dplyr` library through the `group_by` function. 
+The function below shows the strength of the `dplyr` library through the `group_by` function.
 
 ```r
 stratify <- function(data, response, frac=.5, seed=10, ...) {
@@ -51,7 +51,7 @@ train_caret <- function(train, response, methods=c("rpart", "nnet", "svmRadial",
       error=function(e) NULL)
     return(model)
   }, methods)
-  
+
   return(models)
 }
 ```
@@ -73,10 +73,10 @@ confusion_matrix <- function(test, response, models) {
 
 There is still much work to do. Although this is a good start. Here are some of the other things which would be worth working through in the future when there is more time:
 
-*  Preprocessing: When would it be better to do this?  
-*  Feature selection: some algorithms perform better with altered or transformed features. How can this be incorporated.  
-*  Postprocessing: Following from the preprocessing, is there anything that we can do in that regard.  
-*  Improving the output document to become more polish: see the output below, we can have more tailored results based on what was observed. This would probably have to be made with tools other than R.  
+- Preprocessing: When would it be better to do this?
+- Feature selection: some algorithms perform better with altered or transformed features. How can this be incorporated.
+- Postprocessing: Following from the preprocessing, is there anything that we can do in that regard.
+- Improving the output document to become more polish: see the output below, we can have more tailored results based on what was observed. This would probably have to be made with tools other than R.
 
 # Sample Usage
 
@@ -145,4 +145,3 @@ response &lt;- &quot;Species&quot;</code></pre>
 <p>In this section I have attempted to falsify the model I presented above to understand what aspects of the data it is not capturing well.</p>
 <p>INSERT SOMETHING GENERIC</p>
 </div>
-

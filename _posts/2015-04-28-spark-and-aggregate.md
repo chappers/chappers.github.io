@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 # Getting started with Spark
@@ -24,10 +24,8 @@ res0: (Int, Int) = (10,4)
 
 It has three arguments:
 
-*  `zeroValue` : the initial value of the accumulator  
-*  `seqOp` : this combines the accumulator from the rdd (resilient distributed dataset), the first element is the accumulator and the second is an element of the rdd  
-*  `combOp` : this merges two accumulators, the first and second argument are accumulators. 
+- `zeroValue` : the initial value of the accumulator
+- `seqOp` : this combines the accumulator from the rdd (resilient distributed dataset), the first element is the accumulator and the second is an element of the rdd
+- `combOp` : this merges two accumulators, the first and second argument are accumulators.
 
-This function differs from reduce, because you can input and output different values. As you can see from the example above, the input is single values, whilst the output is a tuple. 
-
-
+This function differs from reduce, because you can input and output different values. As you can see from the example above, the input is single values, whilst the output is a tuple.

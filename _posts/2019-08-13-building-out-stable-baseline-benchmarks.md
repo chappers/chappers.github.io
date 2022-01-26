@@ -1,11 +1,11 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In this post we'll go through how one could build a Keras model using `stable-baselines` library as well as the conditions to create a default gym environment. The simple question is if we want to use the Keras APIs to build the basis for a Policy using PPO; we should be able to do this in a fairly straightforward manner. 
+In this post we'll go through how one could build a Keras model using `stable-baselines` library as well as the conditions to create a default gym environment. The simple question is if we want to use the Keras APIs to build the basis for a Policy using PPO; we should be able to do this in a fairly straightforward manner.
 
 Suppose you wanted to create a simple MLP model:
 
@@ -38,10 +38,9 @@ proba_distribution, policy, q_value = pdtype.proba_distribution_from_latent(
 )
 ```
 
-Using this in conjunction with some boilerplate code allows us to construct a policy which can be used for RL purposes. 
+Using this in conjunction with some boilerplate code allows us to construct a policy which can be used for RL purposes.
 
 Full Example using Cart Pole is shown below.
-
 
 ```py
 import tensorflow as tf
@@ -115,4 +114,3 @@ for _ in range(1000):
 
 env.close()
 ```
-

@@ -1,11 +1,11 @@
-highlighter:      rouge
-permalink:        pretty
-markdown:         kramdown
-exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss']
+highlighter: rouge
+permalink: pretty
+markdown: kramdown
+exclude:
+  ["Gemfile", "Gemfile.lock", "README.md", "sass", "watch.sh", "style.scss"]
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-title:           chappers
-
-theme: jekyll-theme-minimal
+title: chappers
+# theme: jekyll-theme-minimal

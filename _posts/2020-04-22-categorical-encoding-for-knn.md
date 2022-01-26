@@ -1,13 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 In this post we'll look at an implementation of [ABDM (Association-Based Distance Metric)](http://www.jaist.ac.jp/~bao/papers/N26.pdf) and [MVDM (Modified Value Difference Metric)](https://link.springer.com/article/10.1023/A:1022664626993) for categorical encoding which can be used in k-nearest-neighbours. There currently isn't a [paper on this but is forthcoming at the time of writing](https://docs.seldon.io/projects/alibi/en/stable/methods/CFProto.html). This is a quick implementation based on the [Seldon Alibi](https://github.com/SeldonIO/alibi/blob/master/alibi/utils/distance.py) implementation; mainly because their implementation wasn't very "sklearn-eqsue". This is also for my own edification!
 
-#  High Level View of Shared Components
+# High Level View of Shared Components
 
 **Whats the Algorithm?**
 
@@ -79,17 +79,16 @@ x_mapping = np.linalg.norm(emb - origin, axis=1)
 final_mapping = zip([list(mean_over.index), x_mapping.tolist()])
 ```
 
-#  High Level View of Split Components
+# High Level View of Split Components
 
 The difference in the two algorithms can be summaried by how the comparitive dataset is produced, as well as the preprocessing which is used in both cases.
 
-MVDM:  the comparison dataset is a one-hot encoded version of the label
+MVDM: the comparison dataset is a one-hot encoded version of the label
 ABDM: the comparison dataset is the modelling dataset itself, with the numeric variables discretised. In addition it uses a symmetric KL-Divergence as a preprocessor before applying manhattan distance.
 
 From here we can apply some preprocessing for both approaches and wrap it up. Would I use the code below in production? Maybe; just may need some config/others so that parts like KBin and MDS portions are easily configurable.
 
-
-```py
+````py
 # ABDM and MVDM
 import numpy as np
 from typing import Dict, Tuple
@@ -237,8 +236,8 @@ class ABDMTransformer(TransformerMixin):
     from sklearn.linear_model import SGDRegressor
     mod = SGDRegressor()
 
-    X_in = manhattan_distances(X_trans_all)[np.argwhere(manhattan_distances(X_trans_all) != 0)].flatten() 
-    y_in = manhattan_distances(X_trans_cats)[np.argwhere(manhattan_distances(X_trans_cats) != 0)].flatten() 
+    X_in = manhattan_distances(X_trans_all)[np.argwhere(manhattan_distances(X_trans_all) != 0)].flatten()
+    y_in = manhattan_distances(X_trans_cats)[np.argwhere(manhattan_distances(X_trans_cats) != 0)].flatten()
 
     mod.fit(X_in.reshape(-1, 1), y_in)
     # calculate mse
@@ -297,5 +296,4 @@ class ABDMTransformer(TransformerMixin):
 
     def fit_transform(self, X, y):
         return self.fit(X, y).transform(X)
-```
-
+````

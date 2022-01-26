@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 There are some things which to be are completely inexplicable in the world of Spark. One of them is finding help for things which really should be recipes.
@@ -12,7 +12,7 @@ To actually get the answer to my question I needed to reference a Scala post on 
 
 Regardless to answer the question I was after:
 
->  How to access the values of denseVector in PySpark
+> How to access the values of denseVector in PySpark
 
 If the values of the vector are in a Dataframe, and we **do not** want to convert it to an RDD and then back to a Dataframe, the correct way would be to define a UDF in Python:
 

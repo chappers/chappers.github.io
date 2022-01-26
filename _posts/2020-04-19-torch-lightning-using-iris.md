@@ -1,21 +1,20 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-Okay, so there are many articles on using torch with lightning and training with pytorch. But for whatever reason many of them are just overly complicated and talk through complicated workflows. For me, the details are important, but to start off, oftentimes we just want to know how do I do a "fit" and a "predict". In this post, we'll look briefly how to set up a minimal example for pytorch. 
+Okay, so there are many articles on using torch with lightning and training with pytorch. But for whatever reason many of them are just overly complicated and talk through complicated workflows. For me, the details are important, but to start off, oftentimes we just want to know how do I do a "fit" and a "predict". In this post, we'll look briefly how to set up a minimal example for pytorch.
 
-Setting up the `pytorch` module
------------------------------
+## Setting up the `pytorch` module
 
 The pytorch module (will use this interchangeably with "lightning"), is the following methods:
 
-*  `forward` - which defines our network
-*  `train_dataloader` - which defines how we are batching/transforming our data/how is it loaded?
-*  `configure_optimizers` - which defines our optimizer
-*  `training_step` - which defines a single optimizer step
+- `forward` - which defines our network
+- `train_dataloader` - which defines how we are batching/transforming our data/how is it loaded?
+- `configure_optimizers` - which defines our optimizer
+- `training_step` - which defines a single optimizer step
 
 If you have all these defined as a module, then the training is as easy as:
 
@@ -84,7 +83,6 @@ trainer.fit(model)
 ```
 
 We can finally verify that this works as expected:
-
 
 ```py
 X, y = load_iris(return_X_y=True)

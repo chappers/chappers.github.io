@@ -1,11 +1,11 @@
 ---
 layout: post
-category : web micro log
-tags : [r]
-tagline: 
+category: web micro log
+tags: [r]
+tagline:
 ---
 
-[General Transit Feed Specification (GTFS)](http://www.transportnsw.info/en/about/transport-data-program.page#gtfs) data is freely available for Sydney Buses. I thought I would go through and see how easy it is to query and create something meaningful. 
+[General Transit Feed Specification (GTFS)](http://www.transportnsw.info/en/about/transport-data-program.page#gtfs) data is freely available for Sydney Buses. I thought I would go through and see how easy it is to query and create something meaningful.
 
 Reading the files in was rather trivial and required the work of the very common `eval(parse())` combination:
 
@@ -38,8 +38,8 @@ library(plyr)
 
 tt <- timetable[timetable$stop_id %in% c("203568","200045"),]
 
-trip_times <- ddply(tt, 
-                    .(trip_id), 
+trip_times <- ddply(tt,
+                    .(trip_id),
                     mutate,
                     time_taken = max(arrival_time) - min(arrival_time))
 ```
@@ -49,7 +49,7 @@ more condensed.
 
 ```r
 trip_times <- filter(stop_times, stop_id %in% c("203568", "200045")) %>% # needs to have both!
-  group_by(trip_id) %>% 
+  group_by(trip_id) %>%
   mutate(time_taken = max(arrival_time) - min(arrival_time)) %>%
   mutate(dest_id=(min(arrival_time)==arrival_time)*as.numeric(stop_id)) %>%
   filter(time_taken != 0) %>%
@@ -57,7 +57,7 @@ trip_times <- filter(stop_times, stop_id %in% c("203568", "200045")) %>% # needs
   select(trip_id, arrival_time, time_taken, dest_id) %>%
   inner_join(trips[, c("trip_id", "route_id")], by="trip_id") %>%
   filter(grepl("X9[4-9]", route_id)) %>%
-  arrange(dest_id, time_taken, arrival_time) 
+  arrange(dest_id, time_taken, arrival_time)
 ```
 
 Personally this style of the code (though comments would be much better!) is much cleaner. It follows a train of thought and avoids the cognitive overhead
@@ -68,7 +68,7 @@ You can even easily chain these commands to come up with a graph which is shown 
 ```r
 stop_times %>%
   filter(stop_id %in% c("203568", "200045")) %>% # needs to have both!
-  group_by(trip_id) %>% 
+  group_by(trip_id) %>%
   mutate(time_taken = max(arrival_time) - min(arrival_time)) %>%
   mutate(dest_id=(min(arrival_time)==arrival_time)*as.numeric(stop_id)) %>%
   filter(time_taken != 0) %>%
@@ -84,4 +84,3 @@ stop_times %>%
 
 Overall, I can definitely see the advantages of forward piping particularly in data analytics, and hope that more and more people would use this approach to generate clean code.
 It is quite scary to even think of the code above to be R code since it resembles little of what you might consider to be "base R".
-

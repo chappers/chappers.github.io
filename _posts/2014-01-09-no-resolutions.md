@@ -1,6 +1,6 @@
 ---
 layout: post
-category : web micro log
+category: web micro log
 ---
 
 This year I'm not making any resolutions.
@@ -17,5 +17,4 @@ I want to be. Focused on the simple things, and on content rather than flashy st
 
 Of course, website will change in the future (I'm still entertaining the idea of placing
 a footer at the bottom). I have left out several pages which I may restore in the future;
-but we'll see what happens. 
-
+but we'll see what happens.

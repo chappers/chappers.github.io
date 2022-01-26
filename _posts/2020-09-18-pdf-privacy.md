@@ -1,13 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-Sometimes you just don't want your PDFs to be searchable. Maybe you've added some annotations to strike-through or block out some sensitive data (but you can still select it!). 
+Sometimes you just don't want your PDFs to be searchable. Maybe you've added some annotations to strike-through or block out some sensitive data (but you can still select it!).
 
-This can be resolved through  some CLI applications:
+This can be resolved through some CLI applications:
 
 ```
 convert: topdf
@@ -36,8 +36,8 @@ make PDF="mypdf.pdf" convert
 
 In here the steps are roughly:
 
-*  Convert `pdf`s pages to individual `png`: `pdftoppm -png $(PDF) document`
-*  Convert the individual `png` to individual `pdf`: `mogrify -format pdf tmp/*.png`
-*  Collate all `pdf` into one big pdf: `pdftk tmp/*.pdf cat output $(PDF)-new.pdf`
+- Convert `pdf`s pages to individual `png`: `pdftoppm -png $(PDF) document`
+- Convert the individual `png` to individual `pdf`: `mogrify -format pdf tmp/*.png`
+- Collate all `pdf` into one big pdf: `pdftk tmp/*.pdf cat output $(PDF)-new.pdf`
 
 This would let us create a new pdf file with no textual data!

@@ -1,14 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 In scikit-learn when you do a gridsearch the default option uses cross validation option. But what if we want to use a train-validation split instead?
 
 This is preferable if we want to train models quicker, and without performing that kind of search procedure. This can be done through using `StratifiedShuffleSplit` explicitly in the `cv` option:
-
 
 ```py
 GridSearchCV(
@@ -24,7 +23,6 @@ GridSearchCV(
 ```
 
 Part of me thinks this approach should actually be the default option!
-
 
 ```py
 from tpot import TPOTClassifier

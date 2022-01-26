@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 I'm currently looking at the Udacity course called [Data Visualization and D3.js](https://www.udacity.com/course/ud507). Working through Lesson 2 involves recreating some visualisations which were "badly" made on the internet. So here are some of the ones which I've come up with using [dimple.js](http://dimplejs.org).
@@ -14,11 +14,11 @@ We can see that firstly the graphics although attempt to be to scale, it is very
 
 <div id="fastfood"></div>
 
-Next up we have MLS salaries. 
+Next up we have MLS salaries.
 
 ![mls](/img/dimple-data/mls.jpg)
 
-Now I haven't got the same data, nor have I thoroughly cleansed it, however I believe grouping them in such a dense way is deterimental. Rather keeping it simple would be more more effective. If there was a need to see the individual's earnings a table below the graphic would be optimal. 
+Now I haven't got the same data, nor have I thoroughly cleansed it, however I believe grouping them in such a dense way is deterimental. Rather keeping it simple would be more more effective. If there was a need to see the individual's earnings a table below the graphic would be optimal.
 
 <div id="mls"></div>
 

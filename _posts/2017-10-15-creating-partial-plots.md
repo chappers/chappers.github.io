@@ -1,22 +1,19 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-
-Partial dependency plots are an important part of post-hoc modelling, particular when we are dealing with complex ensemble based models. 
+Partial dependency plots are an important part of post-hoc modelling, particular when we are dealing with complex ensemble based models.
 
 The idea behind these plots is to simply show the effect of modifying a single variable assuming that all other variables are the same. However there are several ways how this could be achieved, both with different assumptions.
 
 **Using Base Data**
 
-One approach for calculating partial dependency is to simply calculate at $n$ points spread evenly for the variable of interest. 
+One approach for calculating partial dependency is to simply calculate at $n$ points spread evenly for the variable of interest.
 
 Below is an example based on the relevant `h2o` code which has been replaced with the numpy equivalent.
-
-
 
 ```py
 partial_df = []
@@ -46,9 +43,9 @@ for col in cols:
 	partial_df.append(res_df.copy())
 	if plot:
 		plt.figure(figsize=(7,10))
-		plt.plot(res_df['idx'], res_df['lower'], 'b--', 
-				 res_df['idx'], res_df['upper'], 'b--', 
-				 res_df['idx'], res_df['mean'], 'r-', 
+		plt.plot(res_df['idx'], res_df['lower'], 'b--',
+				 res_df['idx'], res_df['upper'], 'b--',
+				 res_df['idx'], res_df['mean'], 'r-',
 				 res_df['idx'], res_df['actual'], 'go', )
 		plt.grid()
 		plt.show()
@@ -83,12 +80,3 @@ elif len(pdp.shape) == 1:
 **Concluding Thoughts**
 
 There isn't necessarily a wrong or right way of approaching it, and probably several approaches to get a sense for the partial relationships in any model. What is probably more important is that there is a sensible way to approach this problem in a reusable and repeatible manner.
-
-
-
-
-
-
-
-
-

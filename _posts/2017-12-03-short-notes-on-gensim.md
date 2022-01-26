@@ -1,13 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 When designing interfaces for software, a commonly cited one is the "Principle of Least Astonishment"; interfaces should work the way that you want them to!
 
-However sometimes there are weird oddities which pop up where people need to be aware of. One of these is the current (in development) interface for gensim to scikit learn. 
+However sometimes there are weird oddities which pop up where people need to be aware of. One of these is the current (in development) interface for gensim to scikit learn.
 
 Imagine you are doing a TFIDF model in Scikit learn right now. The code to do this looks like:
 
@@ -17,16 +17,16 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import make_pipeline
 
 pipeline = make_pipeline(
-    CountVectorizer(), 
+    CountVectorizer(),
     TfidfTransformer())
 
 # data : [String]
 pipeline.fit(data)
 ```
 
-It is clear what the input is: a list of documents, which get transformed by the count vectorizer and then to the tfidf transformer. When gensim comes out with a scikit api interface for gensim, one might hope that it would work if I simply replace `TfidfTransformer` with gensim's `gensim.sklearn_api.tfidf.TfidfTransformer`. 
+It is clear what the input is: a list of documents, which get transformed by the count vectorizer and then to the tfidf transformer. When gensim comes out with a scikit api interface for gensim, one might hope that it would work if I simply replace `TfidfTransformer` with gensim's `gensim.sklearn_api.tfidf.TfidfTransformer`.
 
-Unfortunately this doesn't work. 
+Unfortunately this doesn't work.
 
 Instead to get this working, we would have to do something akin to:
 
@@ -58,5 +58,3 @@ test.fit(doc_term_matrix)
 ```
 
 One of the issues we would need to tackle in the standard usage of gensim is the amount of boilerplate code required to get into a ML scenario [(see urllib2 vs requests)](https://gist.github.com/kennethreitz/973705).
-
-

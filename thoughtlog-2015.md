@@ -1,30 +1,17 @@
-<head>
-<link rel="stylesheet" href="./css/site.css">
-<script data-ad-client="ca-pub-5058752309493957" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-<div id="content"></div>
-<xmp id="marked">
+---
+layout: post
+title: thoughtlog
+---
 
 [90 day plan for management](http://firstround.com/review/this-90-day-plan-turns-engineers-into-remarkable-managers/)
-	
----
 
 [Terry Tao](http://www.nytimes.com/2015/07/26/magazine/the-singular-mind-of-terry-tao.html?_r=0)
-	
----
 
 [github data science](http://www.analyticsvidhya.com/blog/2015/07/github-special-data-scientists-to-follow-best-tutorials/)
 
----
-
 [break out careers](http://www.breakoutcareers.com/)
 
----
-
 [case class vs class](http://stackoverflow.com/questions/2312881/what-is-the-difference-between-scalas-case-class-and-class)
-
----
 
 Practical applications of DBSCAN at [Netflix](http://techblog.netflix.com/2015/07/tracking-down-villains-outlier.html).
 
@@ -38,37 +25,31 @@ Practical applications of DBSCAN at [Netflix](http://techblog.netflix.com/2015/0
 
 comments from [hacker.news]():
 
->  This is a very good and thought-provoking essay for a short blog post, and I have already shared it in a Facebook community heavily populated by professional mathematicians (where the moderator, with a Ph. D. in math from Berkeley, has given it a thumbs up). Thanks for sharing.
->  
->  I really like the overall point of the post that mathematics once known can be forgotten or neglected, and mathematics written up for mathematics journals can be difficult to understand. Professor John Stillwell writes, in the preface to his book Numbers and Geometry (New York: Springer-Verlag, 1998):
->  
->  "What should every aspiring mathematician know? The answer for most of the 20th century has been: calculus. . . . Mathematics today is . . . much more than calculus; and the calculus now taught is, sadly, much less than it used to be. Little by little, calculus has been deprived of the algebra, geometry, and logic it needs to sustain it, until many institutions have had to put it on high-tech life-support systems. A subject struggling to survive is hardly a good introduction to the vigor of real mathematics.
->  
->  ". . . . In the current situation, we need to revive not only calculus, but also algebra, geometry, and the whole idea that mathematics is a rigorous, cumulative discipline in which each mathematician stands on the shoulders of giants.
->  
->  "The best way to teach real mathematics, I believe, is to start deeper down, with the elementary ideas of number and space. Everyone concedes that these are fundamental, but they have been scandalously neglected, perhaps in the naive belief that anyone learning calculus has outgrown them. In fact, arithmetic, algebra, and geometry can never be outgrown, and the most rewarding path to higher mathematics sustains their development alongside the 'advanced' branches such as calculus. Also, by maintaining ties between these disciplines, it is possible to present a more unified view of mathematics, yet at the same time to include more spice and variety."
->  
->  Stillwell demonstrates what he means about the interconnectedness and depth of "elementary" topics in the rest of his book, which is a delight to read and full of thought-provoking problems.
->  
->  
+> This is a very good and thought-provoking essay for a short blog post, and I have already shared it in a Facebook community heavily populated by professional mathematicians (where the moderator, with a Ph. D. in math from Berkeley, has given it a thumbs up). Thanks for sharing.
+>
+> I really like the overall point of the post that mathematics once known can be forgotten or neglected, and mathematics written up for mathematics journals can be difficult to understand. Professor John Stillwell writes, in the preface to his book Numbers and Geometry (New York: Springer-Verlag, 1998):
+>
+> "What should every aspiring mathematician know? The answer for most of the 20th century has been: calculus. . . . Mathematics today is . . . much more than calculus; and the calculus now taught is, sadly, much less than it used to be. Little by little, calculus has been deprived of the algebra, geometry, and logic it needs to sustain it, until many institutions have had to put it on high-tech life-support systems. A subject struggling to survive is hardly a good introduction to the vigor of real mathematics.
+>
+> ". . . . In the current situation, we need to revive not only calculus, but also algebra, geometry, and the whole idea that mathematics is a rigorous, cumulative discipline in which each mathematician stands on the shoulders of giants.
+>
+> "The best way to teach real mathematics, I believe, is to start deeper down, with the elementary ideas of number and space. Everyone concedes that these are fundamental, but they have been scandalously neglected, perhaps in the naive belief that anyone learning calculus has outgrown them. In fact, arithmetic, algebra, and geometry can never be outgrown, and the most rewarding path to higher mathematics sustains their development alongside the 'advanced' branches such as calculus. Also, by maintaining ties between these disciplines, it is possible to present a more unified view of mathematics, yet at the same time to include more spice and variety."
+>
+> Stillwell demonstrates what he means about the interconnectedness and depth of "elementary" topics in the rest of his book, which is a delight to read and full of thought-provoking problems.
 
-----
-
+---
 
 [How I became an Artist](https://medium.com/@noahbradley/how-i-became-an-artist-4390c6b6656c)
 
 comments from [hacker.news](https://news.ycombinator.com/item?id=9838458):
 
->  The best thing about this piece is the rationality of his decision-making: didn't get a scholarship so take a year off to get better. School was getting too expensive so find a cheaper way to go. Need to pay off student loans so move back in with parents. These are excellent artistic decisions, because they allowed him to practice his craft and never take his eyes off his goal, yet didn't wed him to any particular path forward.
->    
->    
->  He treated high costs as damage and routed his career around them.
->    
->    
->  This lesson is as true in business as it is in art: always look for cheaper, more efficient, yet still effective alternatives. Productivity is output/input, and when the output (commercial success, in his case) is a very noisy function of many factors you don't control, figuring out how to minimize input costs while keeping P(success) as high as possible is the key to making good choices. He showed creativity and pragmatism as well as dedication.
->    
->    
->  Also: failure is always an option (I say this as someone who has failed more often than he has succeeded in his major life goals, although the successes have been more than worth the effort.) Hard work and talent are necessary but not sufficient conditions for success. Maybe there is no audience for the kind of art you love (I'm a formal poet, and have more-or-less made my peace with this.) So make sure you're doing it for love, not money. If the money is there, you've won the lottery, but regardless of that aspect of it, making the art you love, and putting in the hours and deliberate practice to get better at your craft, is worth it.
+> The best thing about this piece is the rationality of his decision-making: didn't get a scholarship so take a year off to get better. School was getting too expensive so find a cheaper way to go. Need to pay off student loans so move back in with parents. These are excellent artistic decisions, because they allowed him to practice his craft and never take his eyes off his goal, yet didn't wed him to any particular path forward.
+>
+> He treated high costs as damage and routed his career around them.
+>
+> This lesson is as true in business as it is in art: always look for cheaper, more efficient, yet still effective alternatives. Productivity is output/input, and when the output (commercial success, in his case) is a very noisy function of many factors you don't control, figuring out how to minimize input costs while keeping P(success) as high as possible is the key to making good choices. He showed creativity and pragmatism as well as dedication.
+>
+> Also: failure is always an option (I say this as someone who has failed more often than he has succeeded in his major life goals, although the successes have been more than worth the effort.) Hard work and talent are necessary but not sufficient conditions for success. Maybe there is no audience for the kind of art you love (I'm a formal poet, and have more-or-less made my peace with this.) So make sure you're doing it for love, not money. If the money is there, you've won the lottery, but regardless of that aspect of it, making the art you love, and putting in the hours and deliberate practice to get better at your craft, is worth it.
 
 ---
 
@@ -82,7 +63,7 @@ Here's some things to think about:
 
 - you can teach yourself to be an evangelist (probably the best way)
 
-- 22 is *young* (I have 10 years on you)
+- 22 is _young_ (I have 10 years on you)
 
 - almost better if you know nothing as you learn from the ground up
 
@@ -158,7 +139,6 @@ Start a blog or youtube channel where you review products around an eco-system. 
 
 The trick is to keep yourself motivated. If you look at many information products today (podcasts, youtube channels, magazines), most of them follow a model like this, just copy it. Just the reward of helping others alone makes this worth it, so you really cannot go wrong! In that, even if you do not become a full-time evangelist, you have educated yourself, educated others, built a public profile, and that will pay off big time when looking for work in the future.
 
-
 ---
 
 [Electron as a way of creating GUI in python.](https://www.fyears.org/2015/06/electron-as-gui-of-python-apps.html)
@@ -166,7 +146,7 @@ The trick is to keep yourself motivated. If you look at many information product
 ---
 
 Using [drat](http://dirk.eddelbuettel.com/code/drat.html)
-	
+
 ---
 
 Useful - contributes to predictive accuracy
@@ -175,7 +155,7 @@ Relevance - measure of bayesian optimal classifier/information gain etc.
 ---
 
 [More to mathematics rigour](https://terrytao.wordpress.com/career-advice/there%E2%80%99s-more-to-mathematics-than-rigour-and-proofs/)
-	
+
 ---
 
 [Lifelong learning according to Richard Hamming](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004020)
@@ -184,23 +164,25 @@ Relevance - measure of bayesian optimal classifier/information gain etc.
 
 Networks revision
 
-https://www.udacity.com/course/viewer#!/c-ud819/l-663868561/m-634308999  
+https://www.udacity.com/course/viewer#!/c-ud819/l-663868561/m-634308999
 
-Some suggestions from Piazza:  
-*  [Network Programming Study Guide](http://www.sal.ksu.edu/faculty/tim/NPstudy_guide/index.html)
-*  [TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, 1994, ISBN 0-201-63346-9](http://www.kohala.com/start/tcpipiv1.html)
-*  [Stanford Course: An Introduction to Computer Networks (Fall 2012)](http://f12.class2go.stanford.edu/networking/Fall2012)
-*  [Computer Networks: 5th Ed. by Tanenbaum & Wetherall](http://cse.hcmut.edu.vn/~minhnguyen/NET/Computer%20Networks%20-%20A%20Tanenbaum%20-%205th%20edition.pdf)
+Some suggestions from Piazza:
 
-A quick google search turns up these slides for TCP/IP basics:  
-*  http://www.slideshare.net/sanjoysanyal/tcpip-basics
+- [Network Programming Study Guide](http://www.sal.ksu.edu/faculty/tim/NPstudy_guide/index.html)
+- [TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, 1994, ISBN 0-201-63346-9](http://www.kohala.com/start/tcpipiv1.html)
+- [Stanford Course: An Introduction to Computer Networks (Fall 2012)](http://f12.class2go.stanford.edu/networking/Fall2012)
+- [Computer Networks: 5th Ed. by Tanenbaum & Wetherall](http://cse.hcmut.edu.vn/~minhnguyen/NET/Computer%20Networks%20-%20A%20Tanenbaum%20-%205th%20edition.pdf)
 
-And a few python tutorials on socket programming:  
-*  http://docs.python.org/2/howto/sockets.html  
-*  http://www.tutorialspoint.com/python/python_networking.htm  
-*  TCP: http://www.binarytides.com/python-socket-programming-tutorial  
-*  UDP: http://www.binarytides.com/programming-udp-sockets-in-python  
+A quick google search turns up these slides for TCP/IP basics:
 
+- http://www.slideshare.net/sanjoysanyal/tcpip-basics
+
+And a few python tutorials on socket programming:
+
+- http://docs.python.org/2/howto/sockets.html
+- http://www.tutorialspoint.com/python/python_networking.htm
+- TCP: http://www.binarytides.com/python-socket-programming-tutorial
+- UDP: http://www.binarytides.com/programming-udp-sockets-in-python
 
 ---
 
@@ -255,35 +237,35 @@ dim(am2)
 
 ---
 
-
 # Introduction to Causal Inference
 
 Causal inference is concerned with _what would happen_ to an outcome if we _hypothetically_ did something else to it (i.e. treatment). This idea is commonly used in medicine to determine the effect that medicine might have to a person.
 
-It is important to remember that you cannot substantiate causal claims from associations alone - behind any causal conslusion there must lie causal assumptions that is __not__ testable in observational studies (i.e. correlation does not imply causation). Often we may miss various important piece of information, which leads to confounding information. This is known as [Simpson's Paradox](http://en.wikipedia.org/wiki/Simpson%27s_paradox).
+It is important to remember that you cannot substantiate causal claims from associations alone - behind any causal conslusion there must lie causal assumptions that is **not** testable in observational studies (i.e. correlation does not imply causation). Often we may miss various important piece of information, which leads to confounding information. This is known as [Simpson's Paradox](http://en.wikipedia.org/wiki/Simpson%27s_paradox).
 
 # In the ideal world...
 
-we already know how to solve this problem! We can rephrase this question by simply saying, what we really want to know is the average difference between performing treatment on one _random_ group of people compared to another. In this instance we simply can perform the [`t-test`](http://en.wikipedia.org/wiki/Student%27s_t-test). 
+we already know how to solve this problem! We can rephrase this question by simply saying, what we really want to know is the average difference between performing treatment on one _random_ group of people compared to another. In this instance we simply can perform the [`t-test`](http://en.wikipedia.org/wiki/Student%27s_t-test).
 
 However things are not always that simple in practise, after all, a sample of people could have unique traits. For example, in medical trials you are normally conducting trials on volunteers who possess particular traits. How could you then use this information to generalise to the whole population?
 
 ## The easy solution
 
-Indeed the easiest way is simply treat these predictors in a regression model, thus following the general principles of regression modelling. 
+Indeed the easiest way is simply treat these predictors in a regression model, thus following the general principles of regression modelling.
 
 > Insert example here
 
 # Matching
 
-Matching is a statistical technique used to evaluate the effect of a treatment. The goal of matching is, for every treated unit, to find one (or more) non-treated unit(s) with similar observable characteristics against wholm the effect of the treatment can be assessed. Through matching, it enables a comparison of outcomes among treated and non-treated units to estimate the effect of the treatment without reducing bias due to confounding. 
+Matching is a statistical technique used to evaluate the effect of a treatment. The goal of matching is, for every treated unit, to find one (or more) non-treated unit(s) with similar observable characteristics against wholm the effect of the treatment can be assessed. Through matching, it enables a comparison of outcomes among treated and non-treated units to estimate the effect of the treatment without reducing bias due to confounding.
 
-## A motivating example  
+## A motivating example
 
 _...from [wikipedia](http://en.wikipedia.org/wiki/Rubin_causal_model)_
 
 Suppose we wanted to know the effects that a drug has on patients, however we can't both run a test case on the patient when they take and don't take the drug, and hence we have imperfect information. Let's say that the drug is for blood pressure, then our data might look like the following:
 
+```
 \begin{array} {|r|r|}
 \hline
 \text{Subject} & \text{Change under treatment} & \text{Change under no treatment} \\
@@ -292,27 +274,27 @@ Suppose we wanted to know the effects that a drug has on patients, however we ca
 \hline
 \text{Bob} & 0 & \text{?} \\
 \hline
-\text{James} & -50 & \text{?} \\        
+\text{James} & -50 & \text{?} \\
 \hline
-\text{Mary} & -10 & \text{?} \\        
+\text{Mary} & -10 & \text{?} \\
 \hline
-\text{Sally} & -20 & \text{?} \\        
+\text{Sally} & -20 & \text{?} \\
 \hline
-\text{Susie} & \text{?} & -20 \\  
+\text{Susie} & \text{?} & -20 \\
 \hline
 \end{array}
-
+```
 
 From the table above, we can then quite simply, assuming that every subject is the same, compute and determine the average causal effect of this drug, we can use the following `R` code to do this:
 
-``````r
-drug <- as.data.frame(list(change.blood.pressure=c(-5,10,10,-20,5,15), 
+```r
+drug <- as.data.frame(list(change.blood.pressure=c(-5,10,10,-20,5,15),
                            treatment=c(1,1,0,1,0,0)))
-ddply(drug, ~ treatment, summarize, 
+ddply(drug, ~ treatment, summarize,
       mean.blood.pressure = mean(blood.pressure))
 ```
 
-By inspection we would say that the causal effect of taking the drug is a change in blood pressue of \\(-5 - 10 = -15\\). 
+By inspection we would say that the causal effect of taking the drug is a change in blood pressue of \\(-5 - 10 = -15\\).
 
 However we might realise that sex and the starting blood pressure might be important. This is where we would performing matching to perhaps remove any bias.
 
@@ -320,27 +302,29 @@ However we might realise that sex and the starting blood pressure might be impor
 
 Now if we have a dataset which is perfectly matched, we can still create the same conclusions! It would be our goal to somehow create a dataset which looks like the one below:
 
+```
 \begin{array} {|r|r|}
 \hline
 \text{Subject} & \text{Gender} & \text{Blood Pressure} & \text{Change under treatment} & \text{Change under no treatment} \\
 \hline
-\text{Joe} & \text{male} & 180 & \text{?} & -15 \\        
+\text{Joe} & \text{male} & 180 & \text{?} & -15 \\
 \hline
-\text{Bob} & \text{male} & 180 & -20 & \text{?} \\        
+\text{Bob} & \text{male} & 180 & -20 & \text{?} \\
 \hline
-\text{James} & \text{male} & 160 & -10 & \text{?} \\        
+\text{James} & \text{male} & 160 & -10 & \text{?} \\
 \hline
-\text{Paul} & \text{male} & 160 & \text{?} & -5 \\        
+\text{Paul} & \text{male} & 160 & \text{?} & -5 \\
 \hline
-\text{Mary} & \text{female} & 180 & 5 & \text{?} \\        
+\text{Mary} & \text{female} & 180 & 5 & \text{?} \\
 \hline
-\text{Sally} & \text{female} & 180 & \text{?} & 10 \\        
+\text{Sally} & \text{female} & 180 & \text{?} & 10 \\
 \hline
-\text{Susie} & \text{female} & 160 & 5 & \text{?} \\        
+\text{Susie} & \text{female} & 160 & 5 & \text{?} \\
 \hline
 \text{Jen} & \text{female} & 160 & \text{?} & 10 \\
 \hline
 \end{array}
+```
 
 Again, since it is perfectly matched, we can then simply take the average the same way that we did it above.
 
@@ -352,12 +336,12 @@ drug <- as.data.frame(list(
   treatment = c(0,1,1,0,1,0,1,0)
   ))
 
-ddply(drug, ~treatment, summarize, 
+ddply(drug, ~treatment, summarize,
       mean.blood.pressure = mean(blood.pressure),
       mean.change.in.bp = mean(change.in.bp))
 ```
 
-This would assume that the matched units are homogeneous, and that they have the same causal effect. We could think of it as being we have two similar people, what if one was treated and the other was not. This is the idea behind matching. We must be careful though, because we are **not** trying to ensure that each _pair of matched observations_ is similar in terms of their covariate values, but rather that the matched groups are similar _on average_ across all their covariate values. 
+This would assume that the matched units are homogeneous, and that they have the same causal effect. We could think of it as being we have two similar people, what if one was treated and the other was not. This is the idea behind matching. We must be careful though, because we are **not** trying to ensure that each _pair of matched observations_ is similar in terms of their covariate values, but rather that the matched groups are similar _on average_ across all their covariate values.
 
 ```r
 library(arm)
@@ -366,7 +350,7 @@ data(lalonde)
 lalonde$treat <- as.factor(lalonde$treat)
 
 fit <- glm(treat ~ re74 + re75 + age + factor(educ) +
-             black + hisp + married + nodegr + u74 + u75, 
+             black + hisp + married + nodegr + u74 + u75,
            family=binomial(link="logit"),
            data=lalonde)
 
@@ -378,7 +362,7 @@ pscores <- predict(fit, type="response")
 
 # matchines according to the propensity score as determined in the glm
 lalonde.treat <- unlist(Map(function(x) {if(x==1){return(TRUE)} else{return(FALSE)}}, lalonde$treat))
-matches <- matching(z = lalonde.treat, score=pscores) 
+matches <- matching(z = lalonde.treat, score=pscores)
 matched <- lalonde[matches$matched,]
 
 b.stats <- balance(lalonde, matched, fit)
@@ -408,11 +392,11 @@ dim(unique(am))
 
 [Getting iPython rMagic working on windows](http://www.jedludlow.com/2014/04/getting-ipython-rmagic-to-work-on.html)
 
-1. As described above, pick a suitable flavor of R, and put it on the PATH.  
-2. Pull down the (unofficial) [rpy2 binaries](http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2) from Christhoph Gohlke's treasure trove. Make sure you pick the right Python version of the binaries to match your Python flavor, including Python version number.  
-3. Install those binaries into whatever Python environment you intend to use. (Did you know you can install binary packages into any Python environment, even those not in the Windows registry? That includes an Anaconda install.)  
-4. Create an environment variable called R_HOME, and point it to the base R install directory. If your paths look like those above, that would be "C:\Program Files\R\R-3.0.3" or whatever matches your R version.  
-5. Create an environment variable called R_USER, and set it to your Windows username. This looks to be in line with recent discussion on the R development issues list.  
+1. As described above, pick a suitable flavor of R, and put it on the PATH.
+2. Pull down the (unofficial) [rpy2 binaries](http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2) from Christhoph Gohlke's treasure trove. Make sure you pick the right Python version of the binaries to match your Python flavor, including Python version number.
+3. Install those binaries into whatever Python environment you intend to use. (Did you know you can install binary packages into any Python environment, even those not in the Windows registry? That includes an Anaconda install.)
+4. Create an environment variable called R_HOME, and point it to the base R install directory. If your paths look like those above, that would be "C:\Program Files\R\R-3.0.3" or whatever matches your R version.
+5. Create an environment variable called R_USER, and set it to your Windows username. This looks to be in line with recent discussion on the R development issues list.
 
 To install binaries use the following command.
 
@@ -420,7 +404,7 @@ To install binaries use the following command.
 easy_install BINARY.EXE
 ```
 
-Your user would be the user in 
+Your user would be the user in
 
 ```
 C:\User\WINDOWS_USER
@@ -429,8 +413,7 @@ C:\User\WINDOWS_USER
 Also check these [instructions](http://www.swegler.com/becky/blog/2014/08/03/ipython-ipython-notebook-anaconda-and-r-rpy2/) which might demonstrate that
 infact Python will need to be downgraded to support this, a solution would be to try this on an admin computer and then transfer it over here (via drive or mega).
 
-
-----
+---
 
 **this post will only contain information available from the internet at the time of posting and my own opinions. This is not a holistic representative of Mu Sigma's offering but merely my own thoughts.**
 
@@ -438,16 +421,16 @@ Currently I have the pleasure of working with and partnering with [Mu Sigma](htt
 
 In general there is a cyclical relationship among three areas:
 
-*  Design
-*  Representation
-*  Hypothesis
+- Design
+- Representation
+- Hypothesis
 
 # Design
 
 In the _initial_ design phase there really are two loose questions around **objectives**;
 
-*  Where are we now? (Current state)  
-*  Where do we want to be? (Future state)  
+- Where are we now? (Current state)
+- Where do we want to be? (Future state)
 
 This is an important aspect, after all defining the question is perhaps the most important part of problem solving.
 
@@ -457,29 +440,24 @@ These initial questions are important as they allow potential questions to come 
 
 # Representation
 
-It is important to not enter a problem with as few assumptions as possible. This is because we are often victims to our own cognitive biases. We may also rely too much on traditions or heuristics; unable to then function when people rightfully challenge our set of beliefs. 
-
+It is important to not enter a problem with as few assumptions as possible. This is because we are often victims to our own cognitive biases. We may also rely too much on traditions or heuristics; unable to then function when people rightfully challenge our set of beliefs.
 
 > ... most adults wouldn’t answer any question by telling you what their second favourite thing is, but that’s a thing that a child might do all the time. And I think the beauty of thinking like a child, ... is that sometimes doing things differently and simply and with a kind of joy and triviality leads you to a really special place that as an adult you don’t get to go to very often. [Freakonomic's podcast "Think Like a Child"](http://freakonomics.com/2014/05/22/think-like-a-child-full-transcript/)
 
-The key idea in this area is to approach the problem with an open mind, to list out every factor, then every subfactor, and then go to every attribute and so on. This is reminiscent of the Minto method I explored a few posts earlier on continually asking "Why?". 
+The key idea in this area is to approach the problem with an open mind, to list out every factor, then every subfactor, and then go to every attribute and so on. This is reminiscent of the Minto method I explored a few posts earlier on continually asking "Why?".
 
 Another reason why I feel this portion is critical is that perhaps when you start listing out problems and their factors you might realise that you actually are asking the wrong question and return to the Design phase - again this approach is to reduce the amount of possible rework that you may possibly have to do and I do feel that it is perhaps effective in that regard.
 
 # Hypothesis
 
-Now that you've listed factors relating to the problem its time to ask questions (or hypothesis), things which you need to explore further and questions which you need to ask. It is to understand what information is available to assess whether the efficacy and efficiency of the problem at hand. It is important to realise that if you confirm a hypothesis, then you have a **measurement**, otherwise you have made a **discovery**. 
+Now that you've listed factors relating to the problem its time to ask questions (or hypothesis), things which you need to explore further and questions which you need to ask. It is to understand what information is available to assess whether the efficacy and efficiency of the problem at hand. It is important to realise that if you confirm a hypothesis, then you have a **measurement**, otherwise you have made a **discovery**.
 
 It is in this portion where we may design tests to answer the hypothesis which we might have, which in turn may be necessary to indeed discover perhaps the gaps and questions which we might have.
 
 References:
 
-*  [muPDNA](http://www.mu-sigma.com/analytics/platforms/mupdna/components.html#top)
-*  [What is muPDNA?](https://www.youtube.com/watch?v=cC8l-7tzl4k)
-
-
-
-
+- [muPDNA](http://www.mu-sigma.com/analytics/platforms/mupdna/components.html#top)
+- [What is muPDNA?](https://www.youtube.com/watch?v=cC8l-7tzl4k)
 
 ---
 
@@ -510,9 +488,9 @@ After mortagage is sorted, here is my savings plan:
 
 Investment into following proportion
 
-* 10% into government bonds
-* 70% ASX index
-* 20% International index
+- 10% into government bonds
+- 70% ASX index
+- 20% International index
 
 And hold onto some cash.
 
@@ -592,19 +570,15 @@ proc logistic data=Remission outest=betas covout;
 run;
 ```
 
-
-
-
 ---
 
 [Category Theory](http://math.stackexchange.com/questions/370/good-books-and-lecture-notes-about-category-theory)
 
 Consider the books:
 
-*  Topoi: the categorial analysis of logic
-*  Categories for the working mathematician
-*  [Basic Category Theory (in progress)](http://www.maths.ed.ac.uk/~tl/bct/)
-
+- Topoi: the categorial analysis of logic
+- Categories for the working mathematician
+- [Basic Category Theory (in progress)](http://www.maths.ed.ac.uk/~tl/bct/)
 
 ---
 
@@ -624,15 +598,13 @@ It turns out this is really just syntactic sugar for some operations within the 
 
     do
        x <- [1..10]
-       if odd x 
-           then [x * 2] 
+       if odd x
+           then [x * 2]
            else []
-    
 
 Or even:
 
     [1..10] >>= (\x -> if odd x then [x*2] else [])
-    
 
 **Example 2: Input/Output**:
 
@@ -640,7 +612,6 @@ Or even:
        putStrLn "What is your name?"
        name <- getLine
        putStrLn ("Welcome, " ++ name ++ "!")
-    
 
 Both examples uses monads, aka computation builders. The common theme is that the monad _chains operations_ in some specific, useful way. In the list comprehension, the operations are chained such that if an operation returns a list, then the following operations are performed on _every item_ in the list. The IO monad on the other hand performs the operations sequentially, but passes a "hidden variable" along, which represents "the state of the world", which allows us to write IO code in a pure functional manner.
 
@@ -665,13 +636,12 @@ This is a very simple parser which parses either a quoted string or a number:
     parseNumber = do
         num <- many1 digit
         return (NumberValue (read num))
-    
 
 The operations `char`, `digit` etc. are pretty simple, they either match or don't match. The magic is the monad which manages the control flow: The operations are performed sequentially until a match fail, in which case the monad backtracks to the latest `<|>` and tries the next option. Again, a way of chaining operations with some additional, useful semantics.
 
 **Example 4: Asynchronous programming**
 
-The above examples are in Haskell, but it turns out F# also supports monads. This example is stolen from [Don Syme](http://blogs.msdn.com/dsyme/archive/2007/10/11/introducing-f-asynchronous-workflows.aspx): 
+The above examples are in Haskell, but it turns out F# also supports monads. This example is stolen from [Don Syme](http://blogs.msdn.com/dsyme/archive/2007/10/11/introducing-f-asynchronous-workflows.aspx):
 
     let AsyncHttp(url:string) =
         async {  let req = WebRequest.Create(url)
@@ -679,15 +649,14 @@ The above examples are in Haskell, but it turns out F# also supports monads. Thi
                  use stream = rsp.GetResponseStream()
                  use reader = new System.IO.StreamReader(stream)
                  return reader.ReadToEnd() }
-    
 
-This method fetches a web page. The punch line is the use of `GetResponseAsync` - it actually waits for the response on a separate thread, while the main thread returns from the function. The last three lines are executed on the spawned thread when the response have been received. 
+This method fetches a web page. The punch line is the use of `GetResponseAsync` - it actually waits for the response on a separate thread, while the main thread returns from the function. The last three lines are executed on the spawned thread when the response have been received.
 
 In most other languages you would have to explicitly create a separate function for the lines that handle the response. The `async` monad is able to "split" the block on its own and postpone the execution of the latter half. (The `async {}` syntax indicates that the control flow in the block is defined by the `async` monad)
 
 **How they work**
 
-So how can a monad do all these fancy control-flow thing? What actually happens in a do-block (or a _computation expression_ as they are called in F#), is that every operation (basically every line) is wrapped in a separate anonymous function. These functions are then combined using the `bind` operator (spelled `>>=` in Haskell). Since the `bind` operation combines functions, it can execute them as it sees fit: sequentially, multiple times, in reverse, discard some, execute some on a separate thread when it feels like it and so on. 
+So how can a monad do all these fancy control-flow thing? What actually happens in a do-block (or a _computation expression_ as they are called in F#), is that every operation (basically every line) is wrapped in a separate anonymous function. These functions are then combined using the `bind` operator (spelled `>>=` in Haskell). Since the `bind` operation combines functions, it can execute them as it sees fit: sequentially, multiple times, in reverse, discard some, execute some on a separate thread when it feels like it and so on.
 
 As an example, this is the expanded version of the IO-code from example 2:
 
@@ -699,7 +668,7 @@ This is uglier, but it's also more obvious what is actually going on. The `>>=` 
 
 Note that `>>=` is overloaded for different types, so every monad has its own implementation of `>>=`. (All the operations in the chain have to be of the type of the same monad though, otherwise the `>>=` operator wont work.)
 
-The simplest possible implementation of `>>=` just takes the value on the left and applies it to the function on the right and returns the result, but as said before, what makes the whole pattern useful is when there is something extra going on in the monad's implementation of `>>=`. 
+The simplest possible implementation of `>>=` just takes the value on the left and applies it to the function on the right and returns the result, but as said before, what makes the whole pattern useful is when there is something extra going on in the monad's implementation of `>>=`.
 
 There is some additional cleverness in how the values are passed from one operation to the next, but this requires a deeper explanation of the Haskell type system.
 
@@ -732,7 +701,7 @@ evens :: [Integer] -> [Integer]
 evens = filter even
 
 -- ===================================
--- Ex. 3 - 4 
+-- Ex. 3 - 4
 -- ===================================
 
 -- complete the following line with the correct type signature for this function
@@ -820,7 +789,7 @@ isValid xs = (sumDigits . doubleSecond . toDigitsRev) xs `mod` 10 == 0
 -- ===================================
 -- Ex. 5
 -- ===================================
-    
+
 numValid :: [Integer] -> Integer
 numValid xs = sum . map (\_ -> 1) $ filter isValid xs
 ```
@@ -868,10 +837,10 @@ def parseData(semantic):
         label = -1
     except:
         patch = patchlabel
-        label = 0   
+        label = 0
     return (semantic, int(major), int(minor), int(patch), label)
 
-si = sorted([parseData(x) for x in sample_input], 
+si = sorted([parseData(x) for x in sample_input],
              key=lambda x: (x[1], x[2], x[3], x[4]))
 print '\n'.join([x[0] for x in si])
 ```
@@ -893,7 +862,7 @@ sample_input = strsplit(sample_input, "\n") %>% unlist
 
 parse_data <- function(semantic) {
   semantic1 = sub("\\+\\w+$", "", semantic)
-    
+
   # break the string into three components
   s.split = strsplit(semantic1, "\\.") %>% unlist
   major = s.split[1] %>% as.numeric
@@ -906,7 +875,7 @@ parse_data <- function(semantic) {
     patch = patchlabel %>% as.numeric
     label = 0
   }
-  
+
   return(c(semantic, major, minor, patch, label))
 }
 
@@ -924,16 +893,16 @@ arrange(output, V2, V3, V4, V5)$V1 %>% unlist %>% as.character
 var sample_input = "2.0.11-alpha,0.1.7+amd64,0.10.7+20141005,2.0.12+i386,1.2.34,2.0.11+i386,20.1.1+i386".split(',');
 
 output = _.map(sample_input, function(s) {
-  
+
   // create an object that we can use on it
   sobject = {};
   sobject.name = s;
-  
+
   sgroup = s.replace(/\+\w+$/,"").split('.');
   sobject.major = parseInt(sgroup[0]);
   sobject.minor = parseInt(sgroup[1]);
-  
-  patchlabel = sgroup[2].split('-'); 
+
+  patchlabel = sgroup[2].split('-');
   if(patchlabel.length == 2) {
     sobject.patch = patchlabel[0];
     sobject.label = -1;
@@ -941,11 +910,11 @@ output = _.map(sample_input, function(s) {
     sobject.patch = patchlabel;
     sobject.label = 0;
   }
-  
-  return(sobject);  
+
+  return(sobject);
 });
 
-function compare(a,b) { 
+function compare(a,b) {
   if (a.major < b.major) {
     return -1;
   }
@@ -953,24 +922,24 @@ function compare(a,b) {
     return 1;
   }
   if (a.minor < b.minor) {
-    return -1;    
+    return -1;
   }
   if (b.minor < a.minor) {
     return 1;
   }
   if (a.patch < b.patch) {
-    return -1;    
+    return -1;
   }
   if (b.patch < a.patch) {
     return 1;
   }
   if (a.label < b.label) {
-    return -1;    
+    return -1;
   }
   if (b.label < a.label) {
     return 1;
-  }      
-  return 0;  
+  }
+  return 0;
 }
 
 output = output.sort(compare);
@@ -978,12 +947,9 @@ output = _.map(output, function(a) {return a.name;});
 console.log(output);
 ```
 
-
-
 ---
 
 Installing `nltk` data offline:
-
 
 1. Download the [nltk-data.zip file](http://sourceforge.net/projects/nltk/files/).
 2. Uncompress into the relevant directory. The file structure should look like the below:
@@ -1028,8 +994,6 @@ Volume serial number is 00000002 2902:B6FE
     └───punkt
 ```
 
-
-
 ---
 
 Using `ttk` in Python 2.7
@@ -1070,11 +1034,9 @@ root.mainloop()
 
 ```
 
-
 ---
 
 [Resume/CV Driven Developing](http://radar.oreilly.com/2014/10/resume-driven-development.html) - on hiring skill sets and developing teams
-
 
 ---
 
@@ -1083,9 +1045,6 @@ getting unix tools working on windows is closest to magic as you can get. Heres 
 ```
 grep -r --include="*.txt" STRING . -l
 ```
-
-
-
 
 ---
 
@@ -1125,7 +1084,7 @@ def clock_angle(hr, minute):
     hr_ = (hr % 12) * (360/12)
     min_ = (minute % 60) * (360/60)
     return float(min_- hr_) - ((float(minute)/60)*(360/12))
-    
+
 print clock_angle(6, 15)
 print clock_angle(12, 0)
 print clock_angle(12, 15)
@@ -1160,38 +1119,35 @@ Easy Gui using [Gooey](https://github.com/chriskiehl/Gooey)
 
 [daily programmer](http://www.reddit.com/r/dailyprogrammer/comments/2d8yk5/8112014_challenge_175_easy_bogo/)
 
+    -- bogo sort
 
-	-- bogo sort 
-	
-	-- "sorts" a vector
-	function bsort(a) 
-	  for i=1, (#a*2) do 
-	    x1 = math.random(#a)
-	    x2 = math.random(#a)
-	    a[x1], a[x2] = a[x2], a[x1]
-	  end  
-	  return(a)
-	end
-	
-	function bsortstr(orig) 
-	  torig = {}
-	  orig:gsub(".", function(c) table.insert(torig, c) end)
-	  torig = bsort(torig)
-	  return(table.concat(torig, ''))
-	end
-	
-	function bogo(orig, target)
-	  local i = 0 
-	  while (string.lower(orig) ~= string.lower(target)) do 
-	    i = i+1
-	    orig = bsortstr(orig)
-	  end
-	  return(i)
-	end
-	
-	print(bogo("asfd", "asdf"))
+    -- "sorts" a vector
+    function bsort(a)
+      for i=1, (#a*2) do
+        x1 = math.random(#a)
+        x2 = math.random(#a)
+        a[x1], a[x2] = a[x2], a[x1]
+      end
+      return(a)
+    end
 
+    function bsortstr(orig)
+      torig = {}
+      orig:gsub(".", function(c) table.insert(torig, c) end)
+      torig = bsort(torig)
+      return(table.concat(torig, ''))
+    end
 
+    function bogo(orig, target)
+      local i = 0
+      while (string.lower(orig) ~= string.lower(target)) do
+        i = i+1
+        orig = bsortstr(orig)
+      end
+      return(i)
+    end
+
+    print(bogo("asfd", "asdf"))
 
 ---
 
@@ -1207,9 +1163,9 @@ Hershfield has taken a more high-tech approach. Inspired by the use of images to
 
 [daily programmer](http://www.reddit.com/r/dailyprogrammer/comments/2cld8m/8042014_challenge_174_easy_thuemorse_sequences/)
 
-	library(magrittr)
-	n=10
-	eval(parse(text=paste(c(0,rep(" %>% c(.,1-.) ", n)), collapse='')))
+    library(magrittr)
+    n=10
+    eval(parse(text=paste(c(0,rep(" %>% c(.,1-.) ", n)), collapse='')))
 
 ---
 
@@ -1236,13 +1192,12 @@ CC5 Speech: On Giving up Dreams (or why my 19yr old self is a moron) "Bad Argume
 
 Logical Fallacies/Cognitive Biases:
 
-1. Appeal to Fear: "Imagine a scary future". E.g. "You should give me all your valuables before the police get here. 
+1. Appeal to Fear: "Imagine a scary future". E.g. "You should give me all your valuables before the police get here.
    They will end up putting them in a storeroom and things tend to get lost in the storeroom"
-2. No True Scotsman: A scotsman once read an article in the paper about an Englishman who committed a heinous crime, 
-   and exclaims "No Scotsman would do such a thing." the next day, he comes across an article about a Scotsman 
+2. No True Scotsman: A scotsman once read an article in the paper about an Englishman who committed a heinous crime,
+   and exclaims "No Scotsman would do such a thing." the next day, he comes across an article about a Scotsman
    committing an even worse crime, to which instead of amending his claim, he reacts by saying "No true Scotsman would do such a thing.
 3. Sunk Cost Fallacy: Continually invest in something that is hopeless and doomed to fail.
-
 
 ---
 
@@ -1262,108 +1217,104 @@ On Relative Deprivation, [why perhaps you shouldn't go to the best school you ca
 
 Reading [comments](http://www.reddit.com/r/programming/comments/2bgm0x/walls_you_hit_in_program_size/) really hit home about how I should really start writing Scala.
 
-
 ---
 
 On constraints and design...
 
->  Mme. L. Amic: What is your definition of “Design”, Monsieur Eames? 
->  Charles Eames:One could describe design as a plan for arranging elements to accomplish a particular purpose.
->  
->  Mme. L. Amic: Is Design an expression of art? 
->  Charles Eames:I would rather say it’s an expression of purpose. It may, if it’s good enough, later be judged as art.
->  
->  Mme. L. Amic: Is Design a craft for industrial purposes? 
->  Charles Eames:No, but design may be a solution to some industrial problems.
->  
->  Mme. L. Amic: What is the boundaries of Design? 
->  Charles Eames:What are the boundaries of problems?
->  
->  Mme. L. Amic: Is Design a discipline that concerns itself with only one part of the environment? 
->  Charles Eames:No.
->  
->  Mme. L. Amic: Is it a method of general expression? 
->  Charles Eames:No, it is a method of action.
->  
->  Mme. L. Amic: Is Design a creation of an individual? 
->  Charles Eames:No, because to be realistic one must always recognize the influence of those that have gone before.
->  
->  Mme. L. Amic: Is Design a creation of a group? 
->  Charles Eames:Very often.
->  
->  Mme. L. Amic: Is there a Design ethic? 
->  Charles Eames:There are always design constraints and these often imply an ethic.
->  
->  Mme. L. Amic: Does Design imply the idea of products that are necessarily useful? 
->  Charles Eames:Yes, even though the use might be very suttle.
->  
->  Mme. L. Amic: Is it able to cooperate in the creation of works reserved solely for pleasure? 
->  Charles Eames:Who would say that pleasure is not useful?
->  
->  Mme. L. Amic: Ought form to derive from the analysis of function? 
->  Charles Eames:The great risk here is that the analysis may be incomplete.
->  
->  Mme. L. Amic: Can the computer substitute for the Designer? 
->  Charles Eames:Probably, in some special cases but usually the computer is an aid to the designer.
->  
->  Mme. L. Amic: Does Design imply industrial manufacture? 
->  Charles Eames:Not neccessarily.
->  
->  Mme. L. Amic: Is Design used to modify an old object through new techniques? 
->  Charles Eames:This is one kind of design problem.
->  
->  Mme. L. Amic: Is Design used to fit up an existing model so that it is more attractive? 
->  Charles Eames:One doesn’t usually think of design in this way.
->  
->  Mme. L. Amic: Is Design an element of industrial policy? 
->  Charles Eames: If design constraints imply an ethic and if industrial policy includes ethical principles then yes, design is an element in industrial policy.
->  
->  Mme. L. Amic: Does the creation of Design admit constraint? 
->  Charles Eames:Design depends largely on constraints.
->  
->  Mme. L. Amic: What constraints? 
->  Charles Eames:The sum of all constraints. Here is one of the few effective keys to the design problem: the ability of the designer to recognize as many of the constraints as possible, his willingness and enthusiasm for working within these constraints. The constraints of price, size, strength, balance, time and so forth. Each problem has its own peculiar list.
->  
->  Mme. L. Amic: Does Design obey laws? 
->  Charles Eames:Aren’t constraints enough?
->  
->  Mme. L. Amic: Are there tendencies and schools in Design? 
->  Charles Eames:Yes, but these are more a measure of human limitation than of ideals.
->  
->  Mme. L. Amic: Is Design ephemeral? 
->  Charles Eames:Some needs are ephemeral, most designs are ephemeral.
->  
->  Mme. L. Amic: Ought Design to tend towards the ephemeral or towards permanence? 
->  Charles Eames:Those needs and designs that have a more universal quality tend toward relative permanence.
->  
->  Mme. L. Amic: How would you define yourself with respect to a decorator? An interior architect? A stylist? 
->  Charles Eames:I wouldn’t.
->  
->  Mme. L. Amic: To whom does Design address itself: to the greatest numbers? To the specialsts or the enlightened amateur? To a priviledged social class? 
->  Charles Eames:Design addresses itself to the need.
->  
->  Mme. L. Amic: After having answered all these questions, do you feel you have been able to practice the profession of “Design” under satisfactory conditions, or even optimum conditions? 
->  Charles Eames:Yes.
->  
->  Mme. L. Amic: Have you been forced to accept compromises? 
->  Charles Eames:I don’t remember ever being forced to accept compromises but I have willingly accepted constraints.
->  
->  Mme. L. Amic: What do you feel is the primary condition for the practice of Design and for its propagation? 
->  Charles Eames:A recognition of need.
->  
->  Mme. L. Amic: What is the future of Design?
+> Mme. L. Amic: What is your definition of “Design”, Monsieur Eames?
+> Charles Eames:One could describe design as a plan for arranging elements to accomplish a particular purpose.
+>
+> Mme. L. Amic: Is Design an expression of art?
+> Charles Eames:I would rather say it’s an expression of purpose. It may, if it’s good enough, later be judged as art.
+>
+> Mme. L. Amic: Is Design a craft for industrial purposes?
+> Charles Eames:No, but design may be a solution to some industrial problems.
+>
+> Mme. L. Amic: What is the boundaries of Design?
+> Charles Eames:What are the boundaries of problems?
+>
+> Mme. L. Amic: Is Design a discipline that concerns itself with only one part of the environment?
+> Charles Eames:No.
+>
+> Mme. L. Amic: Is it a method of general expression?
+> Charles Eames:No, it is a method of action.
+>
+> Mme. L. Amic: Is Design a creation of an individual?
+> Charles Eames:No, because to be realistic one must always recognize the influence of those that have gone before.
+>
+> Mme. L. Amic: Is Design a creation of a group?
+> Charles Eames:Very often.
+>
+> Mme. L. Amic: Is there a Design ethic?
+> Charles Eames:There are always design constraints and these often imply an ethic.
+>
+> Mme. L. Amic: Does Design imply the idea of products that are necessarily useful?
+> Charles Eames:Yes, even though the use might be very suttle.
+>
+> Mme. L. Amic: Is it able to cooperate in the creation of works reserved solely for pleasure?
+> Charles Eames:Who would say that pleasure is not useful?
+>
+> Mme. L. Amic: Ought form to derive from the analysis of function?
+> Charles Eames:The great risk here is that the analysis may be incomplete.
+>
+> Mme. L. Amic: Can the computer substitute for the Designer?
+> Charles Eames:Probably, in some special cases but usually the computer is an aid to the designer.
+>
+> Mme. L. Amic: Does Design imply industrial manufacture?
+> Charles Eames:Not neccessarily.
+>
+> Mme. L. Amic: Is Design used to modify an old object through new techniques?
+> Charles Eames:This is one kind of design problem.
+>
+> Mme. L. Amic: Is Design used to fit up an existing model so that it is more attractive?
+> Charles Eames:One doesn’t usually think of design in this way.
+>
+> Mme. L. Amic: Is Design an element of industrial policy?
+> Charles Eames: If design constraints imply an ethic and if industrial policy includes ethical principles then yes, design is an element in industrial policy.
+>
+> Mme. L. Amic: Does the creation of Design admit constraint?
+> Charles Eames:Design depends largely on constraints.
+>
+> Mme. L. Amic: What constraints?
+> Charles Eames:The sum of all constraints. Here is one of the few effective keys to the design problem: the ability of the designer to recognize as many of the constraints as possible, his willingness and enthusiasm for working within these constraints. The constraints of price, size, strength, balance, time and so forth. Each problem has its own peculiar list.
+>
+> Mme. L. Amic: Does Design obey laws?
+> Charles Eames:Aren’t constraints enough?
+>
+> Mme. L. Amic: Are there tendencies and schools in Design?
+> Charles Eames:Yes, but these are more a measure of human limitation than of ideals.
+>
+> Mme. L. Amic: Is Design ephemeral?
+> Charles Eames:Some needs are ephemeral, most designs are ephemeral.
+>
+> Mme. L. Amic: Ought Design to tend towards the ephemeral or towards permanence?
+> Charles Eames:Those needs and designs that have a more universal quality tend toward relative permanence.
+>
+> Mme. L. Amic: How would you define yourself with respect to a decorator? An interior architect? A stylist?
+> Charles Eames:I wouldn’t.
+>
+> Mme. L. Amic: To whom does Design address itself: to the greatest numbers? To the specialsts or the enlightened amateur? To a priviledged social class?
+> Charles Eames:Design addresses itself to the need.
+>
+> Mme. L. Amic: After having answered all these questions, do you feel you have been able to practice the profession of “Design” under satisfactory conditions, or even optimum conditions?
+> Charles Eames:Yes.
+>
+> Mme. L. Amic: Have you been forced to accept compromises?
+> Charles Eames:I don’t remember ever being forced to accept compromises but I have willingly accepted constraints.
+>
+> Mme. L. Amic: What do you feel is the primary condition for the practice of Design and for its propagation?
+> Charles Eames:A recognition of need.
+>
+> Mme. L. Amic: What is the future of Design?
 
 [Charles Eames](http://blog.designersrevolt.com/post/52143068880/the-definition-of-design-in-the-words-of-charles-eames) on constraints and design.
 
-
 ---
 
->  I divide my officers into four groups. There are clever, diligent, stupid, and lazy officers. Usually two characteristics are combined. Some are clever and diligent -- their place is the General Staff. The next lot are stupid and lazy -- they make up 90 percent of every army and are suited to routine duties. Anyone who is both clever and lazy is qualified for the highest leadership duties, because he possesses the intellectual clarity and the composure necessary for difficult decisions. One must beware of anyone who is stupid and diligent -- he must not be entrusted with any responsibility because he will always cause only mischief.
-[Kurt von Hammerstein-Equord](http://en.wikipedia.org/wiki/Kurt_von_Hammerstein-Equord)
-
+> I divide my officers into four groups. There are clever, diligent, stupid, and lazy officers. Usually two characteristics are combined. Some are clever and diligent -- their place is the General Staff. The next lot are stupid and lazy -- they make up 90 percent of every army and are suited to routine duties. Anyone who is both clever and lazy is qualified for the highest leadership duties, because he possesses the intellectual clarity and the composure necessary for difficult decisions. One must beware of anyone who is stupid and diligent -- he must not be entrusted with any responsibility because he will always cause only mischief.
+> [Kurt von Hammerstein-Equord](http://en.wikipedia.org/wiki/Kurt_von_Hammerstein-Equord)
 
 ---
-
 
 [Goodhart's law](http://en.wikipedia.org/wiki/Goodhart's_law): "When a measure becomes a target, it ceases to be a good measure."
 
@@ -1394,19 +1345,16 @@ necessary?
 
 ---
 
-
-
 # Business School
 
 Global MBA from [London School of Business and Finance costs 8500 GBP](http://www.lsbf.org.uk/students/fees-funding.html) or roughly $16k AUD. Though it is not a reputable university.
 
-Looking only at accredited MBAs from Association of MBAs, we have:  
+Looking only at accredited MBAs from Association of MBAs, we have:
 
-*  [Robert Gordon University Aberdeen, ~13000 GBP or 24k AUD](http://www.rgu.ac.uk/business-management-and-accounting/study-options/distance-and-flexible-learning/master-of-business-administration).
-*  [Bradford University School of Management, ~13500 GBP or 25k AUD](http://www.brad.ac.uk/management/programmes/mba/distance-learning-mba/distance-learning-mba/)
-*  [Warwick Business School, ~22500 GBP or 41k AUD](http://www.wbs.ac.uk/courses/mba/distance-learning/fees/)
-*  [Oxford Brooks University, ~14000 GBP or 26k](http://business.brookes.ac.uk/mba/fees/)
-
+- [Robert Gordon University Aberdeen, ~13000 GBP or 24k AUD](http://www.rgu.ac.uk/business-management-and-accounting/study-options/distance-and-flexible-learning/master-of-business-administration).
+- [Bradford University School of Management, ~13500 GBP or 25k AUD](http://www.brad.ac.uk/management/programmes/mba/distance-learning-mba/distance-learning-mba/)
+- [Warwick Business School, ~22500 GBP or 41k AUD](http://www.wbs.ac.uk/courses/mba/distance-learning/fees/)
+- [Oxford Brooks University, ~14000 GBP or 26k](http://business.brookes.ac.uk/mba/fees/)
 
 As a point of comparison looking at Open Universities [RMIT costs over $43k](http://www.rmit.edu.au/browse;ID=ux5sppf6w1ct), and [Melbourne Business School is over $70k](http://mbs.edu/programs/mbaparttime/Pages/Part-Time%20MBA.aspx).
 
@@ -1416,52 +1364,45 @@ As a point of comparison looking at Open Universities [RMIT costs over $43k](htt
 
 ## [HBX](http://hbx.hbs.edu/)
 
-
 CORe (Credential of Readiness) is being piloted at Harvard Business School! It would be best to keep an eye out on what is happening in this space.
 
 ## [Nanodegrees](https://www.udacity.com/nanodegrees)
 
-Have four particular fields:   
+Have four particular fields:
 
-*  Front-end web developer  
-*  iOS developer  
-*  Back-end web developer  
+- Front-end web developer
+- iOS developer
+- Back-end web developer
 
 ---
 
 # [How the Other Half Works: an Adventure in the Low Status of Software Engineers](https://michaelochurch.wordpress.com/2014/07/13/how-the-other-half-works-an-adventure-in-the-low-status-of-software-engineers/)
- 
+
 Very long article, perhaps worth a read. It is about the difference in value (anecdotally) between an engineer and a manager. I think there is an element of reciprocity in analytical/development work, you have to push back otherwise you won’t get respect.
- 
-The gist of it is, when you work in development you are judged on what you don’t know. But when you work in management, they give you the benefit of the doubt. The article phrases it like, in the first instance, everyone has 90 points, but for everything you’re lacking you get negative points, but for the latter, everyone may start on 70, and everything that looks good you would get positive points. 
- 
->  This whole issue is about more than what one knows and doesn’t know about technology. As programmers, we’re used to picking up new skills. It’s something we’re good at (even if penny-shaving businessmen hate the idea of training us). This is all about social status, and why status is so fucking important when one is playing the work game– far more important than being loyal or competent or dedicated. 
->    
->     
->  Low and high status aren’t about being liked or disliked. Some people are liked but have low status, and some people are disliked but retain high status. In general, it’s more useful and important to have high status at work than to be well-liked. It’s obviously best to have both, but well-liked low-status people get crap projects and never advance. Disliked high-status people, at worst, get severance. As Machiavelli said, “it is far safer to be feared than loved if you cannot be both.” People’s likes and dislikes change with the seasons, but a high-status person is more unlikely to have others act against his interests.
->    
->    
->  Moreover, if you have low social status, people will eventually find reasons to dislike you unless you continually sacrifice yourself in order to be liked, and even that strategy runs out of time. At high social status, they’ll find reasons to like you. At low status, your flaws are given prime focus and your assets, while acknowledged, dismissed as unimportant or countered with “yes, buts” which turn any positive trait into a negative. (“Yes, he’s good in Clojure, but he’s might be one of those dynamic-typing cowboy coders!” “Yes, he’s good in Haskell, but that means he’s one of those static-typing hard-asses.” “Yes, he’s a good programmer, but he doesn’t seem like a team player.”) When you have low status, your best strategy is to be invisible and unremarkable, because even good distinctions will hurt you. You want to keep your slate ultra-clean and wait for mean-reversion to drift you into middling status, at which point being well-liked can assist you and, over some time– and it happens glacially– bring you upper-middle or high status.
 
+The gist of it is, when you work in development you are judged on what you don’t know. But when you work in management, they give you the benefit of the doubt. The article phrases it like, in the first instance, everyone has 90 points, but for everything you’re lacking you get negative points, but for the latter, everyone may start on 70, and everything that looks good you would get positive points.
 
-----
+> This whole issue is about more than what one knows and doesn’t know about technology. As programmers, we’re used to picking up new skills. It’s something we’re good at (even if penny-shaving businessmen hate the idea of training us). This is all about social status, and why status is so fucking important when one is playing the work game– far more important than being loyal or competent or dedicated.
+>
+> Low and high status aren’t about being liked or disliked. Some people are liked but have low status, and some people are disliked but retain high status. In general, it’s more useful and important to have high status at work than to be well-liked. It’s obviously best to have both, but well-liked low-status people get crap projects and never advance. Disliked high-status people, at worst, get severance. As Machiavelli said, “it is far safer to be feared than loved if you cannot be both.” People’s likes and dislikes change with the seasons, but a high-status person is more unlikely to have others act against his interests.
+>
+> Moreover, if you have low social status, people will eventually find reasons to dislike you unless you continually sacrifice yourself in order to be liked, and even that strategy runs out of time. At high social status, they’ll find reasons to like you. At low status, your flaws are given prime focus and your assets, while acknowledged, dismissed as unimportant or countered with “yes, buts” which turn any positive trait into a negative. (“Yes, he’s good in Clojure, but he’s might be one of those dynamic-typing cowboy coders!” “Yes, he’s good in Haskell, but that means he’s one of those static-typing hard-asses.” “Yes, he’s a good programmer, but he doesn’t seem like a team player.”) When you have low status, your best strategy is to be invisible and unremarkable, because even good distinctions will hurt you. You want to keep your slate ultra-clean and wait for mean-reversion to drift you into middling status, at which point being well-liked can assist you and, over some time– and it happens glacially– bring you upper-middle or high status.
+
+---
 
 # [What Could Possibly Be Worse Than Failure?](http://thedailywtf.com/Articles/What_Could_Possibly_Be_Worse_Than_Failure_0x3f_.aspx)
 
-
->  So where does this leave us? Do we actually have to wait until a system’s end-of-life before 
->  we can call our development work a success? Of course we do! We can, however, deem it a failure 
->  much sooner than that. But only if we’re willing to recognize that we failed.
->  
->  ...
->  
->  The path that I was headed down was the same path that the developers of this huge monstrosity had taken before me. They considered every project that they had ever completed to be a success. They weren’t arrogant (at first) – it simply was how they, and everyone else, defined success: making it to production.
->    
->  Instead of realizing that the first applications they wrote were poorly designed, poorly programmed, and soon-to-be failure – like everyone’s first are – they chalked them off as a success and moved on to the next project. They developed more software. Bigger software. More expensive software. Wrong software. All because they kept thinking that the completion of the project meant that it was a success.
->    
->  Had they simply admitted to earlier failure – and learned from it – they would have never created such an epic disaster. By imagining that their past projects were a success, they had done far worse than failure.
-
-
+> So where does this leave us? Do we actually have to wait until a system’s end-of-life before
+> we can call our development work a success? Of course we do! We can, however, deem it a failure
+> much sooner than that. But only if we’re willing to recognize that we failed.
+>
+> ...
+>
+> The path that I was headed down was the same path that the developers of this huge monstrosity had taken before me. They considered every project that they had ever completed to be a success. They weren’t arrogant (at first) – it simply was how they, and everyone else, defined success: making it to production.
+>
+> Instead of realizing that the first applications they wrote were poorly designed, poorly programmed, and soon-to-be failure – like everyone’s first are – they chalked them off as a success and moved on to the next project. They developed more software. Bigger software. More expensive software. Wrong software. All because they kept thinking that the completion of the project meant that it was a success.
+>
+> Had they simply admitted to earlier failure – and learned from it – they would have never created such an epic disaster. By imagining that their past projects were a success, they had done far worse than failure.
 
 ---
 
@@ -1475,18 +1416,18 @@ The validation set **is** the main trick. With a validation set in hand, you ask
 
 The importance of estimating a learning systems ability to generalise was not obvious to the early pioneers. Vladimir Vapnik (the V in VC dimension), somewhat sarcastically describes the mindset of the 1970s applied learning community in the following excerpt from "The Nature of Statistical Learning Theory"
 
->  "To get good generalization it is sufficient to choose the coefficients ... that provide the minimal number of training errors. The principle of minimizing the number of training errors is a self-inductive principle, and from the practical point of view does not need justification. The main goal of applied analysis is to ... minimize the number of errors on the training data"
+> "To get good generalization it is sufficient to choose the coefficients ... that provide the minimal number of training errors. The principle of minimizing the number of training errors is a self-inductive principle, and from the practical point of view does not need justification. The main goal of applied analysis is to ... minimize the number of errors on the training data"
 
 ---
 
 [Comments](https://news.ycombinator.com/item?id=6877567)
 
 > A professor of mine stated it very well. If you can imagine that there is a _true_ model somewhere out in infinitely large model space then ML is just the search for that model.
->  
+>
 > In order to make it tractable, you pick a finite model space, train it on finite data, and use a finite algorithm to find the best choice inside of that space. That means you can fail in three ways---you can over-constrain your model space so that the true model cannot be found, you can underpower your search so that you have less an ability to discern the best model in your chosen model space, and you can terminate your search early and fail to reach that point entirely.
->  
+>
 > Almost all error in ML can be seen nicely in this model. In particular here, those who do not remember to optimize validation accuracy are often making their model space so large (overfitting) at the cost of having too little data to power the search within it.
->  
+>
 > Devroye, Gyorfi, and Lugosi [A Probabilistic Theory of Pattern Recognition](http://www.amazon.com/Probabilistic-Recognition-Stochastic-Modelling-Probability/dp/0387946187) have a really great picture of this in their book.
 
 ---
@@ -1495,38 +1436,39 @@ The importance of estimating a learning systems ability to generalise was not ob
 
 One of the most effective ways to deliever a speech is to do one of the following:
 
-*  Make a point, then tell a story
-*  Tell a story, then make a point
-
+- Make a point, then tell a story
+- Tell a story, then make a point
 
 ---
 
 # Future Learnings 2014
 
-Now that 2013 is coming to an end (I know this doesn't have dates). I thought I'll compile a list 
+Now that 2013 is coming to an end (I know this doesn't have dates). I thought I'll compile a list
 of material which I want to get through for the next year. (Perhaps not all of it, since its just a random list)
 
-Online Books:  
--  [A Programmer's Guide to Data Mining](http://guidetodatamining.com/)  
--  [Probabilistic Programming and Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)  
--  [Modern Perl](http://modernperlbooks.com/books/modern_perl/chapter_00.html)  
--  [Scala School](http://twitter.github.io/scala_school/)  
--  [Real World Haskell](http://book.realworldhaskell.org/)  
--  [Real World OCaml](https://realworldocaml.org/)  
+Online Books:
 
-Online Courses:  
--  [XSeries](https://www.edx.org/xseries)  
--  [Data Science and Big Data Track](http://blog.udacity.com/2013/11/sebastian-thrun-launching-our-data.html)  
--  [Masters of Science - Georgia Tech](http://www.omscs.gatech.edu/)  
+- [A Programmer's Guide to Data Mining](http://guidetodatamining.com/)
+- [Probabilistic Programming and Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
+- [Modern Perl](http://modernperlbooks.com/books/modern_perl/chapter_00.html)
+- [Scala School](http://twitter.github.io/scala_school/)
+- [Real World Haskell](http://book.realworldhaskell.org/)
+- [Real World OCaml](https://realworldocaml.org/)
 
-Books  
--  [Scala for the Impatient](http://horstmann.com/scala/)  
+Online Courses:
 
-Exercises  
--  [99 Scala Problems](http://aperiodic.net/phil/scala/s-99/)  
--  [Programming](https://github.com/karan/Projects) [Projects]( http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)  
+- [XSeries](https://www.edx.org/xseries)
+- [Data Science and Big Data Track](http://blog.udacity.com/2013/11/sebastian-thrun-launching-our-data.html)
+- [Masters of Science - Georgia Tech](http://www.omscs.gatech.edu/)
 
+Books
 
+- [Scala for the Impatient](http://horstmann.com/scala/)
+
+Exercises
+
+- [99 Scala Problems](http://aperiodic.net/phil/scala/s-99/)
+- [Programming](https://github.com/karan/Projects) [Projects](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
 
 ---
 
@@ -1544,773 +1486,782 @@ If you are not into long explanations, see [Paolo Bergantino's answer](http://st
 
 To understand decorators, you must first understand that functions are objects in Python. This has important consequences. Let's see why with a simple example :
 
-	def shout(word="yes"):
-		return word.capitalize()+"!"
+    def shout(word="yes"):
+    	return word.capitalize()+"!"
 
-	print shout()
-	# outputs : 'Yes!'
+    print shout()
+    # outputs : 'Yes!'
 
-	# As an object, you can assign the function to a variable like any
-	# other object 
+    # As an object, you can assign the function to a variable like any
+    # other object
 
-	scream = shout
+    scream = shout
 
-	# Notice we don't use parentheses: we are not calling the function, we are
-	# putting the function "shout" into the variable "scream". 
-	# It means you can then call "shout" from "scream":
+    # Notice we don't use parentheses: we are not calling the function, we are
+    # putting the function "shout" into the variable "scream".
+    # It means you can then call "shout" from "scream":
 
-	print scream()
-	# outputs : 'Yes!'
+    print scream()
+    # outputs : 'Yes!'
 
-	# More than that, it means you can remove the old name 'shout', and
-	# the function will still be accessible from 'scream'
+    # More than that, it means you can remove the old name 'shout', and
+    # the function will still be accessible from 'scream'
 
-	del shout
-	try:
-		print shout()
-	except NameError, e:
-		print e
-		#outputs: "name 'shout' is not defined"
+    del shout
+    try:
+    	print shout()
+    except NameError, e:
+    	print e
+    	#outputs: "name 'shout' is not defined"
 
-	print scream()
-	# outputs: 'Yes!'
-	
+    print scream()
+    # outputs: 'Yes!'
+
 OK, keep that in mind, we are going back to it soon. Another interesting property of Python functions is they can be defined... inside another function!
 
-	def talk():
+    def talk():
 
-		# You can define a function on the fly in "talk" ...
-		def whisper(word="yes"):
-			return word.lower()+"..."
+    	# You can define a function on the fly in "talk" ...
+    	def whisper(word="yes"):
+    		return word.lower()+"..."
 
-		# ... and use it right away!
+    	# ... and use it right away!
 
-		print whisper()
+    	print whisper()
 
-	# You call "talk", that defines "whisper" EVERY TIME you call it, then
-	# "whisper" is called in "talk". 
-	talk()
-	# outputs: 
-	# "yes..."
+    # You call "talk", that defines "whisper" EVERY TIME you call it, then
+    # "whisper" is called in "talk".
+    talk()
+    # outputs:
+    # "yes..."
 
-	# But "whisper" DOES NOT EXIST outside "talk":
+    # But "whisper" DOES NOT EXIST outside "talk":
 
-	try:
-		print whisper()
-	except NameError, e:
-		print e
-		#outputs : "name 'whisper' is not defined"*
-		
+    try:
+    	print whisper()
+    except NameError, e:
+    	print e
+    	#outputs : "name 'whisper' is not defined"*
+
 ## Functions references
+
 OK, still here? Now the fun part, you've seen that functions are objects and therefore:
 
-*  can be assigned to a variable;
-*  can be defined in another function.
+- can be assigned to a variable;
+- can be defined in another function.
 
 Well, that means that a function can return another function :-) Have a look:
 
-	def getTalk(type="shout"):
+    def getTalk(type="shout"):
 
-		# We define functions on the fly
-		def shout(word="yes"):
-			return word.capitalize()+"!"
+    	# We define functions on the fly
+    	def shout(word="yes"):
+    		return word.capitalize()+"!"
 
-		def whisper(word="yes") :
-			return word.lower()+"...";
+    	def whisper(word="yes") :
+    		return word.lower()+"...";
 
-		# Then we return one of them
-		if type == "shout":
-			# We don't use "()", we are not calling the function,
-			# we are returning the function object
-			return shout  
-		else:
-			return whisper
+    	# Then we return one of them
+    	if type == "shout":
+    		# We don't use "()", we are not calling the function,
+    		# we are returning the function object
+    		return shout
+    	else:
+    		return whisper
 
-	# How do you use this strange beast?
+    # How do you use this strange beast?
 
-	# Get the function and assign it to a variable
-	talk = getTalk()      
+    # Get the function and assign it to a variable
+    talk = getTalk()
 
-	# You can see that "talk" is here a function object:
-	print talk
-	#outputs : <function shout at 0xb7ea817c>
+    # You can see that "talk" is here a function object:
+    print talk
+    #outputs : <function shout at 0xb7ea817c>
 
-	# The object is the one returned by the function:
-	print talk()
-	#outputs : Yes!
+    # The object is the one returned by the function:
+    print talk()
+    #outputs : Yes!
 
-	# And you can even use it directly if you feel wild:
-	print getTalk("whisper")()
-	#outputs : yes...
-	
+    # And you can even use it directly if you feel wild:
+    print getTalk("whisper")()
+    #outputs : yes...
+
 But wait, there is more. If you can return a function, then you can pass one as a parameter:
 
-	def doSomethingBefore(func): 
-		print "I do something before then I call the function you gave me"
-		print func()
+    def doSomethingBefore(func):
+    	print "I do something before then I call the function you gave me"
+    	print func()
 
-	doSomethingBefore(scream)
-	#outputs: 
-	#I do something before then I call the function you gave me
-	#Yes!
-	
+    doSomethingBefore(scream)
+    #outputs:
+    #I do something before then I call the function you gave me
+    #Yes!
+
 Well, you just have everything needed to understand decorators. You see, decorators are wrappers which means that **they let you execute code before and after the function they decorate** without the need to modify the function itself.
 
 ## Handcrafted decorators
+
 How you would do it manually:
 
-	# A decorator is a function that expects ANOTHER function as parameter
-	def my_shiny_new_decorator(a_function_to_decorate):
+    # A decorator is a function that expects ANOTHER function as parameter
+    def my_shiny_new_decorator(a_function_to_decorate):
 
-		# Inside, the decorator defines a function on the fly: the wrapper.
-		# This function is going to be wrapped around the original function
-		# so it can execute code before and after it.
-		def the_wrapper_around_the_original_function():
+    	# Inside, the decorator defines a function on the fly: the wrapper.
+    	# This function is going to be wrapped around the original function
+    	# so it can execute code before and after it.
+    	def the_wrapper_around_the_original_function():
 
-			# Put here the code you want to be executed BEFORE the original 
-			# function is called
-			print "Before the function runs"
+    		# Put here the code you want to be executed BEFORE the original
+    		# function is called
+    		print "Before the function runs"
 
-			# Call the function here (using parentheses)
-			a_function_to_decorate()
+    		# Call the function here (using parentheses)
+    		a_function_to_decorate()
 
-			# Put here the code you want to be executed AFTER the original 
-			# function is called
-			print "After the function runs"
+    		# Put here the code you want to be executed AFTER the original
+    		# function is called
+    		print "After the function runs"
 
-		# At this point, "a_function_to_decorate" HAS NEVER BEEN EXECUTED.
-		# We return the wrapper function we have just created.
-		# The wrapper contains the function and the code to execute before
-		# and after. It's ready to use!
-		return the_wrapper_around_the_original_function
+    	# At this point, "a_function_to_decorate" HAS NEVER BEEN EXECUTED.
+    	# We return the wrapper function we have just created.
+    	# The wrapper contains the function and the code to execute before
+    	# and after. It's ready to use!
+    	return the_wrapper_around_the_original_function
 
-	# Now imagine you create a function you don't want to ever touch again.
-	def a_stand_alone_function():
-		print "I am a stand alone function, don't you dare modify me"
+    # Now imagine you create a function you don't want to ever touch again.
+    def a_stand_alone_function():
+    	print "I am a stand alone function, don't you dare modify me"
 
-	a_stand_alone_function() 
-	#outputs: I am a stand alone function, don't you dare modify me
+    a_stand_alone_function()
+    #outputs: I am a stand alone function, don't you dare modify me
 
-	# Well, you can decorate it to extend its behavior.
-	# Just pass it to the decorator, it will wrap it dynamically in 
-	# any code you want and return you a new function ready to be used:
+    # Well, you can decorate it to extend its behavior.
+    # Just pass it to the decorator, it will wrap it dynamically in
+    # any code you want and return you a new function ready to be used:
 
-	a_stand_alone_function_decorated = my_shiny_new_decorator(a_stand_alone_function)
-	a_stand_alone_function_decorated()
-	#outputs:
-	#Before the function runs
-	#I am a stand alone function, don't you dare modify me
-	#After the function runs
-	
+    a_stand_alone_function_decorated = my_shiny_new_decorator(a_stand_alone_function)
+    a_stand_alone_function_decorated()
+    #outputs:
+    #Before the function runs
+    #I am a stand alone function, don't you dare modify me
+    #After the function runs
+
 Now, you probably want that every time you call `a_stand_alone_function`, `a_stand_alone_function_decorated` is called instead. That's easy, just overwrite `a_stand_alone_function` with the function returned by `my_shiny_new_decorator`:
 
-	a_stand_alone_function = my_shiny_new_decorator(a_stand_alone_function)
-	a_stand_alone_function()
-	#outputs:
-	#Before the function runs
-	#I am a stand alone function, don't you dare modify me
-	#After the function runs
+    a_stand_alone_function = my_shiny_new_decorator(a_stand_alone_function)
+    a_stand_alone_function()
+    #outputs:
+    #Before the function runs
+    #I am a stand alone function, don't you dare modify me
+    #After the function runs
 
-	# And guess what? That's EXACTLY what decorators do!
+    # And guess what? That's EXACTLY what decorators do!
 
 ## Decorators demystified
+
 The previous example, using the decorator syntax:
 
-	@my_shiny_new_decorator
-	def another_stand_alone_function():
-		print "Leave me alone"
+    @my_shiny_new_decorator
+    def another_stand_alone_function():
+    	print "Leave me alone"
 
-	another_stand_alone_function()  
-	#outputs:  
-	#Before the function runs
-	#Leave me alone
-	#After the function runs
+    another_stand_alone_function()
+    #outputs:
+    #Before the function runs
+    #Leave me alone
+    #After the function runs
 
 Yes, that's all, it's that simple. `@decorator` is just a shortcut to:
 
-	another_stand_alone_function = my_shiny_new_decorator(another_stand_alone_function)
+    another_stand_alone_function = my_shiny_new_decorator(another_stand_alone_function)
 
 Decorators are just a pythonic variant of the [decorator design pattern](http://en.wikipedia.org/wiki/Decorator_pattern). There are several classic design patterns embedded in Python to ease development, like iterators.
 
 Of course, you can cumulate decorators:
 
-	def bread(func):
-		def wrapper():
-			print "</''''''\>"
-			func()
-			print "<\______/>"
-		return wrapper
+    def bread(func):
+    	def wrapper():
+    		print "</''''''\>"
+    		func()
+    		print "<\______/>"
+    	return wrapper
 
-	def ingredients(func):
-		def wrapper():
-			print "#tomatoes#"
-			func()
-			print "~salad~"
-		return wrapper
+    def ingredients(func):
+    	def wrapper():
+    		print "#tomatoes#"
+    		func()
+    		print "~salad~"
+    	return wrapper
 
-	def sandwich(food="--ham--"):
-		print food
+    def sandwich(food="--ham--"):
+    	print food
 
-	sandwich()
-	#outputs: --ham--
-	sandwich = bread(ingredients(sandwich))
-	sandwich()
-	#outputs:
-	#</''''''\>
-	# #tomatoes#
-	# --ham--
-	# ~salad~
-	#<\______/>
+    sandwich()
+    #outputs: --ham--
+    sandwich = bread(ingredients(sandwich))
+    sandwich()
+    #outputs:
+    #</''''''\>
+    # #tomatoes#
+    # --ham--
+    # ~salad~
+    #<\______/>
 
 Using the Python decorator syntax:
 
-	@bread
-	@ingredients
-	def sandwich(food="--ham--"):
-		print food
+    @bread
+    @ingredients
+    def sandwich(food="--ham--"):
+    	print food
 
-	sandwich()
-	#outputs:
-	#</''''''\>
-	# #tomatoes#
-	# --ham--
-	# ~salad~
-	#<\______/>
+    sandwich()
+    #outputs:
+    #</''''''\>
+    # #tomatoes#
+    # --ham--
+    # ~salad~
+    #<\______/>
 
 The order you set the decorators MATTERS:
 
-	@ingredients
-	@bread
-	def strange_sandwich(food="--ham--"):
-		print food
+    @ingredients
+    @bread
+    def strange_sandwich(food="--ham--"):
+    	print food
 
-	strange_sandwich()
-	#outputs:
-	##tomatoes#
-	#</''''''\>
-	# --ham--
-	#<\______/>
-	# ~salad~
+    strange_sandwich()
+    #outputs:
+    ##tomatoes#
+    #</''''''\>
+    # --ham--
+    #<\______/>
+    # ~salad~
 
 ## Eventually answering the question
+
 As a conclusion, you can easily see how to answer the question:
 
-	# The decorator to make it bold
-	def makebold(fn):
-		# The new function the decorator returns
-		def wrapper():
-			# Insertion of some code before and after
-			return "<b>" + fn() + "</b>"
-		return wrapper
+    # The decorator to make it bold
+    def makebold(fn):
+    	# The new function the decorator returns
+    	def wrapper():
+    		# Insertion of some code before and after
+    		return "<b>" + fn() + "</b>"
+    	return wrapper
 
-	# The decorator to make it italic
-	def makeitalic(fn):
-		# The new function the decorator returns
-		def wrapper():
-			# Insertion of some code before and after
-			return "<i>" + fn() + "</i>"
-		return wrapper
+    # The decorator to make it italic
+    def makeitalic(fn):
+    	# The new function the decorator returns
+    	def wrapper():
+    		# Insertion of some code before and after
+    		return "<i>" + fn() + "</i>"
+    	return wrapper
 
-	@makebold
-	@makeitalic
-	def say():
-		return "hello"
+    @makebold
+    @makeitalic
+    def say():
+    	return "hello"
 
-	print say() 
-	#outputs: <b><i>hello</i></b>
+    print say()
+    #outputs: <b><i>hello</i></b>
 
-	# This is the exact equivalent to 
-	def say():
-		return "hello"
-	say = makebold(makeitalic(say))
+    # This is the exact equivalent to
+    def say():
+    	return "hello"
+    say = makebold(makeitalic(say))
 
-	print say() 
-	#outputs: <b><i>hello</i></b>
+    print say()
+    #outputs: <b><i>hello</i></b>
 
 You can now just leave happy, or burn your brain a little bit more and see advanced uses of decorators.
 
 ## Passing arguments to the decorated function
 
-	# It's not black magic, you just have to let the wrapper 
-	# pass the argument:
+    # It's not black magic, you just have to let the wrapper
+    # pass the argument:
 
-	def a_decorator_passing_arguments(function_to_decorate):
-		def a_wrapper_accepting_arguments(arg1, arg2):
-			print "I got args! Look:", arg1, arg2
-			function_to_decorate(arg1, arg2)
-		return a_wrapper_accepting_arguments
+    def a_decorator_passing_arguments(function_to_decorate):
+    	def a_wrapper_accepting_arguments(arg1, arg2):
+    		print "I got args! Look:", arg1, arg2
+    		function_to_decorate(arg1, arg2)
+    	return a_wrapper_accepting_arguments
 
-	# Since when you are calling the function returned by the decorator, you are
-	# calling the wrapper, passing arguments to the wrapper will let it pass them to 
-	# the decorated function
+    # Since when you are calling the function returned by the decorator, you are
+    # calling the wrapper, passing arguments to the wrapper will let it pass them to
+    # the decorated function
 
-	@a_decorator_passing_arguments
-	def print_full_name(first_name, last_name):
-		print "My name is", first_name, last_name
+    @a_decorator_passing_arguments
+    def print_full_name(first_name, last_name):
+    	print "My name is", first_name, last_name
 
-	print_full_name("Peter", "Venkman")
-	# outputs:
-	#I got args! Look: Peter Venkman
-	#My name is Peter Venkman
+    print_full_name("Peter", "Venkman")
+    # outputs:
+    #I got args! Look: Peter Venkman
+    #My name is Peter Venkman
 
 ## Decorating methods
+
 What's great with Python is that methods and functions are really the same, except methods expect their first parameter to be a reference to the current object (`self`). It means you can build a decorator for methods the same way, just remember to take self in consideration:
 
-	def method_friendly_decorator(method_to_decorate):
-		def wrapper(self, lie):
-			lie = lie - 3 # very friendly, decrease age even more :-)
-			return method_to_decorate(self, lie)
-		return wrapper
+    def method_friendly_decorator(method_to_decorate):
+    	def wrapper(self, lie):
+    		lie = lie - 3 # very friendly, decrease age even more :-)
+    		return method_to_decorate(self, lie)
+    	return wrapper
 
 
-	class Lucy(object):
+    class Lucy(object):
 
-		def __init__(self):
-			self.age = 32
+    	def __init__(self):
+    		self.age = 32
 
-		@method_friendly_decorator
-		def sayYourAge(self, lie):
-			print "I am %s, what did you think?" % (self.age + lie)
+    	@method_friendly_decorator
+    	def sayYourAge(self, lie):
+    		print "I am %s, what did you think?" % (self.age + lie)
 
-	l = Lucy()
-	l.sayYourAge(-3)
-	#outputs: I am 26, what did you think?
+    l = Lucy()
+    l.sayYourAge(-3)
+    #outputs: I am 26, what did you think?
 
 Of course, if you make a very general decorator and want to apply it to any function or method, no matter its arguments, then just use `*args, **kwargs`:
 
-	def a_decorator_passing_arbitrary_arguments(function_to_decorate):
-		# The wrapper accepts any arguments
-		def a_wrapper_accepting_arbitrary_arguments(*args, **kwargs):
-			print "Do I have args?:"
-			print args
-			print kwargs
-			# Then you unpack the arguments, here *args, **kwargs
-			# If you are not familiar with unpacking, check:
-			# http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/
-			function_to_decorate(*args, **kwargs)
-		return a_wrapper_accepting_arbitrary_arguments
+    def a_decorator_passing_arbitrary_arguments(function_to_decorate):
+    	# The wrapper accepts any arguments
+    	def a_wrapper_accepting_arbitrary_arguments(*args, **kwargs):
+    		print "Do I have args?:"
+    		print args
+    		print kwargs
+    		# Then you unpack the arguments, here *args, **kwargs
+    		# If you are not familiar with unpacking, check:
+    		# http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/
+    		function_to_decorate(*args, **kwargs)
+    	return a_wrapper_accepting_arbitrary_arguments
 
-	@a_decorator_passing_arbitrary_arguments
-	def function_with_no_argument():
-		print "Python is cool, no argument here."
+    @a_decorator_passing_arbitrary_arguments
+    def function_with_no_argument():
+    	print "Python is cool, no argument here."
 
-	function_with_no_argument()
-	#outputs
-	#Do I have args?:
-	#()
-	#{}
-	#Python is cool, no argument here.
+    function_with_no_argument()
+    #outputs
+    #Do I have args?:
+    #()
+    #{}
+    #Python is cool, no argument here.
 
-	@a_decorator_passing_arbitrary_arguments
-	def function_with_arguments(a, b, c):
-		print a, b, c
+    @a_decorator_passing_arbitrary_arguments
+    def function_with_arguments(a, b, c):
+    	print a, b, c
 
-	function_with_arguments(1,2,3)
-	#outputs
-	#Do I have args?:
-	#(1, 2, 3)
-	#{}
-	#1 2 3 
+    function_with_arguments(1,2,3)
+    #outputs
+    #Do I have args?:
+    #(1, 2, 3)
+    #{}
+    #1 2 3
 
-	@a_decorator_passing_arbitrary_arguments
-	def function_with_named_arguments(a, b, c, platypus="Why not ?"):
-		print "Do %s, %s and %s like platypus? %s" %\
-		(a, b, c, platypus)
+    @a_decorator_passing_arbitrary_arguments
+    def function_with_named_arguments(a, b, c, platypus="Why not ?"):
+    	print "Do %s, %s and %s like platypus? %s" %\
+    	(a, b, c, platypus)
 
-	function_with_named_arguments("Bill", "Linus", "Steve", platypus="Indeed!")
-	#outputs
-	#Do I have args ? :
-	#('Bill', 'Linus', 'Steve')
-	#{'platypus': 'Indeed!'}
-	#Do Bill, Linus and Steve like platypus? Indeed!
+    function_with_named_arguments("Bill", "Linus", "Steve", platypus="Indeed!")
+    #outputs
+    #Do I have args ? :
+    #('Bill', 'Linus', 'Steve')
+    #{'platypus': 'Indeed!'}
+    #Do Bill, Linus and Steve like platypus? Indeed!
 
-	class Mary(object):
+    class Mary(object):
 
-		def __init__(self):
-			self.age = 31
+    	def __init__(self):
+    		self.age = 31
 
-		@a_decorator_passing_arbitrary_arguments
-		def sayYourAge(self, lie=-3): # You can now add a default value
-			print "I am %s, what did you think ?" % (self.age + lie)
+    	@a_decorator_passing_arbitrary_arguments
+    	def sayYourAge(self, lie=-3): # You can now add a default value
+    		print "I am %s, what did you think ?" % (self.age + lie)
 
-	m = Mary()
-	m.sayYourAge()
-	#outputs
-	# Do I have args?:
-	#(<__main__.Mary object at 0xb7d303ac>,)
-	#{}
-	#I am 28, what did you think?
+    m = Mary()
+    m.sayYourAge()
+    #outputs
+    # Do I have args?:
+    #(<__main__.Mary object at 0xb7d303ac>,)
+    #{}
+    #I am 28, what did you think?
 
 ## Passing arguments to the decorator
+
 Great, now what would you say about passing arguments to the decorator itself? Well this is a bit twisted because a decorator must accept a function as an argument and therefore, you cannot pass the decorated function arguments directly to the decorator.
 
 Before rushing to the solution, let's write a little reminder:
 
-	# Decorators are ORDINARY functions
-	def my_decorator(func):
-		print "I am a ordinary function"
-		def wrapper():
-			print "I am function returned by the decorator"
-			func()
-		return wrapper
+    # Decorators are ORDINARY functions
+    def my_decorator(func):
+    	print "I am a ordinary function"
+    	def wrapper():
+    		print "I am function returned by the decorator"
+    		func()
+    	return wrapper
 
-	# Therefore, you can call it without any "@"
+    # Therefore, you can call it without any "@"
 
-	def lazy_function():
-		print "zzzzzzzz"
+    def lazy_function():
+    	print "zzzzzzzz"
 
-	decorated_function = my_decorator(lazy_function)
-	#outputs: I am a ordinary function
-	
-	# It outputs "I am a ordinary function", because that's just what you do:
-	# calling a function. Nothing magic.
+    decorated_function = my_decorator(lazy_function)
+    #outputs: I am a ordinary function
 
-	@my_decorator
-	def lazy_function():
-		print "zzzzzzzz"
+    # It outputs "I am a ordinary function", because that's just what you do:
+    # calling a function. Nothing magic.
 
-	#outputs: I am a ordinary function
+    @my_decorator
+    def lazy_function():
+    	print "zzzzzzzz"
+
+    #outputs: I am a ordinary function
 
 It's exactly the same. "`my_decorator`" is called. So when you `@my_decorator`, you are telling Python to call the function 'labeled by the variable "`my_decorator`"'. It's important, because the label you give can point directly to the decorator... or not! Let's start to be evil!
 
-	def decorator_maker():
+    def decorator_maker():
 
-		print "I make decorators! I am executed only once: "+\
-			  "when you make me create a decorator."
+    	print "I make decorators! I am executed only once: "+\
+    		  "when you make me create a decorator."
 
-		def my_decorator(func):
+    	def my_decorator(func):
 
-			print "I am a decorator! I am executed only when you decorate a function."
+    		print "I am a decorator! I am executed only when you decorate a function."
 
-			def wrapped():
-				print ("I am the wrapper around the decorated function. "
-					  "I am called when you call the decorated function. "
-					  "As the wrapper, I return the RESULT of the decorated function.")
-				return func()
+    		def wrapped():
+    			print ("I am the wrapper around the decorated function. "
+    				  "I am called when you call the decorated function. "
+    				  "As the wrapper, I return the RESULT of the decorated function.")
+    			return func()
 
-			print "As the decorator, I return the wrapped function."
+    		print "As the decorator, I return the wrapped function."
 
-			return wrapped
+    		return wrapped
 
-		print "As a decorator maker, I return a decorator"
-		return my_decorator
+    	print "As a decorator maker, I return a decorator"
+    	return my_decorator
 
-	# Let's create a decorator. It's just a new function after all.
-	new_decorator = decorator_maker()       
-	#outputs:
-	#I make decorators! I am executed only once: when you make me create a decorator.
-	#As a decorator maker, I return a decorator
+    # Let's create a decorator. It's just a new function after all.
+    new_decorator = decorator_maker()
+    #outputs:
+    #I make decorators! I am executed only once: when you make me create a decorator.
+    #As a decorator maker, I return a decorator
 
-	# Then we decorate the function
+    # Then we decorate the function
 
-	def decorated_function():
-		print "I am the decorated function."
+    def decorated_function():
+    	print "I am the decorated function."
 
-	decorated_function = new_decorator(decorated_function)
-	#outputs:
-	#I am a decorator! I am executed only when you decorate a function.
-	#As the decorator, I return the wrapped function
+    decorated_function = new_decorator(decorated_function)
+    #outputs:
+    #I am a decorator! I am executed only when you decorate a function.
+    #As the decorator, I return the wrapped function
 
-	# Let's call the function:
-	decorated_function()
-	#outputs:
-	#I am the wrapper around the decorated function. I am called when you call the decorated function.
-	#As the wrapper, I return the RESULT of the decorated function.
-	#I am the decorated function.
+    # Let's call the function:
+    decorated_function()
+    #outputs:
+    #I am the wrapper around the decorated function. I am called when you call the decorated function.
+    #As the wrapper, I return the RESULT of the decorated function.
+    #I am the decorated function.
 
 No surprise here. Let's do EXACTLY the same thing, but skipping intermediate variables:
 
-	def decorated_function():
-		print "I am the decorated function."
-	decorated_function = decorator_maker()(decorated_function)
-	#outputs:
-	#I make decorators! I am executed only once: when you make me create a decorator.
-	#As a decorator maker, I return a decorator
-	#I am a decorator! I am executed only when you decorate a function.
-	#As the decorator, I return the wrapped function.
+    def decorated_function():
+    	print "I am the decorated function."
+    decorated_function = decorator_maker()(decorated_function)
+    #outputs:
+    #I make decorators! I am executed only once: when you make me create a decorator.
+    #As a decorator maker, I return a decorator
+    #I am a decorator! I am executed only when you decorate a function.
+    #As the decorator, I return the wrapped function.
 
-	# Finally:
-	decorated_function()    
-	#outputs:
-	#I am the wrapper around the decorated function. I am called when you call the decorated function.
-	#As the wrapper, I return the RESULT of the decorated function.
-	#I am the decorated function.
+    # Finally:
+    decorated_function()
+    #outputs:
+    #I am the wrapper around the decorated function. I am called when you call the decorated function.
+    #As the wrapper, I return the RESULT of the decorated function.
+    #I am the decorated function.
 
 Let's make it AGAIN, even shorter:
 
-	@decorator_maker()
-	def decorated_function():
-		print "I am the decorated function."
-	#outputs:
-	#I make decorators! I am executed only once: when you make me create a decorator.
-	#As a decorator maker, I return a decorator
-	#I am a decorator! I am executed only when you decorate a function.
-	#As the decorator, I return the wrapped function.
+    @decorator_maker()
+    def decorated_function():
+    	print "I am the decorated function."
+    #outputs:
+    #I make decorators! I am executed only once: when you make me create a decorator.
+    #As a decorator maker, I return a decorator
+    #I am a decorator! I am executed only when you decorate a function.
+    #As the decorator, I return the wrapped function.
 
-	#Eventually: 
-	decorated_function()    
-	#outputs:
-	#I am the wrapper around the decorated function. I am called when you call the decorated function.
-	#As the wrapper, I return the RESULT of the decorated function.
-	#I am the decorated function.
+    #Eventually:
+    decorated_function()
+    #outputs:
+    #I am the wrapper around the decorated function. I am called when you call the decorated function.
+    #As the wrapper, I return the RESULT of the decorated function.
+    #I am the decorated function.
 
 Hey, did you see that? We used a function call with the "@" syntax :-)
 
 So back to decorators with arguments. If we can use functions to generate the decorator on the fly, we can pass arguments to that function, right?
 
-	def decorator_maker_with_arguments(decorator_arg1, decorator_arg2):
+    def decorator_maker_with_arguments(decorator_arg1, decorator_arg2):
 
-		print "I make decorators! And I accept arguments:", decorator_arg1, decorator_arg2
+    	print "I make decorators! And I accept arguments:", decorator_arg1, decorator_arg2
 
-		def my_decorator(func):
-			# The ability to pass arguments here is a gift from closures.
-			# If you are not comfortable with closures, you can assume it's ok,
-			# or read: http://stackoverflow.com/questions/13857/can-you-explain-closures-as-they-relate-to-python
-			print "I am the decorator. Somehow you passed me arguments:", decorator_arg1, decorator_arg2
+    	def my_decorator(func):
+    		# The ability to pass arguments here is a gift from closures.
+    		# If you are not comfortable with closures, you can assume it's ok,
+    		# or read: http://stackoverflow.com/questions/13857/can-you-explain-closures-as-they-relate-to-python
+    		print "I am the decorator. Somehow you passed me arguments:", decorator_arg1, decorator_arg2
 
-			# Don't confuse decorator arguments and function arguments!
-			def wrapped(function_arg1, function_arg2) :
-				print ("I am the wrapper around the decorated function.\n"
-					  "I can access all the variables\n"
-					  "\t- from the decorator: {0} {1}\n"
-					  "\t- from the function call: {2} {3}\n"
-					  "Then I can pass them to the decorated function"
-					  .format(decorator_arg1, decorator_arg2,
-							  function_arg1, function_arg2))
-				return func(function_arg1, function_arg2)
+    		# Don't confuse decorator arguments and function arguments!
+    		def wrapped(function_arg1, function_arg2) :
+    			print ("I am the wrapper around the decorated function.\n"
+    				  "I can access all the variables\n"
+    				  "\t- from the decorator: {0} {1}\n"
+    				  "\t- from the function call: {2} {3}\n"
+    				  "Then I can pass them to the decorated function"
+    				  .format(decorator_arg1, decorator_arg2,
+    						  function_arg1, function_arg2))
+    			return func(function_arg1, function_arg2)
 
-			return wrapped
+    		return wrapped
 
-		return my_decorator
+    	return my_decorator
 
-	@decorator_maker_with_arguments("Leonard", "Sheldon")
-	def decorated_function_with_arguments(function_arg1, function_arg2):
-		print ("I am the decorated function and only knows about my arguments: {0}"
-			   " {1}".format(function_arg1, function_arg2))
+    @decorator_maker_with_arguments("Leonard", "Sheldon")
+    def decorated_function_with_arguments(function_arg1, function_arg2):
+    	print ("I am the decorated function and only knows about my arguments: {0}"
+    		   " {1}".format(function_arg1, function_arg2))
 
-	decorated_function_with_arguments("Rajesh", "Howard")
-	#outputs:
-	#I make decorators! And I accept arguments: Leonard Sheldon
-	#I am the decorator. Somehow you passed me arguments: Leonard Sheldon
-	#I am the wrapper around the decorated function. 
-	#I can access all the variables 
-	#   - from the decorator: Leonard Sheldon 
-	#   - from the function call: Rajesh Howard 
-	#Then I can pass them to the decorated function
-	#I am the decorated function and only knows about my arguments: Rajesh Howard
+    decorated_function_with_arguments("Rajesh", "Howard")
+    #outputs:
+    #I make decorators! And I accept arguments: Leonard Sheldon
+    #I am the decorator. Somehow you passed me arguments: Leonard Sheldon
+    #I am the wrapper around the decorated function.
+    #I can access all the variables
+    #   - from the decorator: Leonard Sheldon
+    #   - from the function call: Rajesh Howard
+    #Then I can pass them to the decorated function
+    #I am the decorated function and only knows about my arguments: Rajesh Howard
 
 Here it is, a decorator with arguments. Arguments can be set as variable:
 
-	c1 = "Penny"
-	c2 = "Leslie"
+    c1 = "Penny"
+    c2 = "Leslie"
 
-	@decorator_maker_with_arguments("Leonard", c1)
-	def decorated_function_with_arguments(function_arg1, function_arg2):
-		print ("I am the decorated function and only knows about my arguments:"
-			   " {0} {1}".format(function_arg1, function_arg2))
+    @decorator_maker_with_arguments("Leonard", c1)
+    def decorated_function_with_arguments(function_arg1, function_arg2):
+    	print ("I am the decorated function and only knows about my arguments:"
+    		   " {0} {1}".format(function_arg1, function_arg2))
 
-	decorated_function_with_arguments(c2, "Howard")
-	#outputs:
-	#I make decorators! And I accept arguments: Leonard Penny
-	#I am the decorator. Somehow you passed me arguments: Leonard Penny
-	#I am the wrapper around the decorated function. 
-	#I can access all the variables 
-	#   - from the decorator: Leonard Penny 
-	#   - from the function call: Leslie Howard 
-	#Then I can pass them to the decorated function
-	#I am the decorated function and only knows about my arguments: Leslie Howard
+    decorated_function_with_arguments(c2, "Howard")
+    #outputs:
+    #I make decorators! And I accept arguments: Leonard Penny
+    #I am the decorator. Somehow you passed me arguments: Leonard Penny
+    #I am the wrapper around the decorated function.
+    #I can access all the variables
+    #   - from the decorator: Leonard Penny
+    #   - from the function call: Leslie Howard
+    #Then I can pass them to the decorated function
+    #I am the decorated function and only knows about my arguments: Leslie Howard
 
-As you can see, you can pass arguments to the decorator like any function using this trick. You can even use *args, **kwargs if you wish. But remember decorators are called only once. Just when Python imports the script. You can't dynamically set the arguments afterwards. When you do "import x", the function is already decorated, so you can't change anything.
+As you can see, you can pass arguments to the decorator like any function using this trick. You can even use \*args, \*\*kwargs if you wish. But remember decorators are called only once. Just when Python imports the script. You can't dynamically set the arguments afterwards. When you do "import x", the function is already decorated, so you can't change anything.
 
 ## Let's practice: a decorator to decorate a decorator
+
 OK, as a bonus, I'll give you a snippet to make any decorator accept generically any argument. After all, in order to accept arguments, we created our decorator using another function. We wrapped the decorator. Anything else we saw recently that wrapped function? Oh yes, decorators! Let's have some fun and write a decorator for the decorators:
 
-	def decorator_with_args(decorator_to_enhance):
-		""" 
-		This function is supposed to be used as a decorator.
-		It must decorate an other function, that is intended to be used as a decorator.
-		Take a cup of coffee.
-		It will allow any decorator to accept an arbitrary number of arguments,
-		saving you the headache to remember how to do that every time.
-		"""
+    def decorator_with_args(decorator_to_enhance):
+    	"""
+    	This function is supposed to be used as a decorator.
+    	It must decorate an other function, that is intended to be used as a decorator.
+    	Take a cup of coffee.
+    	It will allow any decorator to accept an arbitrary number of arguments,
+    	saving you the headache to remember how to do that every time.
+    	"""
 
-		# We use the same trick we did to pass arguments
-		def decorator_maker(*args, **kwargs):
+    	# We use the same trick we did to pass arguments
+    	def decorator_maker(*args, **kwargs):
 
-			# We create on the fly a decorator that accepts only a function
-			# but keeps the passed arguments from the maker.
-			def decorator_wrapper(func):
+    		# We create on the fly a decorator that accepts only a function
+    		# but keeps the passed arguments from the maker.
+    		def decorator_wrapper(func):
 
-				# We return the result of the original decorator, which, after all, 
-				# IS JUST AN ORDINARY FUNCTION (which returns a function).
-				# Only pitfall: the decorator must have this specific signature or it won't work:
-				return decorator_to_enhance(func, *args, **kwargs)
+    			# We return the result of the original decorator, which, after all,
+    			# IS JUST AN ORDINARY FUNCTION (which returns a function).
+    			# Only pitfall: the decorator must have this specific signature or it won't work:
+    			return decorator_to_enhance(func, *args, **kwargs)
 
-			return decorator_wrapper
+    		return decorator_wrapper
 
-		return decorator_maker
+    	return decorator_maker
 
 It can be used as follows:
 
-	# You create the function you will use as a decorator. And stick a decorator on it :-)
-	# Don't forget, the signature is "decorator(func, *args, **kwargs)"
-	@decorator_with_args 
-	def decorated_decorator(func, *args, **kwargs): 
-		def wrapper(function_arg1, function_arg2):
-			print "Decorated with", args, kwargs
-			return func(function_arg1, function_arg2)
-		return wrapper
+    # You create the function you will use as a decorator. And stick a decorator on it :-)
+    # Don't forget, the signature is "decorator(func, *args, **kwargs)"
+    @decorator_with_args
+    def decorated_decorator(func, *args, **kwargs):
+    	def wrapper(function_arg1, function_arg2):
+    		print "Decorated with", args, kwargs
+    		return func(function_arg1, function_arg2)
+    	return wrapper
 
-	# Then you decorate the functions you wish with your brand new decorated decorator.
+    # Then you decorate the functions you wish with your brand new decorated decorator.
 
-	@decorated_decorator(42, 404, 1024)
-	def decorated_function(function_arg1, function_arg2):
-		print "Hello", function_arg1, function_arg2
+    @decorated_decorator(42, 404, 1024)
+    def decorated_function(function_arg1, function_arg2):
+    	print "Hello", function_arg1, function_arg2
 
-	decorated_function("Universe and", "everything")
-	#outputs:
-	#Decorated with (42, 404, 1024) {}
-	#Hello Universe and everything
+    decorated_function("Universe and", "everything")
+    #outputs:
+    #Decorated with (42, 404, 1024) {}
+    #Hello Universe and everything
 
-	# Whoooot!
+    # Whoooot!
 
 I know, the last time you had this feeling, it was after listening a guy saying: "before understanding recursion, you must first understand recursion". But now, don't you feel good about mastering this?
 
 ## Best practices while using decorators
-*  They are new as of Python 2.4, so be sure that's what your code is running on.
-*  Decorators slow down the function call. Keep that in mind.
-*  You can not un-decorate a function. There are hacks to create decorators that can be removed but nobody uses them. So once a function is decorated, it's done. For all the code.
-*  Decorators wrap functions, which can make them hard to debug.
+
+- They are new as of Python 2.4, so be sure that's what your code is running on.
+- Decorators slow down the function call. Keep that in mind.
+- You can not un-decorate a function. There are hacks to create decorators that can be removed but nobody uses them. So once a function is decorated, it's done. For all the code.
+- Decorators wrap functions, which can make them hard to debug.
 
 Python 2.5 solves this last issue by providing the `functools` module including `functools.wraps` that copies the name, module and docstring of any wrapped function to it's wrapper. Fun fact, `functools.wraps ` is a decorator :-)
 
-	# For debugging, the stacktrace prints you the function __name__
-	def foo():
-		print "foo"
+    # For debugging, the stacktrace prints you the function __name__
+    def foo():
+    	print "foo"
 
-	print foo.__name__
-	#outputs: foo
+    print foo.__name__
+    #outputs: foo
 
-	# With a decorator, it gets messy    
-	def bar(func):
-		def wrapper():
-			print "bar"
-			return func()
-		return wrapper
+    # With a decorator, it gets messy
+    def bar(func):
+    	def wrapper():
+    		print "bar"
+    		return func()
+    	return wrapper
 
-	@bar
-	def foo():
-		print "foo"
+    @bar
+    def foo():
+    	print "foo"
 
-	print foo.__name__
-	#outputs: wrapper
+    print foo.__name__
+    #outputs: wrapper
 
-	# "functools" can help for that
+    # "functools" can help for that
 
-	import functools
+    import functools
 
-	def bar(func):
-		# We say that "wrapper", is wrapping "func"
-		# and the magic begins
-		@functools.wraps(func)
-		def wrapper():
-			print "bar"
-			return func()
-		return wrapper
+    def bar(func):
+    	# We say that "wrapper", is wrapping "func"
+    	# and the magic begins
+    	@functools.wraps(func)
+    	def wrapper():
+    		print "bar"
+    		return func()
+    	return wrapper
 
-	@bar
-	def foo():
-		print "foo"
+    @bar
+    def foo():
+    	print "foo"
 
-	print foo.__name__
-	#outputs: foo
+    print foo.__name__
+    #outputs: foo
 
 ## How can the decorators be useful?
+
 Now the big question: what can I use decorators for? Seem cool and powerful, but a practical example would be great. Well, there are 1000 possibilities. Classic uses are extending a function behavior from an external lib (you can't modify it) or for a debug purpose (you don't want to modify it because it's temporary). You can use them to extends several functions with the same code without rewriting it every time, for DRY's sake. E.g.:
 
-	def benchmark(func):
-		"""
-		A decorator that prints the time a function takes
-		to execute.
-		"""
-		import time
-		def wrapper(*args, **kwargs):
-			t = time.clock()
-			res = func(*args, **kwargs)
-			print func.__name__, time.clock()-t
-			return res
-		return wrapper
+    def benchmark(func):
+    	"""
+    	A decorator that prints the time a function takes
+    	to execute.
+    	"""
+    	import time
+    	def wrapper(*args, **kwargs):
+    		t = time.clock()
+    		res = func(*args, **kwargs)
+    		print func.__name__, time.clock()-t
+    		return res
+    	return wrapper
 
 
-	def logging(func):
-		"""
-		A decorator that logs the activity of the script.
-		(it actually just prints it, but it could be logging!)
-		"""
-		def wrapper(*args, **kwargs):
-			res = func(*args, **kwargs)
-			print func.__name__, args, kwargs
-			return res
-		return wrapper
+    def logging(func):
+    	"""
+    	A decorator that logs the activity of the script.
+    	(it actually just prints it, but it could be logging!)
+    	"""
+    	def wrapper(*args, **kwargs):
+    		res = func(*args, **kwargs)
+    		print func.__name__, args, kwargs
+    		return res
+    	return wrapper
 
 
-	def counter(func):
-		"""
-		A decorator that counts and prints the number of times a function has been executed
-		"""
-		def wrapper(*args, **kwargs):
-			wrapper.count = wrapper.count + 1
-			res = func(*args, **kwargs)
-			print "{0} has been used: {1}x".format(func.__name__, wrapper.count)
-			return res
-		wrapper.count = 0
-		return wrapper
+    def counter(func):
+    	"""
+    	A decorator that counts and prints the number of times a function has been executed
+    	"""
+    	def wrapper(*args, **kwargs):
+    		wrapper.count = wrapper.count + 1
+    		res = func(*args, **kwargs)
+    		print "{0} has been used: {1}x".format(func.__name__, wrapper.count)
+    		return res
+    	wrapper.count = 0
+    	return wrapper
 
-	@counter
-	@benchmark
-	@logging
-	def reverse_string(string):
-		return str(reversed(string))
+    @counter
+    @benchmark
+    @logging
+    def reverse_string(string):
+    	return str(reversed(string))
 
-	print reverse_string("Able was I ere I saw Elba")
-	print reverse_string("A man, a plan, a canoe, pasta, heros, rajahs, a coloratura, maps, snipe, percale, macaroni, a gag, a banana bag, a tan, a tag, a banana bag again (or a camel), a crepe, pins, Spam, a rut, a Rolo, cash, a jar, sore hats, a peon, a canal: Panama!")
+    print reverse_string("Able was I ere I saw Elba")
+    print reverse_string("A man, a plan, a canoe, pasta, heros, rajahs, a coloratura, maps, snipe, percale, macaroni, a gag, a banana bag, a tan, a tag, a banana bag again (or a camel), a crepe, pins, Spam, a rut, a Rolo, cash, a jar, sore hats, a peon, a canal: Panama!")
 
-	#outputs:
-	#reverse_string ('Able was I ere I saw Elba',) {}
-	#wrapper 0.0
-	#wrapper has been used: 1x 
-	#ablE was I ere I saw elbA
-	#reverse_string ('A man, a plan, a canoe, pasta, heros, rajahs, a coloratura, maps, snipe, percale, macaroni, a gag, a banana bag, a tan, a tag, a banana bag again (or a camel), a crepe, pins, Spam, a rut, a Rolo, cash, a jar, sore hats, a peon, a canal: Panama!',) {}
-	#wrapper 0.0
-	#wrapper has been used: 2x
-	#!amanaP :lanac a ,noep a ,stah eros ,raj a ,hsac ,oloR a ,tur a ,mapS ,snip ,eperc a ,)lemac a ro( niaga gab ananab a ,gat a ,nat a ,gab ananab a ,gag a ,inoracam ,elacrep ,epins ,spam ,arutaroloc a ,shajar ,soreh ,atsap ,eonac a ,nalp a ,nam A
+    #outputs:
+    #reverse_string ('Able was I ere I saw Elba',) {}
+    #wrapper 0.0
+    #wrapper has been used: 1x
+    #ablE was I ere I saw elbA
+    #reverse_string ('A man, a plan, a canoe, pasta, heros, rajahs, a coloratura, maps, snipe, percale, macaroni, a gag, a banana bag, a tan, a tag, a banana bag again (or a camel), a crepe, pins, Spam, a rut, a Rolo, cash, a jar, sore hats, a peon, a canal: Panama!',) {}
+    #wrapper 0.0
+    #wrapper has been used: 2x
+    #!amanaP :lanac a ,noep a ,stah eros ,raj a ,hsac ,oloR a ,tur a ,mapS ,snip ,eperc a ,)lemac a ro( niaga gab ananab a ,gat a ,nat a ,gab ananab a ,gag a ,inoracam ,elacrep ,epins ,spam ,arutaroloc a ,shajar ,soreh ,atsap ,eonac a ,nalp a ,nam A
 
 Of course the good thing with decorators is that you can use them right away on almost anything without rewriting. DRY, I said:
 
-	@counter
-	@benchmark
-	@logging
-	def get_random_futurama_quote():
-		import httplib
-		conn = httplib.HTTPConnection("slashdot.org:80")
-		conn.request("HEAD", "/index.html")
-		for key, value in conn.getresponse().getheaders():
-			if key.startswith("x-b") or key.startswith("x-f"):
-				return value
-		return "No, I'm ... doesn't!"
+    @counter
+    @benchmark
+    @logging
+    def get_random_futurama_quote():
+    	import httplib
+    	conn = httplib.HTTPConnection("slashdot.org:80")
+    	conn.request("HEAD", "/index.html")
+    	for key, value in conn.getresponse().getheaders():
+    		if key.startswith("x-b") or key.startswith("x-f"):
+    			return value
+    	return "No, I'm ... doesn't!"
 
-	print get_random_futurama_quote()
-	print get_random_futurama_quote()
+    print get_random_futurama_quote()
+    print get_random_futurama_quote()
 
-	#outputs:
-	#get_random_futurama_quote () {}
-	#wrapper 0.02
-	#wrapper has been used: 1x
-	#The laws of science be a harsh mistress.
-	#get_random_futurama_quote () {}
-	#wrapper 0.01
-	#wrapper has been used: 2x
-	#Curse you, merciful Poseidon!
+    #outputs:
+    #get_random_futurama_quote () {}
+    #wrapper 0.02
+    #wrapper has been used: 1x
+    #The laws of science be a harsh mistress.
+    #get_random_futurama_quote () {}
+    #wrapper 0.01
+    #wrapper has been used: 2x
+    #Curse you, merciful Poseidon!
 
 Python itself provides several decorators: `property`, `staticmethod`, etc. Django use decorators to manage caching and view permissions. Twisted to fake inlining asynchronous functions calls. This really is a large playground.
 
@@ -2382,37 +2333,34 @@ At least, let us hope that we shall all live to see these absurd books about Suc
 
 # Goodbye Microsoft Hello Facebook
 
+I found this farewell letter to be full of advice which probably is quite relevant to me.
 
-I found this farewell letter to be full of advice which probably is quite relevant to me. 
+> Use Occam's Razor in interpersonal relations: look for the simplest, most straightforward explanation that assumes the best of everybody. Stay away from people who always have a conspiracy theory involving twisted office politics, unfulfilled Machiavellian ambitions, and unspoken agendas.
 
->   Use Occam's Razor in interpersonal relations:  look for the simplest, most straightforward explanation that assumes the best of everybody.  Stay away from people who always have a conspiracy theory involving twisted office politics, unfulfilled Machiavellian ambitions, and unspoken agendas.
+> > Good people with good process will outperform good people with no process every time. - Grady Booch
 
->   >    Good people with good process will outperform good people with no process every time. - Grady Booch
+> Don't fear process. Fear bad people dictating process. Fear process trying to make up for bad people.  
+>  I've managed almost 150 people across dev/test/PM. I estimate about 60% of employees think that they belong in the top 20% when ranked against their peers. I have never once had a person say that they belong in the bottom 10%.
 
->   Don't fear process.  Fear bad people dictating process.  Fear process trying to make up for bad people.      
->   I've managed almost 150 people across dev/test/PM.  I estimate about 60% of employees think that they belong in the top 20% when ranked against their peers.  I have never once had a person say that they belong in the bottom 10%.
+> Offer me one great Microsoft engineer for five "solid" ones: I gladly take the exchange.
 
->   Offer me one great Microsoft engineer for five "solid" ones:  I gladly take the exchange.
-
->   In a company as large as Microsoft, I guarantee you'll find someone higher level than you who you think is worse than you.  Don't get stuck in this mental trap - it won't motivate you to be your best.  Look instead towards the person you admire most at your level.  What can you learn from them?  What unique strengths might you have which they don't have?
+> In a company as large as Microsoft, I guarantee you'll find someone higher level than you who you think is worse than you. Don't get stuck in this mental trap - it won't motivate you to be your best. Look instead towards the person you admire most at your level. What can you learn from them? What unique strengths might you have which they don't have?
 
 [Philip Su](http://worldofsu.com/philipsu/goodbye-microsoft-hello-facebook/)
-
 
 ---
 
 # Teddy Bear Debugging
 
-
 Teddy bear debugging (or [rubber duck debugging](http://en.wikipedia.org/wiki/Rubber_duck_debugging)) involves telling your problems to a teddy bear!
 
 Although amusing (and cute), why does this actually work?
 
-I think it follows the idea that: 
+I think it follows the idea that:
 
 > To teach is to learn twice. -- [Joseph Joubert](http://en.wikipedia.org/wiki/Joseph_Joubert)
 
-It ensures that you have a firm grasp of what you're doing, and perhaps more importantly, forces you to slow down and think. 
+It ensures that you have a firm grasp of what you're doing, and perhaps more importantly, forces you to slow down and think.
 
 Though another person's theory to is:
 
@@ -2420,19 +2368,17 @@ Though another person's theory to is:
 
 Here are some other [stories](http://www.c2.com/cgi/wiki?RubberDucking) from [c2.com](http://www.c2.com/cgi/wiki?CardboardProgrammer).
 
->   Basically, there was a university computer programming lab [MIT?] where in one corner sat a perfectly ordinary teddy bear. If you were a student working in this lab, and you were stuck on something, the rule was that you had to explain your problem to the teddy bear first, then go back to your work and try to apply whatever wisdom the bear imparted upon you. If you were still stuck at this point, then and only then were you allowed to ask for the help of the lab's tutor.  
->    
->  If someone comes up to you seeking help with a problem, and during the course of explaining the problem to you they figure it out for themselves, you are being that person's teddy bear. -- cdevers
+> Basically, there was a university computer programming lab [MIT?] where in one corner sat a perfectly ordinary teddy bear. If you were a student working in this lab, and you were stuck on something, the rule was that you had to explain your problem to the teddy bear first, then go back to your work and try to apply whatever wisdom the bear imparted upon you. If you were still stuck at this point, then and only then were you allowed to ask for the help of the lab's tutor.
+>
+> If someone comes up to you seeking help with a problem, and during the course of explaining the problem to you they figure it out for themselves, you are being that person's teddy bear. -- cdevers
 
 > At a computer lab at UT (University of Texas) there was a lab assistant who required all people asking for help to first tell their problem to his TeddyBear which lived on his desk. He used to say that after talking to the bear more than 75% of the people solved their problems -- [MarkInterrante](http://www.c2.com/cgi/wiki?MarkInterrante)
-
 
 ---
 
 # No Hitchhikers Guide to Mathematics
 
-
->	"Mathematics is useful and I want to be better at it, but I won't write any original proofs and I absolutely abhor reading other people's proofs. I just want to use the theorems others have proved, like Fermat's Last Theorem and the undecidability of the Halting Problem."
+>     "Mathematics is useful and I want to be better at it, but I won't write any original proofs and I absolutely abhor reading other people's proofs. I just want to use the theorems others have proved, like Fermat's Last Theorem and the undecidability of the Halting Problem."
 
 The point is that the sentiment is in the wrong place. Mathematics is cousin to programming in terms of the learning curve, obscure culture, and the amount of time one spends confused. And mathematics is as much about writing proofs as software development is about writing programs (it's not everything, but without it you can't do anything). Honestly, it sounds ridiculously obvious to say it directly like this, but the fact remains that people feel like they can understand the content of mathematics without being able to write or read proofs.
 
@@ -2442,7 +2388,6 @@ The point is that the sentiment is in the wrong place. Mathematics is cousin to 
 
 # Don't Design for Reuse
 
-
 > If you're designing for reuse, you're doing it wrong.
 
 Perhaps a controversial view (perhaps better titled to be don't reinvent the wheel) but poses the question of (particularly in the comments) that if you write code well, perhaps it will follow anyway.
@@ -2451,10 +2396,9 @@ Perhaps a controversial view (perhaps better titled to be don't reinvent the whe
 
 ---
 
-
 # The Australian Computer Society should be disbanded
 
->	Sorry, but who are these f*cking morons? They are doing more damage to the industry than help. I kept thinking that at some point Candid Camera might jump out from behind the door.
+>     Sorry, but who are these f*cking morons? They are doing more damage to the industry than help. I kept thinking that at some point Candid Camera might jump out from behind the door.
 
 [Source](http://www.linkedin.com/today/post/article/20130131000939-921366-the-australian-computer-society-should-be-disbanded)
 
@@ -2470,7 +2414,7 @@ Fred Ross [A farewell to bioinformatics](http://madhadron.com/?p=263)
 
 ---
 
-###A Loose Technical explanation (Pareto Principle)  
+###A Loose Technical explanation (Pareto Principle)
 
 Why does the 50/01 follow if 80/20 is true?
 
@@ -2480,7 +2424,7 @@ $$f(0) = 0$$
 $$f(1) = 1$$
 $$f(0.2) = 0.8$$
 
-Since \\(f(x)\\) is a continuous function, we will assume that it follows the power law. That is that \\(f(x) = ax^k\\). By inspection we can conclude that \\(a = 1\\) which remains that we solve \\(k\\). Rearranging equation above yields that \\(k = \frac{ln(0.8)}{ln(0.2)}=\\). Thus 
+Since \\(f(x)\\) is a continuous function, we will assume that it follows the power law. That is that \\(f(x) = ax^k\\). By inspection we can conclude that \\(a = 1\\) which remains that we solve \\(k\\). Rearranging equation above yields that \\(k = \frac{ln(0.8)}{ln(0.2)}=\\). Thus
 
 $$f(0.01) = 0.01^{ln(0.8)/ln(0.2)}  \approx 0.5$$
 
@@ -2498,9 +2442,10 @@ Alongside this I may also pick up a few database languages to learn as well. Esp
 
 First up Ruby.
 
-Things learnt 
-*	Carelessness on my part but the `get` function translates everythings to string type.
-*	Everything is an object
+Things learnt
+
+- Carelessness on my part but the `get` function translates everythings to string type.
+- Everything is an object
 
 ---
 
@@ -2508,10 +2453,11 @@ Things learnt
 
 Probabilistic inequalities are useful to provide quick counter examples in data mining. This is very useful in preventing any issues relating to [data dredging](http://en.wikipedia.org/wiki/Data_dredging).
 
-My current favourite two which are extremely quick and easy to use are:  
-*  Markov inequality (and by corollary, Chebyshev's inequality)
-   $$
-*  Jensen's inequality
+My current favourite two which are extremely quick and easy to use are:
+
+- Markov inequality (and by corollary, Chebyshev's inequality)
+  $$
+- Jensen's inequality
 
 ---
 
@@ -2527,8 +2473,9 @@ They weren't allowed to. Otherwise the seniors wouldn't get their cash for today
 
 Bingo-like cards are then collected; carefully, slowly, meticulously. Order matters you see, their pay depended on it. The cryptic symbols alongside with the roman and greek alphabet meant that it was impossible for them to understand what theses cards were for; only that they would receive that cash for the days work.
 
->  Comments: try _1st_ person present tense should have been used.   
->  * 	what do people say? use speech
+> Comments: try _1st_ person present tense should have been used.
+>
+> -     what do people say? use speech
 
 ---
 
@@ -2536,9 +2483,9 @@ Bingo-like cards are then collected; carefully, slowly, meticulously. Order matt
 
 You picked a relevant topic for your speech, finding a topic to talk about is tricky. Examples used were things we could relate to - coke versus Pepsi. You had more complex structure but it was easy to follow and I am amazed you remembered it all. A couple of things to think about are as follows:
 
--	Put your paper down - you told us all that the speech was not on that piece of paper but you clung onto it during your speech - free up your hands if you are not using your paper - it also makes you come across as more relaxed. Notes are ok though as long as you don't read them word for word
--	Watch out for other filler words apart from um and ahs. I noticed quick a few "actually" and "so" creeping in between ideas. It is really difficult but try to pause instead of using these Slow down a bit more in parts to vary the pace - it was quite quick
--	You are a very confident speaker but any nerves you feel manifest themselves most in your breathing. Try to take a few deep breaths before you start and hopefully this will help
+- Put your paper down - you told us all that the speech was not on that piece of paper but you clung onto it during your speech - free up your hands if you are not using your paper - it also makes you come across as more relaxed. Notes are ok though as long as you don't read them word for word
+- Watch out for other filler words apart from um and ahs. I noticed quick a few "actually" and "so" creeping in between ideas. It is really difficult but try to pause instead of using these Slow down a bit more in parts to vary the pace - it was quite quick
+- You are a very confident speaker but any nerves you feel manifest themselves most in your breathing. Try to take a few deep breaths before you start and hopefully this will help
 
 ---
 
@@ -2547,29 +2494,28 @@ You picked a relevant topic for your speech, finding a topic to talk about is tr
 Chapman's Web.py extended version is available [here](https://github.com/chappers/wiki).
 
 [Skeleton](http://www.getskeleton.com/) was used to create responsive web format.
- 
 
 ##Technical details
 
 Since all updates are added in the database, to select the last updated the following SQL code was used:
 
-	select 
-		a.id, 
-		a.url, 
-		a.title, 
-		a.content, 
-		a.posted_on
-	from 
-		page as a, 
-		(select 
-			url,
-			max(posted_on) as posted_on 
-			from page
-			group by url) b
-	where 
-		a.url = b.url 
-		and a.posted_on = b.posted_on
-		
+    select
+    	a.id,
+    	a.url,
+    	a.title,
+    	a.content,
+    	a.posted_on
+    from
+    	page as a,
+    	(select
+    		url,
+    		max(posted_on) as posted_on
+    		from page
+    		group by url) b
+    where
+    	a.url = b.url
+    	and a.posted_on = b.posted_on
+
 ---
 
 # Failure Resume
@@ -2577,7 +2523,8 @@ Since all updates are added in the database, to select the last updated the foll
 Trying to debug jekyll? Try this: `jekyll --no-auto --server`
 
 List of things to do to:
--	Resume of my failures
+
+- Resume of my failures
 
 ---
 
@@ -2588,43 +2535,43 @@ The natural progression from Web.py [To Do list](http://webpy.org/src/todo-list/
 The edit functionality is included by adding an 'edit' url and the class named Edit.
 
 urls:
-	urls = (
-		'/', 'Index',
-		'/del/(\d+)', 'Delete',
-		'/edit/(\d+)', 'Edit'
-	)
+urls = (
+'/', 'Index',
+'/del/(\d+)', 'Delete',
+'/edit/(\d+)', 'Edit'
+)
 
 /templates/edit.html
-	$def with (todo, form)
+$def with (todo, form)
 
-	$todo.title
+    $todo.title
 
-	<form action="" method="post">
-	$:form.render()
-	</form>
+    <form action="" method="post">
+    $:form.render()
+    </form>
 
-	class Edit
-	class Edit:
-		form = web.form.Form(
-			web.form.Textbox('title', web.form.notnull,
-				description="I need to:"),
-			web.form.Button('Update'))
+    class Edit
+    class Edit:
+    	form = web.form.Form(
+    		web.form.Textbox('title', web.form.notnull,
+    			description="I need to:"),
+    		web.form.Button('Update'))
 
-		def GET(self, id):
-			todo = db.select('todo', where='id=$id', vars=locals())[0]
-			form = self.form
-			#put in the values of the form im editting
-			form.fill(todo)
-			return render.edit(todo, form)
+    	def GET(self, id):
+    		todo = db.select('todo', where='id=$id', vars=locals())[0]
+    		form = self.form
+    		#put in the values of the form im editting
+    		form.fill(todo)
+    		return render.edit(todo, form)
 
-		def POST(self, id):
-			todo = db.select('todo', where='id=$id', vars=locals())[0]
-			form = self.form
-			if not form.validates():
-				return render.edit(todo, form)
-			#db.update('todo', where="id=$id",title = form.d.text, vars=locals())
-			db.update('todo', where="id=$id", vars=locals(),title=form.d.title)
-			raise web.seeother('/')
+    	def POST(self, id):
+    		todo = db.select('todo', where='id=$id', vars=locals())[0]
+    		form = self.form
+    		if not form.validates():
+    			return render.edit(todo, form)
+    		#db.update('todo', where="id=$id",title = form.d.text, vars=locals())
+    		db.update('todo', where="id=$id", vars=locals(),title=form.d.title)
+    		raise web.seeother('/')
 
 Simple!
 
@@ -2634,43 +2581,17 @@ Simple!
 
 `Web.py` tutorial and examples all come with the assumption that you would install `MySQL` or `Postgres`. Below I will demonstrate how you could complete the examples using `sqlite`, through python's default module `sqlite3`.
 
-`---`
+---
 
 Database object is created using
 
-	db = web.database(dbn='sqlite', db='dbname.db')
-	
+    db = web.database(dbn='sqlite', db='dbname.db')
+
 A table can be created using the SQL code below. Notice that there are sqlite specific code in the use of incrementation of 'id'.
 
-	CREATE TABLE page (
-		page_id INTEGER PRIMARY KEY,
-		page_title TEXT,
-		page_content TEXT)
+    CREATE TABLE page (
+    	page_id INTEGER PRIMARY KEY,
+    	page_title TEXT,
+    	page_content TEXT)
 
 This idea can be applied to every example on the web.py website.
-
-</xmp>
-
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-document.getElementById('content').innerHTML = marked(document.getElementById('marked').innerHTML);
-document.getElementById('marked').style.display = 'none';
-</script>
-
-<script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<div id="footer">
-<p>
-<a href="http://chappers.github.io/"> home </a>
-:: 
-<a href="http://chappers.github.io/portfolio/"> portfolio </a>
-::
-<a href="http://chappers.github.io/about/"> about </a>
-::
-<a href="http://chappers.github.io/thoughtlog.html"> thoughtlog </a>
-::
-<a href="http://chappers.github.io/WritingDrafts/"> writing drafts </a>
-</p>
-</div>
-</html>

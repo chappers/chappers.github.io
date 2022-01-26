@@ -1,13 +1,13 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 Using `tsfresh` to generate features quickly without thinking too hard...
 
-Rough sketch is below. I'm not perfectly happy with the code, but using `tsfresh` in conjunction with `shap` and `isolationforest` should provide a really good starting point for bootstrapping timeseries modelling, particularly when you don't have any labels. We can make use of this feature engineering pipeline to build (hopefully) sensible profiles. 
+Rough sketch is below. I'm not perfectly happy with the code, but using `tsfresh` in conjunction with `shap` and `isolationforest` should provide a really good starting point for bootstrapping timeseries modelling, particularly when you don't have any labels. We can make use of this feature engineering pipeline to build (hopefully) sensible profiles.
 
 ```py
 from tsfresh.examples.robot_execution_failures import (
@@ -124,5 +124,5 @@ subset_timeseries = extract_features_and_impute(
 
 What improvements can be made?
 
-*  In production, the statistics needs to be saved, so they are not affected by the extract batch - this is particularly important when scoring models
-*  Better feature selection approach - we could do several rounds of isolation forest for example, to trim down the features selected. 
+- In production, the statistics needs to be saved, so they are not affected by the extract batch - this is particularly important when scoring models
+- Better feature selection approach - we could do several rounds of isolation forest for example, to trim down the features selected.

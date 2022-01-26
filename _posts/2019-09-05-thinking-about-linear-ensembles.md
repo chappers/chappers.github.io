@@ -1,15 +1,15 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 Can linear ensembles yield non-linear boundaries when the base learner is a linear model?
 
 On the surface, the answer surely is "no". How could a linear model, when combined in a linear combination yield a _non-linear_ boundary?
 
-On closer inspection, the answer lies on how we may ensemble, and also how we may introduce non-linearities, similar to how neural networks are trained to represent non-linear decision boundaries. 
+On closer inspection, the answer lies on how we may ensemble, and also how we may introduce non-linearities, similar to how neural networks are trained to represent non-linear decision boundaries.
 
 ## Thinking about neural networks
 
@@ -21,7 +21,7 @@ This can be used to naturally answer the question - if we add a non-linear activ
 
 ## Code example
 
-The easiest way to demonstrate how this could work is if we consider an ensemble of three arbitrary (generalised) linear models in the form of a logistic regression. In this setting, the non-linearity will come from the logistic function which is used at the end of each of the base learners. 
+The easiest way to demonstrate how this could work is if we consider an ensemble of three arbitrary (generalised) linear models in the form of a logistic regression. In this setting, the non-linearity will come from the logistic function which is used at the end of each of the base learners.
 
 ```r
 library(dplyr)
@@ -42,7 +42,7 @@ lgrid <- expand.grid(x1 = seq(-4, 2, by=0.05),
                     x2 = seq(-4, 2, by=0.05))
 lgrid$pred <- ensemble(lgrid)
 ggplot(data=lgrid) +
-geom_point(aes(x=x1, y=x2, color=pred), alpha=0.7) + 
+geom_point(aes(x=x1, y=x2, color=pred), alpha=0.7) +
 scale_color_gradient2(midpoint=0.5, low="blue", mid="white",
                         high="red", space ="Lab" )
 ```

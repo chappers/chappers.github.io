@@ -1,73 +1,72 @@
 ---
 layout: post
-category : web micro log
-tags : [js]
+category: web micro log
+tags: [js]
 ---
 
 Recently I have been looking at a visualisation grammar called [Vega](http://trifacta.github.io/vega/). The main reason is the simplicity with generating graphs for the web when you come from other non-web areas such as Python.
 
 But why Vega? The visualisation grammar is something which I believe is easily accessible for people who don't have knowledge in HTML or JavaScript. [D3](http://d3.js.org) although a wonder and powerful library, is way too difficult to even do the simplest of actions, whilst many of the other libraries seem to connect to D3, removing parts of its abstractions. Though they are useful, I truly believe that an approach like Vega is the future. (I am also highly influenced by [R's ggvis](http://ggvis.rstudio.com/) project which uses Vega as well).
 
-As of writing there are no tooltips on the graphs. Though the authors have noted that it is slated for a future release when they flesh out the grammar for developing tooltips. Nevertheless I thought about the easiest and painless way (though not necessarily the best!) is to add my own tooltips, and concluded that just using jQuery with CSS is the easiest way to add tooltips. 
+As of writing there are no tooltips on the graphs. Though the authors have noted that it is slated for a future release when they flesh out the grammar for developing tooltips. Nevertheless I thought about the easiest and painless way (though not necessarily the best!) is to add my own tooltips, and concluded that just using jQuery with CSS is the easiest way to add tooltips.
 
 ## The Tooltip
 
-To create the tooltip, all we need is some text which follows our mouse when it hovers over the suitable part of the graph. 
+To create the tooltip, all we need is some text which follows our mouse when it hovers over the suitable part of the graph.
 
 1. Build a box which follows our mouse.
 
-To do this we will use jQuery to continually update the position of the mouse and place the tooltip relative to the mouse. 
+To do this we will use jQuery to continually update the position of the mouse and place the tooltip relative to the mouse.
 
 ```html
-  <head>
-    <style>
-/* this is for tooltips in the graph*/
-#tooltip {
-    position: absolute;
-    float: left;
-    background-color: #fff;
-    border: 2px solid #aaa;
-    padding: 2px;
-    border-radius: 5px;
-}
-    </style>
-    
-  </head>
-  <body>
-    <div id="tooltip">This is a tooltip</div>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-    $(document).bind('mousemove', function(e){
-        $('#tooltip').css({
-           "left":  e.pageX + 20,
-           "top":   e.pageY
-        });
+<head>
+  <style>
+    /* this is for tooltips in the graph*/
+    #tooltip {
+      position: absolute;
+      float: left;
+      background-color: #fff;
+      border: 2px solid #aaa;
+      padding: 2px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="tooltip">This is a tooltip</div>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(document).bind("mousemove", function (e) {
+      $("#tooltip").css({
+        left: e.pageX + 20,
+        top: e.pageY,
+      });
     });
-    </script>
-  </body>   
+  </script>
+</body>
 ```
 
 Expanding on this idea, we can easily add it to our graph which is in Vega. The trick is that in the "mouseover" even we will set all the styling and the words in the toolbox, whilst on "mouseout" we will remove all the styling and text in the toolbox thus "hiding" the toolbox.
 
 ```js
-vg.parse.spec(spec, function(chart) {
-  var view = chart({el:"#view"})
-    .on("mouseover", function(event, item) {   
+vg.parse.spec(spec, function (chart) {
+  var view = chart({ el: "#view" })
+    .on("mouseover", function (event, item) {
       // set the css for the tooltip
-      $('#tooltip').text("Value is : "+item.datum.data.y);
-      $('#tooltip').css("border", "2px solid #aaa");
-      $('#tooltip').css("padding", "2px");
-      $('#tooltip').css("border-radius", "5px");
+      $("#tooltip").text("Value is : " + item.datum.data.y);
+      $("#tooltip").css("border", "2px solid #aaa");
+      $("#tooltip").css("padding", "2px");
+      $("#tooltip").css("border-radius", "5px");
     })
-    .on("mouseout", function(event, item) {
+    .on("mouseout", function (event, item) {
       // remove all styling from the tooltip
-      $('#tooltip').text("");
-      $('#tooltip').css("border", "0px");
-      $('#tooltip').css("padding", "0px");
-      $('#tooltip').css("border-radius", "0px");
+      $("#tooltip").text("");
+      $("#tooltip").css("border", "0px");
+      $("#tooltip").css("padding", "0px");
+      $("#tooltip").css("border-radius", "0px");
     })
     .update();
-  });
+});
 ```
 
 The result can be seen in the graph below:
@@ -177,7 +176,3 @@ $('#tooltip').css({
 .update();
 });
 </script>
-
-
-
-

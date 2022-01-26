@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 ```py
@@ -29,7 +29,7 @@ Let's try similar setup but writing SQL.
 ```py
 df.createOrReplaceTempView("tbl")
 w1 = spark.sql("""
-    select 
+    select
         window(date, "1 day").start as event_timestamp,
         first(val, True) as val
     from tbl
@@ -39,7 +39,7 @@ w1 = spark.sql("""
 
 With this in mind, how would we best create features from a unified streaming and batch pattern?
 
-If we assume that the data would already have restrictions such as maximum number of instances in a time window; setting `first(<col>, True)` would also allow for taking the first non-null in the event that there are null values present.  
+If we assume that the data would already have restrictions such as maximum number of instances in a time window; setting `first(<col>, True)` would also allow for taking the first non-null in the event that there are null values present.
 
 When this is flattened in this way - we can ingest it directly into a feature store like Feast in both a stream and batch. To observe this in action, suppose there is a `csv` file in the following format:
 
@@ -91,7 +91,7 @@ df_event = (
 
 df_event.createOrReplaceTempView("df_event")
 w1 = spark.sql("""
-    select 
+    select
         window(event_timestamp, "1 day").start as event_timestamp,
         first(val, True) as val
     from df_event

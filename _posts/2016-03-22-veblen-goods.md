@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 # The new Veblen Profession
@@ -14,7 +14,7 @@ in education.
 Having a ethnic background being south-east Asian means that there are two main
 occupations which are highly valued:
 
-*  Medical Doctor Lawyer
+- Medical Doctor Lawyer
 
 This prestige around the world is highlighted by the sheer difficulty in
 completing and earning their respective titles. Although not a comprehensive
@@ -23,7 +23,7 @@ be a Veblen Profession.
 
 After all;
 
->  What do you call a doctor who finishes last in their class? A doctor.
+> What do you call a doctor who finishes last in their class? A doctor.
 
 Within Sydney, there is probably another profession which has begun to rise
 (though not as prestigious as the two mentioned) - the Actuary.
@@ -69,7 +69,7 @@ backgrounds in areas such as hard (Physicists, Chemists) and soft sciences
 (Econometricians), engineers, computer scientists - basically anyone from a STEM
 background. In contrast technical pricing within Sydney in particular has been
 solely reserved for the large influx of actuaries, again anecdotally making it
-very hard for anyone without an actuarial background to enter.  
+very hard for anyone without an actuarial background to enter.
 
 ## On Hiring
 
@@ -99,8 +99,8 @@ actuarial work.
 In the various positions which I have interviewed for technical components
 of the interview normally consisted of two parts:
 
-*  Knowledge
-*  Case studies
+- Knowledge
+- Case studies
 
 As I have become increasingly senior, I have noticed that the Knowledge portion
 has become increasingly shorter and a huge focus on case studies. Unfortunately

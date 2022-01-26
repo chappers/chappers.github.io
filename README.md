@@ -1,4 +1,3 @@
-chappers.github.com
-===================
+# chappers.github.com
 
 Personal blog of chapman siu

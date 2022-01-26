@@ -1,24 +1,23 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
-Here are some random notes for myself based on my experience in GraphQL/Graphene. 
+Here are some random notes for myself based on my experience in GraphQL/Graphene.
 
 Graphene has two main parts:
 
-*  Queries: which are just for querying data  
-*  Mutation: when you have a query which modifies data in some way  
+- Queries: which are just for querying data
+- Mutation: when you have a query which modifies data in some way
 
-Mutation
-========
+# Mutation
 
 To write a mutation there are a few components:
 
-*  Structure of the output
-*  Accepting input parameters
-*  Modifying data
+- Structure of the output
+- Accepting input parameters
+- Modifying data
 
 Sample mutation ([taken from docs](http://docs.graphene-python.org/en/latest/types/mutations/)):
 
@@ -46,10 +45,10 @@ class CreatePerson(graphene.Mutation):
     def mutate(root, args, context, info):
         # this extracts the argument when the mutation is called
         person = Person(name=args.get('name'))
-        
+
         # modify stuff here
         ok = True
-        
+
         # this is the output of the query after mutation is complete
         return CreatePerson(person=person, ok=ok)
 ```
@@ -65,7 +64,6 @@ class MyMutations(graphene.ObjectType):
     create_person = CreatePerson.Field()
 
 # We must define a query for our schema
-class Query(graphene.ObjectType):    
+class Query(graphene.ObjectType):
     person = graphene.Field(Person)
 ```
-

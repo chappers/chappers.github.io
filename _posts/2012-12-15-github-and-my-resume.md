@@ -1,8 +1,8 @@
 ---
 layout: post
-category : code dump
-tags : [python]
-tagline: 
+category: code dump
+tags: [python]
+tagline:
 ---
 
 [Repository here](https://github.com/chappers/markdownResume)  

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : web micro log
+category: web micro log
 tags: [node, express 3, express]
 ---
 
@@ -37,14 +37,14 @@ would alter `index.jade`. But what is `jade`? How does node know to locate `view
 Lets firstly look at the `app.js`.
 
 ```javascript
-var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
+var express = require("express");
+var routes = require("./routes");
+var user = require("./routes/user");
 ```
 
-What do these do? 
+What do these do?
 
-Using what I know from the Python universe, the code above would be similar to 
+Using what I know from the Python universe, the code above would be similar to
 
 ```javascript
 import express
@@ -58,7 +58,7 @@ package we installed earlier.
 So where does the magic happen to generate the front page?
 
 ```javascript
-app.get('/', routes.index);
+app.get("/", routes.index);
 ```
 
 What this "means" is in the base URL we will run the function in `routes.index`
@@ -69,4 +69,3 @@ Now switching to `./routes.index.js` (where it is directed), we can see that it 
 Finally, looking at the `views folder` we can see `index.jade` which is what is
 finally rendered. Change `index.jade` to whatever you want and refresh the page to get
 it to show up.
-

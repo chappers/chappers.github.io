@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 Orchestrating in-memory jobs in Luigi need not be hard. The easiest way is to roll your own `luigi.Target`. For example the following works perfectly:
@@ -12,13 +12,13 @@ _data = {}
 
 class MemoryTarget(luigi.Target):
     _data = {}
-    def __init__(self, path): 
+    def __init__(self, path):
         self.path = path
-    def exists(self): 
+    def exists(self):
         return self.path in _data
-    def put(self, value): 
+    def put(self, value):
         _data[self.path] = value
-    def get(self): 
+    def get(self):
         return _data[self.path]
 ```
 
@@ -35,44 +35,44 @@ _data = {}
 
 class MemoryTarget(luigi.Target):
     _data = {}
-    def __init__(self, path): 
+    def __init__(self, path):
         self.path = path
-    def exists(self): 
+    def exists(self):
         return self.path in _data
-    def put(self, value): 
+    def put(self, value):
         _data[self.path] = value
-    def get(self): 
+    def get(self):
         return _data[self.path]
 
 
 class MyTask(luigi.Task):
     x = luigi.IntParameter(default=5)
     y = luigi.IntParameter(default=45)
-    
+
     #def run(self):
     #    print self.x + self.y
-    
+
     def run(self):
         f = self.output()
         f.put(self.x + self.y)
         print(f.get())
-    
+
     def output(self):
         return MemoryTarget(self.__class__.__name__)
 
 class MyTask2(luigi.Task):
     x = luigi.IntParameter()
     y = luigi.IntParameter(default=45)
-    
+
     def run(self):
         dyna_input = yield MyTask()
         f = self.output()
         f.put(dyna_input.get() + self.x + self.y)
         print(f.get())
-    
+
     def output(self):
         return MemoryTarget(self.__class__.__name__)
-    
+
     @luigi.Task.event_handler(luigi.Event.SUCCESS)
     def output_object(task):
         """Will be called directly after a successful execution

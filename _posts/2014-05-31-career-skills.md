@@ -1,9 +1,9 @@
 ---
 layout: post
-category : web micro log
+category: web micro log
 ---
 
-**Notes on the MOOC "Enhance your career and Employability skills" Week 2** 
+**Notes on the MOOC "Enhance your career and Employability skills" Week 2**
 
 <table>
 <tr><td>Skill</td><td>Description</td><td>Rating</td><td>Evidence</td></tr>
@@ -14,4 +14,3 @@ category : web micro log
 <tr><td>Leadership</td><td>Establishing a clear vision, sharing that vision with others so that they will follow willingly, providing the information, knowledge and methods to realise that vision, and co-ordinating and balancing the conflicting interests of all members and stakeholders. </td><td>3</td><td>Chairing meetings, and sharing knowledge is vitally important especially when dealing with non-technical people. This is an area which I have invested heavily within the last two years, but I must continue to do so if I am to become a stronger analyst</td></tr>
 <tr><td></td></tr>
 </table>
-

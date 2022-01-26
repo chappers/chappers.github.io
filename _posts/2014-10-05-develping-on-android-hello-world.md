@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : [android, java]
+category: web micro log
+tags: [android, java]
 ---
 
 **This is a series of post as I will hopefully build a simple wallpaper app.**
@@ -10,8 +10,7 @@ When creating a new application using [Android Studio](https://developer.android
 
 But firstly, let's have a quick look at the different files which build up an Android app.
 
-`res/layouts`
--------------
+## `res/layouts`
 
 I like to think of layouts as your HTML code. It tells you where everything sits. Within Android studio, there is a simple point and click template which allows you to easily and quickly generate something to your liking.
 
@@ -25,8 +24,7 @@ This line within the `TextView` does it:
 android:text="@string/hello_world"
 ```
 
-`res/values`
-------------
+## `res/values`
 
 This is where your variables are listed for your layouts. See within `strings.xml` you have the resulting "Hello World!" string here:
 
@@ -36,14 +34,13 @@ This is where your variables are listed for your layouts. See within `strings.xm
 
 But its always more interesting to be able to change these things within code. Lets look at how to do that next.
 
-Code
-----
+## Code
 
 To be able to change the text within `.java` code, simply reference the field that you wish to change and the use the method `.setText()`. We then control when and how the text is to be changed. Does it change:
 
-*  When you first load up the application?
-*  When you change something in settings?
-*  When you click on something?
+- When you first load up the application?
+- When you change something in settings?
+- When you click on something?
 
 There are many aspects which we have to think about when and how we should change text. But for starters, lets just change it `onCreate`. You could see the `onCreate` method within your `.java` file. Simply add:
 
@@ -62,8 +59,7 @@ android:id="@+id/YOUR_ID"
 
 Then when you run the emulator you should be able to see the text updated to "Hello Again".
 
-Finally
--------
+## Finally
 
 Your files should look something like the ones below:
 
@@ -112,7 +108,7 @@ public class HelloActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.hello, menu);
-        
+
         TextView changeText = (TextView) findViewById(R.id.hello_world);
         changeText.setText("Chapman!");
         return true;
@@ -132,8 +128,7 @@ public class HelloActivity extends ActionBarActivity {
 }
 ```
 
-Changing Fields to be Editable
-------------------------------
+## Changing Fields to be Editable
 
 To simply change text to be editable, all we have to do is change the "TextView" to EditText" in the `.xml` file. Then in our code, instead of declaring a "TextView" variable, we use an "EditText" variable, setting the `TextView.BufferType.EDITABLE`, i.e. :
 
@@ -146,7 +141,7 @@ To simply change text to be editable, all we have to do is change the "TextView"
     />
 ```
 
-and 
+and
 
 ```java
     @Override

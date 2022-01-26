@@ -1,23 +1,23 @@
 ---
 layout: post
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
-In this post we'll quickly go through how to add "single" agent policies to QMIX (multiagent) environment specifically to RLlib. Why would we want to do this? 
+In this post we'll quickly go through how to add "single" agent policies to QMIX (multiagent) environment specifically to RLlib. Why would we want to do this?
 
 In my mind, algorithms like MAVEN make use of hierarchical policies would need constructs like this.
 
-_Side note_: I dislike using PyMARL as an environment as theres not enough examples to get things working quickly. Whilst RLlib is fairly opinionated - at the very least, its easier to mix and match items together; especially when working with other problems which are not MARL (Multi-agent reinforcement learning). 
+_Side note_: I dislike using PyMARL as an environment as theres not enough examples to get things working quickly. Whilst RLlib is fairly opinionated - at the very least, its easier to mix and match items together; especially when working with other problems which are not MARL (Multi-agent reinforcement learning).
 
 Of course this is not without downsides; being heavy on RLlib means that doing anything that is "custom" does end up being a lot of code! At this stage its something that I've learnt to live with and the constraints do encourage some form of discipline.
 
 **Broad Idea**
 
-The broad idea is that we make use of QMIX as a "base policy trainer" which we then manually alter policies on top. 
+The broad idea is that we make use of QMIX as a "base policy trainer" which we then manually alter policies on top.
 
-However, to use QMIX we need to make use of "agent groups" as part of the Multi-agent environments. These environment allow one to group units logically together (for example, when training for an RTS game, one approach might be to group all the units which are the same unit type together, and have them cooperate). 
+However, to use QMIX we need to make use of "agent groups" as part of the Multi-agent environments. These environment allow one to group units logically together (for example, when training for an RTS game, one approach might be to group all the units which are the same unit type together, and have them cooperate).
 
 To do this let's start working backwards (even though this is not how I came to build it!)
 
@@ -34,7 +34,7 @@ config = {
 }
 ```
 
-This layout is the same as an ordinary hierarchical setup in the RLlib documentation. Working backwards, we need to create our groups. Notice that we refer to the groups as part of the `policy_mapping_fn`. 
+This layout is the same as an ordinary hierarchical setup in the RLlib documentation. Working backwards, we need to create our groups. Notice that we refer to the groups as part of the `policy_mapping_fn`.
 
 ```py
 grouping = {"group_1": [0, 1], "group_2": [2]}
@@ -61,7 +61,7 @@ Then if we run:
 tune.run("QMIX", config=config)
 ```
 
-Then it would work as expected. 
+Then it would work as expected.
 
 <details>
 <summary>A cleaned up example is shown here</summary>

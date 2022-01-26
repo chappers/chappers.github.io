@@ -1,9 +1,9 @@
 ---
 layout: post
 title: What is SpaCy's default Text Categorization Model?
-category : 
-tags : 
-tagline: 
+category:
+tags:
+tagline:
 ---
 
 SpaCy makes text classification easy. How easy? Let's compare!
@@ -26,7 +26,7 @@ pipeline.predict(['Polygon Splitting algo', 'doctor patient relationship problem
 
 For SpaCy, we can use this:
 
-<!-- 
+<!--
 
 ```py
 from sklearn.datasets import fetch_20newsgroups
@@ -158,7 +158,7 @@ for itn in range(100):
     # Shuffle the training data
     random.shuffle(TRAINING_DATA)
     losses = {}
-    
+
     # Batch the examples and iterate over them
     for batch in spacy.util.minibatch(TRAINING_DATA, size=1):
         for text, annotations in batch:
@@ -171,7 +171,6 @@ for itn in range(100):
             print(losses)
 ```
 -->
-
 
 ```py
 import spacy
@@ -189,7 +188,7 @@ for doc, label in zip(twenty_train.data, twenty_train.target.tolist()):
     )
 
 
-nlp = spacy.blank("en")  
+nlp = spacy.blank("en")
 # or
 # nlp = spacy.load("en_core_web_sm")
 category = nlp.create_pipe("textcat")
@@ -205,7 +204,7 @@ for itn in range(1):
     # Shuffle the training data
     random.shuffle(train_data)
     losses = {}
-    
+
     # Batch the examples and iterate over them
     for batch in spacy.util.minibatch(train_data, size=64):
         texts = [nlp(text) for text, entities in batch]
@@ -233,7 +232,7 @@ class SpacyTextCat(ClassifierMixin):
     def __init__(self, pack="en", n_classes = None, cats=None, batch_size=64, iters=1000):
         # TODO support multi-label and multiclass properly
         if pack == "en":
-            self.nlp = spacy.blank("en")  
+            self.nlp = spacy.blank("en")
         else:
             self.nlp = spacy.load(pack)
         self.category = self.nlp.create_pipe("textcat")
@@ -265,8 +264,8 @@ class SpacyTextCat(ClassifierMixin):
         self.n_classes = n_classes if n_classes is not None else 2
         self.is_binary = self.n_classes == 2
         self.batch_size = batch_size
-            
-    
+
+
     def preprocess_data(self, X, y):
         # reformat data...
         #X = np.array(X)
@@ -296,7 +295,7 @@ class SpacyTextCat(ClassifierMixin):
             iters = self.iters
 
         losses = {}
-        
+
         for _ in range(iters):
             for batch in spacy.util.minibatch(train_data, size=self.batch_size):
                 texts = [self.nlp(text) for text, response in batch]
@@ -322,9 +321,9 @@ pred = clf.predict(twenty_train.data)
 print(pred)
 ```
 
-This seems like a suitable approach at a brief level - though it might be more prudent to have custom code rather than trying to make it generic, but it can be wrapped up in a cleaner module rather than Spacy specific code everywhere. 
+This seems like a suitable approach at a brief level - though it might be more prudent to have custom code rather than trying to make it generic, but it can be wrapped up in a cleaner module rather than Spacy specific code everywhere.
 
-<!-- 
+<!--
 
 import spacy
 import numpy as np
@@ -382,12 +381,12 @@ class SpacyTextCat(ClassifierMixin):
     def __init__(self, pack="en", n_classes = None, batch_size=64, iters=1000):
         # spacy 3 has separate interfaces for classification vs multilabel...
         if pack == "en":
-            self.nlp = spacy.blank("en")  
+            self.nlp = spacy.blank("en")
         else:
             self.nlp = spacy.load(pack)
         self.category = self.nlp.add_pipe("textcat", config=config, last=True)
         n_classes = 2 if n_classes is None else n_classes
-            
+
         for c in range(n_classes):
             self.category.add_label(f"label{c}")
 
@@ -397,8 +396,8 @@ class SpacyTextCat(ClassifierMixin):
         self.iters = iters
         self.n_classes = n_classes
         self.batch_size = batch_size
-            
-    
+
+
     def preprocess_data(self, X, y):
         # reformat data...
         #X = np.array(X)
@@ -422,7 +421,7 @@ class SpacyTextCat(ClassifierMixin):
             iters = self.iters
 
         losses = {}
-        
+
         for _ in range(iters):
             for batch in spacy.util.minibatch(train_data, size=self.batch_size):
                 texts = [self.nlp(text) for text, response in batch]

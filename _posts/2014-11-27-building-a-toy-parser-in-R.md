@@ -1,7 +1,7 @@
 ---
 layout: post
-category : web micro log
-tags : 
+category: web micro log
+tags:
 ---
 
 In this blog post I will go through the process of building a combinatory parser in R. This post reflects
@@ -10,7 +10,7 @@ Ramble was still a work in progress and may differ to what I will explore in thi
 
 ## R is a functional
 
-What do I mean by this? In R functions are [first-class](http://en.wikipedia.org/wiki/First-class_function), and [higher-order](http://en.wikipedia.org/wiki/Higher-order_function). 
+What do I mean by this? In R functions are [first-class](http://en.wikipedia.org/wiki/First-class_function), and [higher-order](http://en.wikipedia.org/wiki/Higher-order_function).
 
 ```r
 f <- function(...) {
@@ -30,7 +30,7 @@ function(x) x+1
 [1] 2
 ```
 
-Here we have an example of passing functions and variables around in functions. You can also see `?Map` or `?Reduce` for the other higher order functions in R. 
+Here we have an example of passing functions and variables around in functions. You can also see `?Map` or `?Reduce` for the other higher order functions in R.
 
 ## Building the Parser
 
@@ -90,11 +90,11 @@ $leftover
 
 Since the rest of the functions are notably more complex, I will ommit them here, but will discuss how they are used.
 
-**Do**  
+**Do**
 
 The do function chains successive parsing actions together. If any of them fail, it will return an empty list. It has the last argument describing how/what it should do with these parsed elements.
 
-**Choice**  
+**Choice**
 
 The choice function tries the first parser, if it returns an empty list, it will move onto the second one.
 
@@ -105,7 +105,7 @@ many1 <- function(p) {
   do(v=p,
           vs=many(p),
           f = function(v,vs="") {unlist(c(v,vs))})
-  
+
 }
 
 many <- function(p) {
@@ -117,13 +117,13 @@ By now we can then go ahead and chain these functions again to determine things 
 
 ```r
 nat <- function() {
-  do(xs = many1(Digit()),f = function(xs) {paste(xs, collapse='')})  
+  do(xs = many1(Digit()),f = function(xs) {paste(xs, collapse='')})
 }
 
 token <- function(p) {
   do(space(),
           v = p,
-          space(), 
+          space(),
           f = function(v) {v})
 }
 
@@ -153,7 +153,7 @@ nat = 0 | 1 | 2 ...
 This would be expressed as the following using Ramble:
 
 ```r
-expr <- do(f=term, 
+expr <- do(f=term,
            function(f, leftover_){
              return(
                (do(s=symbol("+"),
@@ -166,7 +166,7 @@ expr <- do(f=term,
              )
            })
 
-term <- do(f=factor, 
+term <- do(f=factor,
            function(f, leftover_){
              return(
                (do(s=symbol("*"),
@@ -245,13 +245,3 @@ $leftover
 ```
 
 Hopefully in the future I can develop this further and make it easier to use. At the moment I feel that it is too clunky and not very friendly (although consistent with itself).
-
-
-
-
-
-
-
-
-
-

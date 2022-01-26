@@ -1,19 +1,19 @@
 ---
 layout: post
-category : web micro log
+category: web micro log
 ---
 
-**Notes on the MOOC "Enhance your career and Employability skills" Week 1** 
+**Notes on the MOOC "Enhance your career and Employability skills" Week 1**
 
-Integrity. "Form follows function" - results driven, challenging work. Flexibility with 
-respect to tooling (flexibility/innovation over process). Data driven decisions. 
+Integrity. "Form follows function" - results driven, challenging work. Flexibility with
+respect to tooling (flexibility/innovation over process). Data driven decisions.
 The customer is not always right; sometimes they don't know what they're looking for.
 Mass collaboration over individual work. Automate relentlessly. Sense of purpose and results.
 
 ## Lifeline
 
-* Positive Emotions: curiosity, hope, gratitude, joy, enthusiasm, pride, generosity  
-* Negative Emotions: worry, dread, anger, sorrow, frustration, envy, selfishness  
+- Positive Emotions: curiosity, hope, gratitude, joy, enthusiasm, pride, generosity
+- Negative Emotions: worry, dread, anger, sorrow, frustration, envy, selfishness
 
 <script src="http://code.shutterstock.com/rickshaw/vendor/d3.min.js"></script>
 <script src="http://code.shutterstock.com/rickshaw/rickshaw.min.js"></script>
@@ -42,31 +42,30 @@ graph.render();
 
 ### Peaks
 
-*  New Job  
-*  Productivity  
+- New Job
+- Productivity
 
 ### Troughs
 
-*  Change in management  
-*  Lack of acknowledgement/recognition  
-*  Opinion and expertise is ignored  
+- Change in management
+- Lack of acknowledgement/recognition
+- Opinion and expertise is ignored
 
 ## Test and Learn
 
-"You don't know what you don't know"  
+"You don't know what you don't know"
 
 ### Crafting Experiments
 
 Currently I have the opportunity to place myself for nomination for the executive team for a local toastmasters club; I really should just see what it is like to be part of a committee.
 
-Try doing tasks using different tools. Try generalising approaches. 
+Try doing tasks using different tools. Try generalising approaches.
 
 MOOCs
 
 ### Shifting Experiences
 
 See how I could get a taste for leadership roles. Is it for me?
-
 
 ### Making Sense
 
@@ -120,8 +119,3 @@ _to be revisited_
 <tr><td>Supportive</td><td>The organisation you work for is open and tolerant. Your views are sought and respected during decision making.</td><td>Y</td><td></td><td></td></tr>
 <tr><td>Cooperation</td><td>Your work requires operating as part of a team and interacting with others to achieve a goal.</td><td>Y</td></tr>
 </table>
-
-
-
-
-

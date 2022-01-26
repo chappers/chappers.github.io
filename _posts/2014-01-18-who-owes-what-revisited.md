@@ -1,11 +1,11 @@
 ---
 layout: post
-category : web micro log
-tags : [python]
+category: web micro log
+tags: [python]
 ---
 
-Perhaps its just an itch, but I couldn't resist. So here is 
-[**Wow**](https://gist.github.com/chappers/8412812). As stated before 
+Perhaps its just an itch, but I couldn't resist. So here is
+[**Wow**](https://gist.github.com/chappers/8412812). As stated before
 I thought the best way was to emulate [APScheduler](http://pythonhosted.org/APScheduler/).
 
 Usage is fairly similar. To start Wow simply use.

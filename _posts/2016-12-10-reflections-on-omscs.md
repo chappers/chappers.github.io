@@ -1,22 +1,21 @@
 ---
 layout: post
-category : web micro log
-tags :
+category: web micro log
+tags:
 ---
 
 It is all over, finally finished my last assessment for OMSCS program. Some of
 the common questions I got was:
 
-*  Was this worth it? How difficult is the program? Why this program? Would you
-*  recommend this program to someone else?
+- Was this worth it? How difficult is the program? Why this program? Would you
+- recommend this program to someone else?
 
 Overall if I was to rate my experience, I have to say that OMSCS is a bit of a
 mixed bag. It is difficult to compare with another course or program since this
 is my first program which I worked through whilst working full-time. With that
 mind please consider some of my comments.
 
-Is such a program truly International?
-======================================
+# Is such a program truly International?
 
 One of the huge selling points of OMSCS is that it was billed as an
 international program; you can be anywhere and still study in this program.
@@ -38,8 +37,7 @@ reasonable compromise, though it meant you normally wouldn't actually look at
 anything till probably 8 hours after an assessment was released, (since 12am
 anywhere on earth is ~11pm AEDT).
 
-On Rigor and Difficulty
-========================
+# On Rigor and Difficulty
 
 Most people felt the program was rigorous, and in general I would agree with
 that assessment. Besides a very weird and negative experience in CS6505 which I
@@ -54,33 +52,30 @@ The courses in general were a tad easier than my undergraduate experience, proba
 
 None of the courses really contained too much Math, but at the same time gave
 you enough to encourage you to explore more. There was definitely an expectation
-that everyone  would be Math literate when starting the program rather than
+that everyone would be Math literate when starting the program rather than
 having a program which would help with your Math skills.
 
-Surprising Elements
-===================
+# Surprising Elements
 
 There is without a doubt that my computer science foundation has become stronger by finishing this program. The depth and breadth of my skills has definitely improved; more than what I would have gained with an education in Australia, since Australia (and UK models in general) are more specialist orientated compared with US which is more generalist. Within the course of the degree I have managed to cover five different areas of computer science (at least what is considered to be five different areas for the purposes of breadth requirement for PhD at Georgia Tech)
 
-*  Software methodology and engineering: CS6300 Software development Process  
-*  Network and communications: CS6250 Computer Networks
-*  Machine learning: CS7641 Machine Learning, CSE6242 Data and visual analytics
-*  Intelligent Systems: CS6601 Artificial Intelligence
-*  Learning Sciences and Technology: CS6460 Educational Technology
+- Software methodology and engineering: CS6300 Software development Process
+- Network and communications: CS6250 Computer Networks
+- Machine learning: CS7641 Machine Learning, CSE6242 Data and visual analytics
+- Intelligent Systems: CS6601 Artificial Intelligence
+- Learning Sciences and Technology: CS6460 Educational Technology
 
-Major projects
-==============
+# Major projects
 
 I would say there were three major projects that I did for this degree
 
-*  Scene Completion with a large dataset of images
-*  Web app for health informatics
-*  Paper for educational technology which was on "Duplicate Question Detection Using Online Learning"
+- Scene Completion with a large dataset of images
+- Web app for health informatics
+- Paper for educational technology which was on "Duplicate Question Detection Using Online Learning"
 
 The paper writing course was well put together and I would definitely follow a similar model to produce papers!
 
-Recommendations
-===============
+# Recommendations
 
 The value proposition for a life long learner is definitely strong for the OMSCS program. You will surely learn a lot and develop lots of knowledge and skills. However for career progression and particularly for international students there is still a big question mark.
 

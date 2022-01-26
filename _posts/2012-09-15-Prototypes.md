@@ -1,17 +1,17 @@
 ---
 layout: post
-category : web micro log
-tags : [opinion, data mining]
-tagline: 
+category: web micro log
+tags: [opinion, data mining]
+tagline:
 ---
 
-Too often, prototype creep occurs. Prototypes end up being the production version, regardless of whether it is appropriate. 
+Too often, prototype creep occurs. Prototypes end up being the production version, regardless of whether it is appropriate.
 
->	"We don't have enough time."
+>     "We don't have enough time."
 
 Is the most common excuses for not creating a production copy. However, we really should plan accordingly. There are many reasons for creating production versions from scratch. One being:
 
->	Once in production, a prototype will never die.
+>     Once in production, a prototype will never die.
 
 This is why "we don't have enough time." is dangerous excuse. We should make quality a requirement. Not a 'nice to have'.
 

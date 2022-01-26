@@ -1,13 +1,11 @@
 ---
 layout: post
-category : web micro log
-tags : [python]
+category: web micro log
+tags: [python]
 ---
 
-
-
 Over the Christmas break I went on a holiday with a group of friends,
-and we stumbled on a bit of a dilemma: 
+and we stumbled on a bit of a dilemma:
 
 Who owes what?
 
@@ -21,12 +19,12 @@ the logic that we did using [Pandas](http://pandas.pydata.org/). Now in hindsigh
 doing this using Pandas may not be the wisest way. However with the requirements
 I had in mind, it was by far the most straight forward solution I could think of.
 
-Requirements:  
+Requirements:
 
--  Information presented in a flat file (in this case csv) for easy manipulation
-on a phone or tablet.  
--  Should be "obvious" for a general user to stare at the flat file and understand
-the format, and how to populate new entries.  
+- Information presented in a flat file (in this case csv) for easy manipulation
+  on a phone or tablet.
+- Should be "obvious" for a general user to stare at the flat file and understand
+  the format, and how to populate new entries.
 
 Again, this wasn't designed to be used by your average Joe, more for myself and perhaps
 if other people for some inexplicable reason are interested in this. As a side note, if
@@ -70,16 +68,16 @@ But we're not done yet! After this is done, we would want a final DataFrame that
 of the aggregated amounts of what each person owes to everyone. This is done using a
 self-join. In SQL-like code it would be:
 
-    select 
+    select
         coalesce(a.creditor, b.debitor) as creditor,
         coalesce(b.creditor, a.debitor) as debitor,
         coalesce(a.amount, 0) as cr,
         coalesce(b.amount, 0) as dr
-    from 
-        data as a 
-        full outer join data as b 
+    from
+        data as a
+        full outer join data as b
             on a.creditor = b.debitor and a.debitor = b.creditor
-    
+
 Which would result in something like this:
 
 <table>

@@ -8,4 +8,3 @@ title: thoughtlog
 [One day I'll probably dive deep into nix](https://nix.dev/)
 
 [podman play kube and generate kube can be the bridge between docker compose and kubernetes?](https://www.redhat.com/sysadmin/podman-play-kube-updates)
-

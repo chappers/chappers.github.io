@@ -31,16 +31,16 @@ Let \\(F\\) be a collection of subsets of a sample space \\(\Omega\\).
 
 Then \\(F\\) is a \\(\sigma\\)-algebra if and only if :
 
-1.          The empty set is in \\(F\\).
-2.          If \\(A \in F\\) then the complement \\(A^c \in F\\).
+1.           The empty set is in \\(F\\).
+2.           If \\(A \in F\\) then the complement \\(A^c \in F\\).
 3.  If \\(A_i \in F\\), \\(i=1,2,...\\), then their union \\(\cup A_i \in F\\)
 
 ## Measure (Definition)
 
 Let \\((\Omega, F)\\) be a measurable space. A set function \\(\nu\\) defined on \\(F\\) is called a **measure** if and only if :
 
-1.          \\(0 \le \nu(A) \le \infty\\) for any \\(A\in F\\)
-2.          \\(\nu(\emptyset)=0\\)
+1.           \\(0 \le \nu(A) \le \infty\\) for any \\(A\in F\\)
+2.           \\(\nu(\emptyset)=0\\)
 3.  If \\(A_i \in F\\), \\(i=1,2,...\\), and \\(A_i\\)'s are disjoint for any \\(i \neq j\\), then $$ \nu (\cup\_{i=1}^\infty A_i) = \sum\_{i=1}^{\infty} \nu (A_i)$$
 
 ---

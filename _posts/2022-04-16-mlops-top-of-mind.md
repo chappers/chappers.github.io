@@ -15,4 +15,4 @@ I've been thinking about "production grade" things recently, specifically the li
 
 One other topic that isn't broached enough is hosting model APIs in a sensible way in Kubernetes when a centralised decision platform is required. I don't think there is a one-size-fits all solution (and indeed, there are many vendor specific solutions), what I'm concerned about is the lack of open-source or "common language" approaches for this problem, despite being very common. One reason for this is due to the mixing of statistical concepts (e.g. experimental design) with software concepts (feature flags) often make it difficult to have some common ground. Solutions are typically too biased on direction or the other. 
 
-
+Edit 2022-05-26: since writing this tilt.dev is now acquired by Docker! I think I'll be migrating workflows to Tilt going forward.

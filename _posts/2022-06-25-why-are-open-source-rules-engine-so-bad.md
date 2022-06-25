@@ -20,3 +20,4 @@ Rough idea:
 
 Then we can easily evaluate the binary tree using the rules and visualise it. The next challenge would be how do we integrate it with workflows so that we can deploy. I'll leave that for later, though the rough idea is to use existing CICD tooling and workflows to enable this such as integration with GitHub actions etc. 
 
+This notion also aligns with Martin Fowler's idea of creating a small tightly controlled DSL for a specific usecase, rather than trying to create an all encompassing system.

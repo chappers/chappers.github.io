@@ -13,7 +13,6 @@ So perhaps here will be a collection of (mostly other people's) proofs, until I 
 
 There will be plenty of mistakes, but regardless. Let us begin.
 
-email [me](mailto:chapm0n.siu@gmail.com?Subjext=Incorrect%20Proof) if you spot something wrong!
 
 ---
 

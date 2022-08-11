@@ -11,9 +11,9 @@ I've been interested in various forms of markdown for a while (after all jekyll 
 
 A very short python script will allow you to generate presentations without having to worry about layout. The structure of the presentations is using markdown as normal and seperating each slide by `---`. For example, the markdown presentation to generate this [presentation](https://googledrive.com/host/0ByHWFFfBDxCFZ1ctMk9MRjBXc0U/deckjs/presentation.html) is as below:
 
-    #Chapman Siu
+    #Chappers
     ---
-    Chapman's personal:
+    Chappers's personal:
 
     *	projects, essays and code dump
     *	web micro log

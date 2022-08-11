@@ -17,7 +17,7 @@ z = Wow()
 Then to add a payment:
 
 {% highlight python %}
-z.add_payment("deposit", 39.25, "Chapman", "Tim")
+z.add_payment("deposit", 39.25, "Chappers", "Tim")
 {% endhighlight %}
 
 Finally to calculate, simply do

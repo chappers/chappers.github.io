@@ -1,3 +1,3 @@
 # chappers.github.com
 
-Personal blog of chapman siu
+Personal blog of chappers

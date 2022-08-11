@@ -37,12 +37,12 @@ violate the requirements I set for myself.
 Since I demanded that the data be a flat file, its quite simple.
 
     description, amount, creditor, debitor
-    deposit, 38, Chapman, Tim
-    breakfast, 10, Dave, Chapman
+    deposit, 38, Chappers, Tim
+    breakfast, 10, Dave, Chappers
     Taxi, 20, Josh
     breakfast, 25, Josh
-    Sea Kayaking, 250, Chapman
-    ATV tour, 350, Chapman
+    Sea Kayaking, 250, Chappers
+    ATV tour, 350, Chappers
     Taxi, 5, Josh, Tim
     Groceries, 23.5, Dave
 
@@ -93,21 +93,21 @@ Which would result in something like this:
 <tbody>
 <tr>
 <th>0</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td>    Dave</td>
 <td> 150.000</td>
 <td>  15.875</td>
 </tr>
 <tr>
 <th>1</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td>    Josh</td>
 <td> 150.000</td>
 <td>  11.250</td>
 </tr>
 <tr>
 <th>2</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td>     Tim</td>
 <td> 188.000</td>
 <td>   0.000</td>
@@ -115,7 +115,7 @@ Which would result in something like this:
 <tr>
 <th>3</th>
 <td>    Dave</td>
-<td> Chapman</td>
+<td> Chappers</td>
 <td>  15.875</td>
 <td> 150.000</td>
 </tr>
@@ -157,19 +157,19 @@ The ending result would look like this:
 <tbody>
 <tr>
 <th>0</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td> Dave</td>
 <td> 134.625</td>
 </tr>
 <tr>
 <th>1</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td> Josh</td>
 <td> 160.375</td>
 </tr>
 <tr>
 <th>2</th>
-<td> Chapman</td>
+<td> Chappers</td>
 <td>  Tim</td>
 <td> 165.875</td>
 </tr>

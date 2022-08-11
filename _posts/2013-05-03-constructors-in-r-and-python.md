@@ -50,6 +50,6 @@ The R equivalent of the above is
 
     Person$methods(add_age = function(set_age) age <<- set_age)
 
-    chapman <- Person$new(name = "chapman")
-    chapman$add_age(10)
-    print(chapman$age)
+    Chappers <- Person$new(name = "Chappers")
+    Chappers$add_age(10)
+    print(Chappers$age)

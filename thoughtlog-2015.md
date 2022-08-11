@@ -2491,7 +2491,7 @@ You picked a relevant topic for your speech, finding a topic to talk about is tr
 
 # Webpy Extending Wiki
 
-Chapman's Web.py extended version is available [here](https://github.com/chappers/wiki).
+Chappers's Web.py extended version is available [here](https://github.com/chappers/wiki).
 
 [Skeleton](http://www.getskeleton.com/) was used to create responsive web format.
 

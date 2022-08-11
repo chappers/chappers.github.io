@@ -110,7 +110,7 @@ public class HelloActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.hello, menu);
 
         TextView changeText = (TextView) findViewById(R.id.hello_world);
-        changeText.setText("Chapman!");
+        changeText.setText("Chappers!");
         return true;
     }
 

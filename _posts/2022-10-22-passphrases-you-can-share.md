@@ -4,9 +4,7 @@ Sometimes you have to generate passphrases for sharing. Some of the word banks o
 Its probably not worth the effort for people to curate adjectives, nouns and numbers which just fit the bill. Here is a short script that does that (refresh page to generate new passphrases)
 
 
-<pre>
-<p id="demo"></p>
-</pre>
+<pre><p id="demo"></p></pre>
 
 **How it works**
 

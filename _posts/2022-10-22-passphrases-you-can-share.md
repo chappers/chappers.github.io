@@ -37,11 +37,11 @@ Of course additional `<verb>` and `<adverb>` combinations can be added to extend
 
 <script>
 function generateNumber() {
-  return String(Math.floor(Math.random() * 10));
+return String(Math.floor(Math.random() * 10));
 }
 
 function selectRandomElement(items) {
-  return items[Math.floor(Math.random() * items.length)]
+return items[Math.floor(Math.random() * items.length)]
 }
 
 const numLen = 2;
@@ -53,7 +53,7 @@ var randomAdjective = selectRandomElement(adjectives);
 
 var randNumString = '';
 for (i = 0; i < numLen; i++) {
-  randNumString += String(generateNumber())
+randNumString += String(generateNumber())
 }
 
 document.getElementById("demo").innerHTML = randomAdjective + '.' + randomAnimal + randNumString;

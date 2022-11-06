@@ -1,3 +1,7 @@
+---
+layout: post
+title: passphrase
+---
 
 Sometimes you have to generate passphrases for sharing. Some of the word banks online just aren't...safe for work?
 

@@ -1,0 +1,122 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% feed_meta %}
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-54510916-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./css/pygments.css" />
+    <script src="./js/site.js"></script>
+    <title>chappers - {{ site.posts.first.title }}</title>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      type="text/javascript"
+    ></script>
+    <script
+      data-ad-client="ca-pub-5058752309493957"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+
+  <body>
+    <div>
+      <article>
+        <h1>
+          <a href="/" id="home">chappers</a> :
+          <a href="{{ site.base_url }}{{ site.posts.first.url }}"
+            >{{ site.posts.first.title }}</a
+          >
+        </h1>
+        <p>{{ site.posts.first.date | date_to_string }}</p>
+        <p>{{ site.posts.first.content }}</p>
+        <script
+          src="https://utteranc.es/client.js"
+          repo="chappers/blogroll"
+          issue-term="{{ site.posts.first.url }}"
+          theme="github-light"
+          crossorigin="anonymous"
+          async
+        ></script>
+      </article>
+
+      <br />
+      <br />
+      <h1>more...</h1>
+      <br />
+
+      {% for post in site.posts offset:1 limit:10 %} {% capture this_year %}{{
+      post.date | date: "%Y" }}{% endcapture %} {% capture this_month %}{{
+      post.date | date: "%B" }}{% endcapture %} {% capture next_year %}{{
+      post.previous.date | date: "%Y" }}{% endcapture %} {% capture next_month
+      %}{{ post.previous.date | date: "%B" }}{% endcapture %} {% if
+      forloop.first %}
+      <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+      <h3 id="{{ this_year }}-{{ this_month }}-ref">{{ this_month }}</h3>
+      {% endif %}
+
+      <p>
+        {{ post.date | date: "%d" }}
+        <a href="{{ post.url }}" id="bold">{{ post.title }}</a>
+      </p>
+
+      {% if forloop.last %} {% else %} {% if this_year != next_year %}
+      <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+      <h3 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+      {% else %} {% if this_month != next_month %}
+      <h3 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+      {% endif %} {% endif %} {% endif %} {% endfor %}
+
+      <p>
+        <a href="http://chappers.github.io/archive/" style="color: #888"
+          >:: All Posts</a
+        >
+      </p>
+    </div>
+    <!-- mathjax -->
+    <canvas id="map"></canvas>
+    <script src="https://chappers.github.io/js/pagemap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
+    <div>{% include footer.html %}</div>
+  </body>
+</html>
